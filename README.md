@@ -13,6 +13,7 @@ The final network reconstructs 480 m observations on a 120 m grid with 5,977,045
 | Location | Contents |
 |---|---|
 | [Manuscript PDF](research/jstars_20260914/manuscript/main.pdf) | Revised nine-page article; LaTeX is in the same directory |
+| [Step-by-step reproduction](docs/reproduction.md) | Environment, downloads, three-model inference and scoring, expected result, troubleshooting and full-retraining limits |
 | [Configuration](docs/configuration.md) | Five training stages, all 74 channels, history selection, QA and baseline adaptations |
 | [Download guide](docs/release.md) | Google Drive data, GitHub model weights, checksums and extraction |
 | [Data manifest](resources/historylst246/manifest.json) | Fixed fit/validation/test splits, scene metadata and original array hashes |
@@ -21,6 +22,8 @@ The final network reconstructs 480 m observations on a 120 m grid with 5,977,045
 | `scripts/` | Portable extraction and compact-model inference entry points |
 
 ## Quick start
+
+For a complete walkthrough from a fresh checkout to the paper's three-model mean RMSE, start with the [reproduction guide](docs/reproduction.md).
 
 Use Python 3.10 or later and install PyTorch appropriate for your CPU/GPU, then:
 

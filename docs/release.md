@@ -9,6 +9,9 @@ The folder is **private**: sign in with an account granted access, or request
 access from the folder owner through Google Drive. Dataset parts are not hosted on GitHub.
 Selected checkpoint weights are attached to the GitHub Release.
 
+For a sequential walkthrough that uses these downloads to recompute the paper's
+three-model mean test score, see the [reproduction guide](reproduction.md).
+
 `release-assets.json` records each group's storage location and the exact
 byte sizes and SHA-256 checksums of every compressed part and restored file.
 The original dataset contains 27 arrays (10,490,274,936 bytes), preserving
