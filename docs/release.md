@@ -4,8 +4,9 @@ Repository: `jf-xjr/share-net-lst` (private). Version: `v1.0.0-manuscript`.
 **SHaRe-Net** stands for **Scale-wise Historical Reweighting Network**.
 
 The source tree preserves the manuscript implementations and fixed partitions.
-Processed dataset arrays will be distributed through **Google Drive**. The
-Google Drive link is **pending**; dataset parts are not hosted on GitHub.
+Processed dataset arrays are available in the [Google Drive data folder](https://drive.google.com/drive/folders/1xzp6lgvS1q4fS1Dcqmya80vaH8-_1--s).
+The folder is **private**: sign in with an account granted access, or request
+access from the folder owner through Google Drive. Dataset parts are not hosted on GitHub.
 Selected checkpoint weights are attached to the GitHub Release.
 
 `release-assets.json` records each group's storage location and the exact
@@ -16,9 +17,23 @@ five data parts totaling 3,626,248,102 bytes, each at most 1 GiB.
 
 ## Download and restore
 
-After the Google Drive link is supplied, download the required data parts into
-`downloads/`. The test and validation sets each have one part; training has
+Download the required data parts below into `downloads/`, retaining the exact
+filenames. The test and validation sets each have one part; training has
 three parts, all of which are required to restore the training set.
+
+| Google Drive part | Bytes |
+|---|---:|
+| [historylst246-test.tar.gz.part001](https://drive.google.com/file/d/1WvYbTuWGz5vLK3NbANMOOo0ZyY78TmFK/view) | 433,481,225 |
+| [historylst246-validation.tar.gz.part001](https://drive.google.com/file/d/172egi4HM7t8M-Ms7r09Uirdr7UajlprV/view) | 219,698,623 |
+| [historylst246-fit.tar.gz.part001](https://drive.google.com/file/d/1t1VxDkQTktiUEGhl64op9TpaAvKR_EUj/view) | 1,073,741,824 |
+| [historylst246-fit.tar.gz.part002](https://drive.google.com/file/d/1kFsu_gQI5n16gAGP6beqiA2jFpWU26UP/view) | 1,073,741,824 |
+| [historylst246-fit.tar.gz.part003](https://drive.google.com/file/d/1ibQGPemF8UroLPS_qvEqBrnYhEYBSkHj/view) | 825,584,606 |
+
+All five uploaded parts were verified on 2026-09-16 against their local byte
+sizes and MD5 checksums. The [SHA-256 manifest](https://drive.google.com/file/d/1dr8svKE9-6Q2uggUEqtAokAI34gQvnFL/view)
+is in the same folder. The repository [release-assets.json](../release-assets.json)
+contains each part's SHA-256, MD5 and Drive URL; extraction checks SHA-256
+for both downloaded parts and original array files.
 
 For model weights in this private GitHub repository, authenticate GitHub CLI
 with an account that has access:

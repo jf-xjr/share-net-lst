@@ -11,7 +11,10 @@
         {
           "name": "historylst246-test.tar.gz.part001",
           "bytes": 433481225,
-          "sha256": "1a02e4a43bad662c1aa503caeada7482c93e6481824e2228220cd58fdc0cf7d7"
+          "sha256": "1a02e4a43bad662c1aa503caeada7482c93e6481824e2228220cd58fdc0cf7d7",
+          "md5": "db908200e6451cefa74b23697de6896d",
+          "google_drive_file_id": "1WvYbTuWGz5vLK3NbANMOOo0ZyY78TmFK",
+          "download_url": "https://drive.google.com/file/d/1WvYbTuWGz5vLK3NbANMOOo0ZyY78TmFK/view"
         }
       ],
       "files": [
@@ -62,7 +65,9 @@
         }
       ],
       "storage": "google_drive",
-      "download_url": null
+      "download_url": "https://drive.google.com/drive/folders/1xzp6lgvS1q4fS1Dcqmya80vaH8-_1--s",
+      "visibility": "private",
+      "access_required": true
     },
     {
       "name": "historylst246-validation",
@@ -71,7 +76,10 @@
         {
           "name": "historylst246-validation.tar.gz.part001",
           "bytes": 219698623,
-          "sha256": "6e84adccfd130faf731fad8b158faa7a4d7055cc95d49d19524408ed00f96c7b"
+          "sha256": "6e84adccfd130faf731fad8b158faa7a4d7055cc95d49d19524408ed00f96c7b",
+          "md5": "7924e8f52ea89fbd2ecae7936621813a",
+          "google_drive_file_id": "172egi4HM7t8M-Ms7r09Uirdr7UajlprV",
+          "download_url": "https://drive.google.com/file/d/172egi4HM7t8M-Ms7r09Uirdr7UajlprV/view"
         }
       ],
       "files": [
@@ -122,7 +130,9 @@
         }
       ],
       "storage": "google_drive",
-      "download_url": null
+      "download_url": "https://drive.google.com/drive/folders/1xzp6lgvS1q4fS1Dcqmya80vaH8-_1--s",
+      "visibility": "private",
+      "access_required": true
     },
     {
       "name": "historylst246-fit",
@@ -131,17 +141,26 @@
         {
           "name": "historylst246-fit.tar.gz.part001",
           "bytes": 1073741824,
-          "sha256": "817f089fc0bad5e8b2cc47842cb703664b996adbb28934cf8d3ee1e886de1c92"
+          "sha256": "817f089fc0bad5e8b2cc47842cb703664b996adbb28934cf8d3ee1e886de1c92",
+          "md5": "97db2e488fe8aa7a5a5f94f60241c0bf",
+          "google_drive_file_id": "1t1VxDkQTktiUEGhl64op9TpaAvKR_EUj",
+          "download_url": "https://drive.google.com/file/d/1t1VxDkQTktiUEGhl64op9TpaAvKR_EUj/view"
         },
         {
           "name": "historylst246-fit.tar.gz.part002",
           "bytes": 1073741824,
-          "sha256": "d8754a86c044c3130088f2414a3cdd02f7336ff30e31639b955a8482f52f4f29"
+          "sha256": "d8754a86c044c3130088f2414a3cdd02f7336ff30e31639b955a8482f52f4f29",
+          "md5": "a8f095ae8f915909cf28dbf56ff5ea3c",
+          "google_drive_file_id": "1kFsu_gQI5n16gAGP6beqiA2jFpWU26UP",
+          "download_url": "https://drive.google.com/file/d/1kFsu_gQI5n16gAGP6beqiA2jFpWU26UP/view"
         },
         {
           "name": "historylst246-fit.tar.gz.part003",
           "bytes": 825584606,
-          "sha256": "579c8c5036358ec1dfae29ded63612a4a0259972232697a5fe5b9d121af24d41"
+          "sha256": "579c8c5036358ec1dfae29ded63612a4a0259972232697a5fe5b9d121af24d41",
+          "md5": "775de62b6300402935587588fcd00dc5",
+          "google_drive_file_id": "1ibQGPemF8UroLPS_qvEqBrnYhEYBSkHj",
+          "download_url": "https://drive.google.com/file/d/1ibQGPemF8UroLPS_qvEqBrnYhEYBSkHj/view"
         }
       ],
       "files": [
@@ -192,7 +211,9 @@
         }
       ],
       "storage": "google_drive",
-      "download_url": null
+      "download_url": "https://drive.google.com/drive/folders/1xzp6lgvS1q4fS1Dcqmya80vaH8-_1--s",
+      "visibility": "private",
+      "access_required": true
     },
     {
       "name": "selected-checkpoints",
@@ -293,5 +314,16 @@
       ],
       "storage": "github_release"
     }
-  ]
+  ],
+  "dataset_upload": {
+    "status": "uploaded_and_verified",
+    "storage": "google_drive",
+    "folder_url": "https://drive.google.com/drive/folders/1xzp6lgvS1q4fS1Dcqmya80vaH8-_1--s",
+    "visibility": "private",
+    "access_required": true,
+    "verified_at_utc": "2026-09-16T09:38:41.672066+00:00",
+    "remote_size_and_md5_verified": true,
+    "dataset_parts": 5,
+    "dataset_bytes": 3626248102
+  }
 }
