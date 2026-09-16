@@ -1,0 +1,17 @@
+{
+  "architecture": "without_thermal_bypass",
+  "seed": 20260914,
+  "updates": 12000,
+  "batch_size": 4,
+  "lr": 0.001,
+  "warmup": 300,
+  "weight_decay": 0.0001,
+  "validation_interval": 1000,
+  "evaluation_batch": 2,
+  "history_dropout": 0.0,
+  "emissivity_dropout": 0.0,
+  "selection": "minimum FP32 Val45 macro RMSE; 26 raw/EMA opportunities",
+  "teacher": false,
+  "training_crop": 128,
+  "initialization": "fresh shared random tensors within each paired seed"
+}

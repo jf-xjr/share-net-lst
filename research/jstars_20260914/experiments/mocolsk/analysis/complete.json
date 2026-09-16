@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "selection_sha256": "b769b3be67f17c3db555b58ac80aa101513bd8c9274e7444178a60f7d8663e67",
+  "prediction_sha256": {
+    "native": "8b58ec60f803e27b4581a13e870a883890ee8c6474092f98fbd179291a7c152d",
+    "calibrated": "0ecca50e76de15125b478c2069fba5b5cbe370a45bcf02972f1b193cbaa04e58"
+  },
+  "timing_recovery_source_sha256": "a6d822f724bf7bb36959e50bf34829a820ef0ee22f4ad3eec9e53bf5de5c4c49",
+  "source_sha256": "b16c383f310ddbf6878107041593b01df18c9c003baf9cb38785f2656cb4bc6d",
+  "outputs": {
+    "inference_benchmark.json": "8dca56aa0c2ab105f4e1021fe2c8a612b276bcff8bdce3f21e43d30c6911cca3",
+    "paired.json": "5987fc9a776b5598e66742a26022cb89b19770beb321d3e011516d33ad18bfae",
+    "members.json": "9af790d16f1d772dbda13d4409009ba6b0e9c598576024438524f6aca194c0e2",
+    "scores.json": "53ec5a0b1a64a624e73adbc05feed387c13930516234beb2355f00dc84d27fad"
+  }
+}

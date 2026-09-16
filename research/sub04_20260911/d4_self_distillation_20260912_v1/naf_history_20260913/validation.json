@@ -1,0 +1,62 @@
+[
+  {
+    "step": 0,
+    "weights": "raw",
+    "validation_macro_rmse": 0.42238873556742956,
+    "seconds": 16.055977976997383
+  },
+  {
+    "step": 0,
+    "weights": "ema",
+    "validation_macro_rmse": 0.42238873556742956,
+    "seconds": 17.49918489099946
+  },
+  {
+    "step": 250,
+    "weights": "raw",
+    "validation_macro_rmse": 0.41935449768903316,
+    "seconds": 141.6581125729972
+  },
+  {
+    "step": 250,
+    "weights": "ema",
+    "validation_macro_rmse": 0.4186640943830105,
+    "seconds": 143.17629182699966
+  },
+  {
+    "step": 500,
+    "weights": "raw",
+    "validation_macro_rmse": 0.41761005563003234,
+    "seconds": 238.9011176799977
+  },
+  {
+    "step": 500,
+    "weights": "ema",
+    "validation_macro_rmse": 0.4177356537505565,
+    "seconds": 240.2634873930001
+  },
+  {
+    "step": 750,
+    "weights": "raw",
+    "validation_macro_rmse": 0.4169633622380928,
+    "seconds": 325.11345663799875
+  },
+  {
+    "step": 750,
+    "weights": "ema",
+    "validation_macro_rmse": 0.41720482473897436,
+    "seconds": 326.5637634499981
+  },
+  {
+    "step": 1000,
+    "weights": "raw",
+    "validation_macro_rmse": 0.41714010614357006,
+    "seconds": 416.848416386998
+  },
+  {
+    "step": 1000,
+    "weights": "ema",
+    "validation_macro_rmse": 0.4171393881311977,
+    "seconds": 418.2141644129988
+  }
+]

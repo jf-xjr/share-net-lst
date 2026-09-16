@@ -1,0 +1,22 @@
+{
+  "status": "explicit_root_reallocation_of_final_evaluation_reserve",
+  "created_unix": 1789300094.2823212,
+  "previous_confirmation_allocation": {
+    "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260913/compact_query_product/confirmation_allocation.json",
+    "sha256": "c65b2e06314e3d98eae2215afce91dc54ec5afd6b93c5ec8f3cd6eb32eb9218b"
+  },
+  "budget_added_seconds": 0,
+  "hard_deadline_unix": 1789302396,
+  "effective_training_stop_unix": 1789301796,
+  "final_evaluation_reserve_seconds": 600,
+  "maximum_job_seconds": 700,
+  "seeds": [
+    20260912,
+    20260913
+  ],
+  "reason": "Two unchanged QP confirmations take about 584 seconds each. Reallocate 10 minutes of the existing 20-minute evaluation reserve so the second actual confirmation can finish; original Test90 plus shared cost timings are expected to fit within the remaining 10 minutes. No extra user budget, no baseline, no new method search.",
+  "original_pilot_gate_pass": false,
+  "final_numeric_gates_unchanged": true,
+  "old_bound_sources_and_receipts_unchanged": true,
+  "no_Test_weight_or_method_selection": true
+}

@@ -1,0 +1,4 @@
+numpy>=2.0,<2.3
+numba==0.61.2
+llvmlite==0.44.0
+rasterio>=1.3

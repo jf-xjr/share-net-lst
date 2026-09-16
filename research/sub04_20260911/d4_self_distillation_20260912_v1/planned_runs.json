@@ -1,0 +1,49 @@
+{
+  "status": "plan_only_not_completed",
+  "runs": [
+    {
+      "architecture": "naf_history",
+      "seed": 20260905,
+      "run": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/d4_self_distillation_20260912_v1/pilot_naf905",
+      "source_checkpoint": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/runs/naf_history_20260905_cuda/best.pt",
+      "source_completion": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/runs/naf_history_20260905_cuda/complete.json"
+    },
+    {
+      "architecture": "baseline",
+      "seed": 20260905,
+      "run": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/d4_self_distillation_20260912_v1/baseline_20260905",
+      "source_checkpoint": "/home/jf_xjr/uhi_cdc/research/route_a_20260911/utae/best.pt",
+      "source_completion": "/home/jf_xjr/uhi_cdc/research/route_a_20260911/utae/complete.json"
+    },
+    {
+      "architecture": "naf_history",
+      "seed": 20260912,
+      "run": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/d4_self_distillation_20260912_v1/naf_history_20260912",
+      "source_checkpoint": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/runs/naf_history_20260912/best.pt",
+      "source_completion": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/runs/naf_history_20260912/complete.json"
+    },
+    {
+      "architecture": "baseline",
+      "seed": 20260912,
+      "run": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/d4_self_distillation_20260912_v1/baseline_20260912",
+      "source_checkpoint": "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/runs/baseline_20260912/best.pt",
+      "source_completion": "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/runs/baseline_20260912/complete.json"
+    },
+    {
+      "architecture": "naf_history",
+      "seed": 20260913,
+      "run": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/d4_self_distillation_20260912_v1/naf_history_20260913",
+      "source_checkpoint": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/runs/naf_history_20260913/best.pt",
+      "source_completion": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/runs/naf_history_20260913/complete.json"
+    },
+    {
+      "architecture": "baseline",
+      "seed": 20260913,
+      "run": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/d4_self_distillation_20260912_v1/baseline_20260913",
+      "source_checkpoint": "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/runs/baseline_20260913/best.pt",
+      "source_completion": "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/runs/baseline_20260913/complete.json"
+    }
+  ],
+  "all_other_five_require_actual_passing_pilot": true,
+  "teacher_receipt": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/d4_fit_teacher_cache_20260912_v1/predictions_complete.json"
+}

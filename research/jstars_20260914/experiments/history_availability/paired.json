@@ -1,0 +1,338 @@
+{
+  "archive_only_minus_all": {
+    "metric": "rmse",
+    "definition": "first minus second",
+    "delta": 0.07846447870100114,
+    "confidence_interval_95": [
+      0.06504653308805172,
+      0.09228912520747569
+    ],
+    "positive_cities": 30,
+    "cities": 30,
+    "regional_delta": {
+      "china": 0.10448510853032864,
+      "europe": 0.07210119458236626,
+      "us": 0.05880713299030851
+    },
+    "city_deltas": [
+      {
+        "city": "alexandria_la",
+        "region": "us",
+        "delta": 0.05222814554651334
+      },
+      {
+        "city": "baoji_cn",
+        "region": "china",
+        "delta": 0.05257728595521072
+      },
+      {
+        "city": "beijing_cn",
+        "region": "china",
+        "delta": 0.1412145521705283
+      },
+      {
+        "city": "brno_cz",
+        "region": "europe",
+        "delta": 0.07223543307322755
+      },
+      {
+        "city": "caldwell_id",
+        "region": "us",
+        "delta": 0.09776565642576984
+      },
+      {
+        "city": "elizabethtown_ky",
+        "region": "us",
+        "delta": 0.020199542238208468
+      },
+      {
+        "city": "frankfurt_am_main_de",
+        "region": "europe",
+        "delta": 0.054830097184433546
+      },
+      {
+        "city": "ganzhou_cn",
+        "region": "china",
+        "delta": 0.0943130029077609
+      },
+      {
+        "city": "guankou_cn",
+        "region": "china",
+        "delta": 0.13107239370597829
+      },
+      {
+        "city": "hanzhong_cn",
+        "region": "china",
+        "delta": 0.046859862658213236
+      },
+      {
+        "city": "hrodna_by",
+        "region": "europe",
+        "delta": 0.027329819827209556
+      },
+      {
+        "city": "indio_ca",
+        "region": "us",
+        "delta": 0.1102117452206704
+      },
+      {
+        "city": "kaunas_lt",
+        "region": "europe",
+        "delta": 0.04125122394757147
+      },
+      {
+        "city": "kryvyy_rih_ua",
+        "region": "europe",
+        "delta": 0.10781025151709667
+      },
+      {
+        "city": "mianyang_cn",
+        "region": "china",
+        "delta": 0.06303789215599886
+      },
+      {
+        "city": "odessa_tx",
+        "region": "us",
+        "delta": 0.14901299490360115
+      },
+      {
+        "city": "riga_lv",
+        "region": "europe",
+        "delta": 0.1156667644128671
+      },
+      {
+        "city": "rome_it",
+        "region": "europe",
+        "delta": 0.07317659211299421
+      },
+      {
+        "city": "salisbury_md",
+        "region": "us",
+        "delta": 0.05169961651189309
+      },
+      {
+        "city": "san_angelo_tx",
+        "region": "us",
+        "delta": 0.04139734571443465
+      },
+      {
+        "city": "shangrao_cn",
+        "region": "china",
+        "delta": 0.1598915269708271
+      },
+      {
+        "city": "sioux_city_ia",
+        "region": "us",
+        "delta": 0.017745577244170474
+      },
+      {
+        "city": "sofia_bg",
+        "region": "europe",
+        "delta": 0.05993796265530993
+      },
+      {
+        "city": "state_college_pa",
+        "region": "us",
+        "delta": 0.03886484523779071
+      },
+      {
+        "city": "tuscaloosa_al",
+        "region": "us",
+        "delta": 0.008945860860033072
+      },
+      {
+        "city": "xining_cn",
+        "region": "china",
+        "delta": 0.1352652398981784
+      },
+      {
+        "city": "zaragoza_es",
+        "region": "europe",
+        "delta": 0.10391028064949503
+      },
+      {
+        "city": "zhongwei_cn",
+        "region": "china",
+        "delta": 0.0703042629040016
+      },
+      {
+        "city": "zibo_cn",
+        "region": "china",
+        "delta": 0.15031506597658906
+      },
+      {
+        "city": "zuerich_ch",
+        "region": "europe",
+        "delta": 0.06486352044345745
+      }
+    ]
+  },
+  "recent_only_minus_all": {
+    "metric": "rmse",
+    "definition": "first minus second",
+    "delta": 0.0689565974209555,
+    "confidence_interval_95": [
+      0.054038654141135074,
+      0.08491406606206868
+    ],
+    "positive_cities": 30,
+    "cities": 30,
+    "regional_delta": {
+      "china": 0.08031125584436036,
+      "europe": 0.061616110964788195,
+      "us": 0.06494242545371795
+    },
+    "city_deltas": [
+      {
+        "city": "alexandria_la",
+        "region": "us",
+        "delta": 0.07421070731501045
+      },
+      {
+        "city": "baoji_cn",
+        "region": "china",
+        "delta": 0.0966334804158433
+      },
+      {
+        "city": "beijing_cn",
+        "region": "china",
+        "delta": 0.022612203623304683
+      },
+      {
+        "city": "brno_cz",
+        "region": "europe",
+        "delta": 0.028497860628665772
+      },
+      {
+        "city": "caldwell_id",
+        "region": "us",
+        "delta": 0.061016668016925624
+      },
+      {
+        "city": "elizabethtown_ky",
+        "region": "us",
+        "delta": 0.06866818762598093
+      },
+      {
+        "city": "frankfurt_am_main_de",
+        "region": "europe",
+        "delta": 0.08031046148097909
+      },
+      {
+        "city": "ganzhou_cn",
+        "region": "china",
+        "delta": 0.11229132118271068
+      },
+      {
+        "city": "guankou_cn",
+        "region": "china",
+        "delta": 0.045448915766341524
+      },
+      {
+        "city": "hanzhong_cn",
+        "region": "china",
+        "delta": 0.12149650464352096
+      },
+      {
+        "city": "hrodna_by",
+        "region": "europe",
+        "delta": 0.1152187110342246
+      },
+      {
+        "city": "indio_ca",
+        "region": "us",
+        "delta": 0.013848724804406132
+      },
+      {
+        "city": "kaunas_lt",
+        "region": "europe",
+        "delta": 0.07366276073247346
+      },
+      {
+        "city": "kryvyy_rih_ua",
+        "region": "europe",
+        "delta": 0.03542354802575881
+      },
+      {
+        "city": "mianyang_cn",
+        "region": "china",
+        "delta": 0.11399130565768167
+      },
+      {
+        "city": "odessa_tx",
+        "region": "us",
+        "delta": 0.010176042125610019
+      },
+      {
+        "city": "riga_lv",
+        "region": "europe",
+        "delta": 0.020096055075864427
+      },
+      {
+        "city": "rome_it",
+        "region": "europe",
+        "delta": 0.16615745881773586
+      },
+      {
+        "city": "salisbury_md",
+        "region": "us",
+        "delta": 0.04073978620300722
+      },
+      {
+        "city": "san_angelo_tx",
+        "region": "us",
+        "delta": 0.05258384975470437
+      },
+      {
+        "city": "shangrao_cn",
+        "region": "china",
+        "delta": 0.05077858721597783
+      },
+      {
+        "city": "sioux_city_ia",
+        "region": "us",
+        "delta": 0.053174717245627556
+      },
+      {
+        "city": "sofia_bg",
+        "region": "europe",
+        "delta": 0.03734900413113712
+      },
+      {
+        "city": "state_college_pa",
+        "region": "us",
+        "delta": 0.1161562175171506
+      },
+      {
+        "city": "tuscaloosa_al",
+        "region": "us",
+        "delta": 0.1588493539287567
+      },
+      {
+        "city": "xining_cn",
+        "region": "china",
+        "delta": 0.14969642852665277
+      },
+      {
+        "city": "zaragoza_es",
+        "region": "europe",
+        "delta": 0.010344454815400861
+      },
+      {
+        "city": "zhongwei_cn",
+        "region": "china",
+        "delta": 0.04429703801618334
+      },
+      {
+        "city": "zibo_cn",
+        "region": "china",
+        "delta": 0.045866773395386806
+      },
+      {
+        "city": "zuerich_ch",
+        "region": "europe",
+        "delta": 0.04910079490564201
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "variant": "archive_only",
+  "seed": 20260905,
+  "prediction": "/home/jf_xjr/uhi_cdc/research/jstars_20260914/experiments/history_availability/archive_only_20260905.npy",
+  "prediction_sha256": "c560ac842bc1a9830b8008d392186cd7e529dd09a2990e94213c93cb22252d25",
+  "freeze_sha256": "759ca27cb38c0f2cb4c98b9d8e673cf7fb993dedbd632cfefceb9da3a01638f5",
+  "checkpoint_sha256": "9fb45471adf1f2acfcbc81d70dd8f352517c6bd9efef188f50a6b7e67266ee54",
+  "queries": 90,
+  "labels_opened": false,
+  "original_first_scene_maximum_difference_K": 0.0,
+  "seconds": 13.194337139000709
+}

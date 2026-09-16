@@ -1,0 +1,14 @@
+{
+  "repository": "https://github.com/yuyi13/ubESTARFM",
+  "commit": "171cfbdc92a7e63ef8769face326f00cb650061a",
+  "license": "MIT",
+  "original_adapter_sha256": "80f5c17c4d90ba0db309dbb40ea6e388c915f8c02c45688ecd46ebc360339a31",
+  "upstream_source_sha256": {
+    "model.py": "f96ab7a555bee26c6bf3280c456c8b359d9f40983e992d94b0d671cb98280108",
+    "io.py": "dccf3c04c874b6c9d0cc1575fdbd345b9cbdeed59f33d2193b50694aeb8e7121",
+    "api.py": "3960600b1f6b995e7cb1bff50817c80a571bfcdf53d57a76f56eaff539660ef9",
+    "__init__.py": "94eae84dffdaa098e7467f0e43f7166a5f36b9c801c7d9501bf16468f7c849d4",
+    "kernels.py": "a8ec79b1bc1348c9294680cf20e9f0f1974588e0a9b5a958d9bb3afef4fa8da0"
+  },
+  "changes": "Upstream unchanged; existing past-only adapter imports portable projection; diagnostic protocol functions omitted; numerical pooling/selection unchanged"
+}

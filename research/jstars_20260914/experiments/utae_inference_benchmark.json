@@ -1,0 +1,119 @@
+{
+  "labels_opened": false,
+  "split": "validation",
+  "scene_size": 160,
+  "precision": "FP32, TF32 disabled; common FP64 support projection",
+  "timed": "CPU prepared input arrays through host-to-GPU transfers, complete method inference, projection, CPU output",
+  "selection": "lowest, median, highest number of scene-available histories in Val45",
+  "warmup": 3,
+  "repetitions": 10,
+  "gpu": "NVIDIA GeForce RTX 5060 Ti",
+  "results": {
+    "original_UTAE": {
+      "checkpoint": "/home/jf_xjr/uhi_cdc/research/sub04_20260913/final_confirmation/runs/baseline_20260905/best.pt",
+      "checkpoint_sha256": "73ffc240398398c7cb1d9d9d3d64c6ed913baee7eb0a41c2fa61698af8de0147",
+      "parameters": 2985697,
+      "cases": [
+        {
+          "scene_id": "coeur_d_alene_id:2022:LC09_L2SP_043027_20220731_02_T1",
+          "index": 4,
+          "references": 5,
+          "seconds": [
+            0.027656844999000896,
+            0.02710568999464158,
+            0.025929566996637732,
+            0.028402551004546694,
+            0.025517905000015162,
+            0.027974179000011645,
+            0.026282487997377757,
+            0.03428319899830967,
+            0.02712809199874755,
+            0.02797475399711402
+          ],
+          "median_seconds": 0.027392468498874223,
+          "peak_cuda_bytes": 262704128,
+          "repeat_maximum_difference_K": [
+            3.0517578125e-05,
+            3.0517578125e-05,
+            3.0517578125e-05,
+            3.0517578125e-05,
+            3.0517578125e-05,
+            2.86102294921875e-05,
+            3.0517578125e-05,
+            3.0517578125e-05,
+            3.0517578125e-05,
+            3.0517578125e-05
+          ]
+        },
+        {
+          "scene_id": "bucharest_ro:2022:LC09_L2SP_183029_20220720_02_T1",
+          "index": 0,
+          "references": 8,
+          "seconds": [
+            0.026956326997606084,
+            0.02683990600053221,
+            0.02620622100221226,
+            0.027557246998185292,
+            0.02568350999354152,
+            0.026451268000528216,
+            0.02579591299581807,
+            0.025790995001443662,
+            0.025798418006161228,
+            0.027202492994547356
+          ],
+          "median_seconds": 0.026328744501370238,
+          "peak_cuda_bytes": 262704128,
+          "repeat_maximum_difference_K": [
+            3.0517578125e-05,
+            3.0517578125e-05,
+            3.0517578125e-05,
+            3.0517578125e-05,
+            3.0517578125e-05,
+            3.0517578125e-05,
+            3.0517578125e-05,
+            3.0517578125e-05,
+            3.0517578125e-05,
+            3.0517578125e-05
+          ]
+        },
+        {
+          "scene_id": "sevilla_es:2021:LC08_L2SP_202034_20210730_02_T1",
+          "index": 36,
+          "references": 9,
+          "seconds": [
+            0.02626667699951213,
+            0.025932939002814237,
+            0.026277677003236022,
+            0.02609116499661468,
+            0.025816952998866327,
+            0.025338627005112357,
+            0.025290174002293497,
+            0.026136521002626978,
+            0.02559602499968605,
+            0.02784692499699304
+          ],
+          "median_seconds": 0.02601205199971446,
+          "peak_cuda_bytes": 262704128,
+          "repeat_maximum_difference_K": [
+            3.0517578125e-05,
+            3.0517578125e-05,
+            3.0517578125e-05,
+            3.0517578125e-05,
+            3.0517578125e-05,
+            3.0517578125e-05,
+            3.0517578125e-05,
+            3.0517578125e-05,
+            3.0517578125e-05,
+            3.0517578125e-05
+          ]
+        }
+      ],
+      "median_across_case_medians": 0.026328744501370238
+    }
+  },
+  "repeat_check": "Initial 1e-6 K bound replaced by the established 2e-4 K FP32 operation bound; actual repeat differences retained. No training or Test predictions repeated.",
+  "source_sha256": {
+    "/home/jf_xjr/uhi_cdc/research/jstars_20260914/experiments/benchmark_utae.py": "cea1ed86f6e334a0fc98d452455030e8e75862ac3dfd4344352ea4a2e20cbc73",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/historylst/model.py": "799a0a51c4f8b0ffdfc7a0aae69b2ffaaa58d422c7e8c8c370b638b308ab33b5"
+  }
+}

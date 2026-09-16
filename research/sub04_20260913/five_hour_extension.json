@@ -1,0 +1,18 @@
+{
+  "user_instruction": "追加5小时预算，合理分配时间，按要求保质保量完成目标",
+  "start_utc": "2026-09-13 03:26:36 UTC",
+  "hard_deadline_utc": "2026-09-13 08:26:36 UTC",
+  "hard_deadline_asia_shanghai": "2026-09-13 16:26:36 +08:00",
+  "start_unix": 1789269996,
+  "hard_deadline_unix": 1789287996,
+  "freeze_new_experiment_designs_by_unix": 1789280796,
+  "stop_search_by_unix": 1789284396,
+  "reserved_final_evaluation_seconds": 3600,
+  "scope": "Both original goals unchanged; no paper edits until both pass. Test30 remains previously consumed. No restart of completed training.",
+  "allocation_minutes": {
+    "initial_existing_weight_evaluation": 15,
+    "goal2_primary_experiments_and_bounded_network_followup": 165,
+    "matched_repeats_and_frozen_rule_confirmation": 60,
+    "final_evaluation_cost_and_delivery": 60
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "status": "both_complete_before_labels",
+  "entries": {
+    "code0": {
+      "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/d4_teacher_val_20260912_v1/code0.npy",
+      "sha256": "0733a6462c8af0713dc6ea1ee8f1a3f79e21f91c45334476960d0e523129fb5a",
+      "shape": [
+        45,
+        1,
+        160,
+        160
+      ],
+      "dtype": "float64"
+    },
+    "d4mean": {
+      "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/d4_teacher_val_20260912_v1/d4mean.npy",
+      "sha256": "0b667daf4b007f22108e501f3fcbc978d74e3ecb213cbe1fd984f0f124b5a6ad",
+      "shape": [
+        45,
+        1,
+        160,
+        160
+      ],
+      "dtype": "float64"
+    }
+  },
+  "checkpoint": {
+    "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/naf_history_20260905_alpha25.pt",
+    "sha256": "7e2c2fa8292054a21a90c7b35902850969f9ac4e55a2fde325800cf6f21c4309"
+  },
+  "source_sha256": {
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/d4_teacher_feasibility_20260912.py": "43dfed93c1fed5d574a21c187cacfc0b7070762bd8b96d2a9f854110be21ae10",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/reference_models/code/g246_8h_augment.py": "2a451833361eb9ea82f56f62d1a49d342d5d635f47bd55d88b4fb9a05158467e",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/interpolation_plan.json": "fb57b1500c29e02aa127ecaad31c0c49d4b104928bce01c9c432ad7d62e7f22d",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/naf_history/model.py": "10664005cfd76a7823869f358d15fc5e4be115a89cd75bd9c65d81317b7231d4",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/evaluate_finalist.py": "2e43bca8bd4bdb81e76a7f8e6f6a48522ab5c92935dfccad62209f073b4ae6cf",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/evaluate_screens.py": "4e1054b5fc3c46dffd156798eedd7e2233285b8e8a097a2442031222182aec26",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/run.py": "e4262473a7e7d4c02f267e4a4e2e8d0bd24be4ac76ff3c2cc2f87b524df6579c",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/manifest.json": "1eb03fe8b3a57226101f0e3a11215d2b5cae94de0d4bc6bbaede5fa12d1a83ef",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/historylst/model.py": "799a0a51c4f8b0ffdfc7a0aae69b2ffaaa58d422c7e8c8c370b638b308ab33b5",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/historylst/data.py": "efc8ef0364756a93986be9a597f7967b1f967ec730d5fa38b3f7fc5c41fb4520",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/historylst/metrics.py": "7cc4442478a4ac4fa7d72f502f1a7e5adec437678435371605678b0947646e09",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/historylst/hotspots.py": "2622cf4fbd3eb7e51e317174bd28633502a80ea62c45a6d6e9cf3ea7c2cc2c74"
+  },
+  "design_sha256": "d1603fe289ff21904be9593443f08e8ed35908653d15a5d0d093d61abfbd310b",
+  "manifest_sha256": "1eb03fe8b3a57226101f0e3a11215d2b5cae94de0d4bc6bbaede5fa12d1a83ef",
+  "scene_ids": [
+    "bucharest_ro:2022:LC09_L2SP_183029_20220720_02_T1",
+    "bucharest_ro:2023:LC09_L2SP_182029_20230630_02_T1",
+    "bucharest_ro:2024:LC08_L2SP_183029_20240802_02_T1",
+    "coeur_d_alene_id:2021:LC08_L2SP_043027_20210602_02_T1",
+    "coeur_d_alene_id:2022:LC09_L2SP_043027_20220731_02_T1",
+    "coeur_d_alene_id:2023:LC09_L2SP_043027_20230803_02_T1",
+    "datong_cn:2021:LC08_L2SP_125032_20210601_02_T1",
+    "datong_cn:2022:LC09_L2SP_125032_20220612_02_T1",
+    "datong_cn:2024:LC09_L2SP_125032_20240601_02_T1",
+    "enid_ok:2022:LC08_L2SP_028035_20220612_02_T1",
+    "enid_ok:2023:LC08_L2SP_028035_20230802_02_T1",
+    "enid_ok:2024:LC08_L2SP_028035_20240804_02_T1",
+    "essen_de:2021:LC08_L2SP_196024_20210602_02_T1",
+    "essen_de:2023:LC08_L2SP_196024_20230811_02_T1",
+    "essen_de:2024:LC09_L2SP_196024_20240720_02_T1",
+    "fushun_cn:2021:LC08_L2SP_119031_20211013_02_T1",
+    "fushun_cn:2022:LC08_L2SP_118031_20220907_02_T1",
+    "fushun_cn:2024:LC08_L2SP_118031_20240827_02_T1",
+    "lawton_ok:2022:LC09_L2SP_028036_20220706_02_T1",
+    "lawton_ok:2023:LC09_L2SP_028036_20230826_02_T1",
+    "lawton_ok:2024:LC08_L2SP_028036_20240820_02_T1",
+    "lowell_ma:2022:LC09_L2SP_012030_20220722_02_T1",
+    "lowell_ma:2024:LC09_L2SP_012030_20240625_02_T1",
+    "lowell_ma:2025:LC09_L2SP_012030_20250730_02_T1",
+    "lublin_pl:2023:LC09_L2SP_186024_20230813_02_T1",
+    "lublin_pl:2024:LC08_L2SP_187024_20240627_02_T1",
+    "lublin_pl:2025:LC09_L2SP_186024_20250701_02_T1",
+    "lyon_fr:2021:LC08_L2SP_196028_20210821_02_T1",
+    "lyon_fr:2022:LC09_L2SP_197028_20220722_02_T1",
+    "lyon_fr:2023:LC09_L2SP_196028_20230819_02_T1",
+    "neijiang_cn:2022:LC08_L2SP_128040_20220812_02_T1",
+    "neijiang_cn:2023:LC08_L2SP_129039_20230416_02_T1",
+    "neijiang_cn:2024:LC09_L2SP_128040_20240825_02_T1",
+    "ningbo_cn:2021:LC08_L2SP_118039_20210429_02_T1",
+    "ningbo_cn:2023:LC09_L2SP_118039_20230427_02_T1",
+    "ningbo_cn:2025:LC09_L2SP_118039_20250502_02_T1",
+    "sevilla_es:2021:LC08_L2SP_202034_20210730_02_T1",
+    "sevilla_es:2022:LC09_L2SP_202034_20220709_02_T1",
+    "sevilla_es:2023:LC08_L2SP_202034_20230821_02_T1",
+    "shijiazhuang_cn:2021:LC08_L2SP_124034_20210525_02_T1",
+    "shijiazhuang_cn:2022:LC09_L2SP_124034_20220707_02_T1",
+    "shijiazhuang_cn:2023:LC09_L2SP_124034_20230624_02_T1",
+    "troy_ny:2021:LC08_L2SP_014030_20210607_02_T1",
+    "troy_ny:2023:LC09_L2SP_014030_20230723_02_T1",
+    "troy_ny:2024:LC09_L2SP_013030_20240616_02_T1"
+  ],
+  "device": "cuda",
+  "fp32": true,
+  "tf32": false,
+  "batch": 2,
+  "repair_dtype": "float64",
+  "counters": {
+    "model_forward_calls": 184,
+    "image_forwards": 360,
+    "historical_source_encodings": 3240
+  },
+  "prediction_seconds": 7.6145127630006755,
+  "opened_arrays": [
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/d4_teacher_val_20260912_v1/code0.npy",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/d4_teacher_val_20260912_v1/code0.partial.npy",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/d4_teacher_val_20260912_v1/d4mean.npy",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/d4_teacher_val_20260912_v1/d4mean.partial.npy",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/data/validation/inputs/coarse.npy",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/data/validation/inputs/context.npy",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/data/validation/inputs/emissivity.npy",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/data/validation/inputs/fine.npy",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/data/validation/inputs/history.npy",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/data/validation/inputs/support.npy"
+  ],
+  "labels_opened": false,
+  "test_opened": false
+}

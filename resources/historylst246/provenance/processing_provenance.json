@@ -1,0 +1,26 @@
+{
+  "optical_normalization.json": {
+    "sha256": "452d909e209b9e022067a5f0b9240f4ac7f684e51f9be04b6501beb8631de36c",
+    "bytes": 34616
+  },
+  "texture_normalization.json": {
+    "sha256": "fc9266c5ac07006eadcc2228b50fb6390ff7442d5ed44eae9d8e2135af8bcfe2",
+    "bytes": 13828664
+  },
+  "weather_normalization.json": {
+    "sha256": "d9758c51bfc2b975aec6488a95d579f288b06812944f908b3d24ef195bf75da3",
+    "bytes": 2209
+  },
+  "original_processing_source_sha256": {
+    "acquire_effective120_v2.py": "330ad60233d5cd5a8492be491b621b7969862998cb85fb017276c31723c88821",
+    "build_g246_8h_cache.py": "a0c28fcf7f2a1b26a0a562686804dbeb1bef27fba9d68fd9e4d35d04e7e227f2",
+    "build_g246_half_q_cache.py": "36afceb4ee9391b0bf700638d477b5132abe6829c149b2f7b36a0902c03f70cd",
+    "g246_r2_data.py": "dc83b931e6379d0bd6eb6ad0a03f727ff584e5df79aa87e9797ead15e59c054b",
+    "g246_r2_multisource.py": "cf216eaef939ac3c8138542503378342c29fc73280e4d55d6c83bcf4b13dbe9f",
+    "g246_8h_historical_features.py": "431dfaf4ce6f8166e2ca4bc3a020215f555027e31e193f0f3f81fe2c9f216a3a",
+    "g246_8h_recent_historical_features.py": "d46cc7f106ef057ba760c6b65599d701c21f4a13620896b7eb75f53e28bb6a08",
+    "build_g246_8h_emissivity_cache.py": "0bdb28a2ad6aa37ec9afb6d6d5cf5240f2a811b2772406c6749a882044e0e87f",
+    "g246_8h_historical_contract.py": "fc995527dfefdafda4bddfa6d433a10f8ae57b8bde2ae5d675d332cc8dfb73a9",
+    "g246_8h_recent_source_contract.py": "3aa2d162ffeed4ba9b82e31f85cc4707b51e0b51678c9800e99368159e159851"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "user_instruction": "追加4小时预算，尽可能尝试到达目标",
+  "created_unix": 1789284816.0280397,
+  "prior_budget": {
+    "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260913/five_hour_extension.json",
+    "sha256": "c350221d61a0b082e208114a441cdfc864ad169e8ec875e40bb0373f44e8b5d0"
+  },
+  "previous_hard_deadline_unix": 1789287996,
+  "additional_seconds": 14400,
+  "hard_deadline_unix": 1789302396,
+  "hard_deadline_utc": "2026-09-13 12:26:36 UTC",
+  "hard_deadline_asia_shanghai": "2026-09-13 20:26:36 +08:00",
+  "freeze_recipe_by_unix": 1789293396,
+  "stop_training_search_by_unix": 1789298796,
+  "reserved_final_evaluation_seconds": 3600,
+  "interpretation": "Append four hours to the previously authorized hard deadline; preserve all original budgets and failed gates.",
+  "scope": "Both original goals unchanged; no paper edits until both pass; no newly independent Test claim; new experiments only with fixed Fit/Val design; no rerun of completed jobs.",
+  "allocation_priority": [
+    "GPU: bounded new training recipe pilots followed by matched three-seed confirmation if promising",
+    "CPU: one nonlinear observable continuous history-rule family with fixed comparisons",
+    "Freeze before final consumed-Test evaluation; actual single-network costs and rule deployment cost if rule passes"
+  ]
+}

@@ -1,0 +1,19 @@
+__pycache__/
+*.pyc
+*.pt
+*.npy
+*.npz
+*.tif
+*.tiff
+*.partial
+.DS_Store
+.env
+.env.*
+!.env.example
+downloads/
+outputs/
+*.tar.gz.part*
+*.restoring
+
+# Recorded sampling schedules are small reproducibility inputs.
+!**/schedule.npz

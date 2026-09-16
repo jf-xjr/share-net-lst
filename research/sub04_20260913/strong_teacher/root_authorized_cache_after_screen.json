@@ -1,0 +1,47 @@
+{
+  "status": "root_authorized_one_fit_cache_after_failed_compute_screen",
+  "authorized_utc": "2026-09-13T03:38:03.139597+00:00",
+  "authorization": "Parent explicitly authorized one unchanged fixed24 Fit603 cache inside the user-added five-hour budget after observing the failed extra compute screen.",
+  "original_screen_gate_pass": false,
+  "original_screen": "Val macro RMSE < .407 K and improvement over prior teacher >= .002 K",
+  "observed_macro_rmse": 0.40725759545661777,
+  "observed_improvement_k": 0.002211273754502585,
+  "screen_deviation_reason": "The .407 threshold was an additional compute allocation screen. The fixed teacher improved by .002211 K; one <=600 second input-only cache is explicitly funded despite the failed screen.",
+  "teacher_results": {
+    "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260913/strong_teacher/validation/results.json",
+    "sha256": "08414cdc03aad0b47b1329c23d03a2316f6fcedebed6185048efa862d7fb3798"
+  },
+  "teacher_prediction_receipt": {
+    "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260913/strong_teacher/validation/predictions_complete.json",
+    "sha256": "0c86b601669ff2837d130a485bef95d008b00d69e8d935c116552e0852db8702"
+  },
+  "checkpoint_sha256": [
+    "09d9bfdc2c40e25841bb7dc5fe32d1a87c737a8cd0111ea03d315cfee2bbb793",
+    "15d93a2af1ed5cff466e102091c16dbd9f7b9a39e93df872d83e68c483ced3f2",
+    "62fe326f5910585183699a84635e9f5eae6815747023e9ed3e33376330715852"
+  ],
+  "views": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "member_count": 3,
+  "equal_view_count": 24,
+  "freeze_sha256": "eb304811a8b43c743604ecc2237a45fa02ae12d31c8ceb7d8a0b623e95a6be7b",
+  "teacher_or_view_reselected": false,
+  "original_result_or_source_modified": false,
+  "user_goal1_test_macro_threshold_k": 0.42,
+  "user_goal1_standard_lowered": false,
+  "single_student_pilot_gate": "Full Val RMSE < .412 K and improvement over its frozen initial .4162927624 K >= .005 K",
+  "one_cache_only": true,
+  "fit_labels_allowed": false,
+  "test_allowed": false,
+  "job_limit_seconds": 600,
+  "gpu_window_deadline_unix": 1789271700,
+  "overall_extension_deadline_unix": 1789287996
+}

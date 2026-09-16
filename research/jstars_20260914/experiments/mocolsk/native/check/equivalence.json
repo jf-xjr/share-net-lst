@@ -1,0 +1,10 @@
+{
+  "native_single_forward_maximum_difference_K": 3.0517578125e-05,
+  "repaired_operation_fp64_maximum_difference": 0.0,
+  "batch_operation_fp64_maximum_difference": 0.0,
+  "repeated_batch_fp32_maximum_difference_K": 6.103515625e-05,
+  "common_input_bitwise_equal": true,
+  "batch_independent": true,
+  "dynamic_mlp_nonzero_gradient_tensors": 48,
+  "parameters": 25472601
+}

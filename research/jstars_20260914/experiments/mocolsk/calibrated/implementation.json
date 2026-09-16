@@ -1,0 +1,17 @@
+{
+  "source_sha256": {
+    "/home/jf_xjr/uhi_cdc/research/jstars_20260914/experiments/train_mocolsk.py": "6ef12fe651439e937897fa75b861c69f0272fd3c5cd9267a5c0387ce947714d1",
+    "/home/jf_xjr/uhi_cdc/research/jstars_20260914/experiments/mocolsk_model.py": "11abc6d1f863575541dbe61cbd7f844fc092a35a1e6e86771c6b1732760ba454",
+    "/home/jf_xjr/uhi_cdc/code/train_mocolsk_v2.py": "62104612a57efcc78acb2304a061899fb20903d65e383a285094722ebfd9a4b3",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/run.py": "e4262473a7e7d4c02f267e4a4e2e8d0bd24be4ac76ff3c2cc2f87b524df6579c",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/historylst/model.py": "799a0a51c4f8b0ffdfc7a0aae69b2ffaaa58d422c7e8c8c370b638b308ab33b5",
+    "/home/jf_xjr/uhi_cdc/baselines/PGDM/lib/moco/dynamic_mlp.py": "dc0aeab756f0d0219259ea73cdefcc5bcbf7703e2edcf538ad438179e161e087",
+    "/home/jf_xjr/uhi_cdc/baselines/PGDM/lib/moco/mocolsk.py": "583a316678fabdaf6385db4a670559653045ddf71b25cc521a59d6e70685c6b6",
+    "/home/jf_xjr/uhi_cdc/baselines/PGDM/lib/moco/mocolsk_net.py": "cfbfeb5469430614478694704992a4d67291b5ba52937c50f4efd501cdc0de54"
+  },
+  "published_architecture": "https://doi.org/10.1109/TGRS.2025.3547945",
+  "common_input_fields": 155,
+  "gradient_repair": "Functional dynamic convolutions preserve B=1 forward values and allow MCWG training; per-sample generation preserves B>1 independence",
+  "initializer": "/home/jf_xjr/uhi_cdc/research/jstars_20260914/experiments/mocolsk/native/best.pt",
+  "initialization_sha256": "af2b517d31c579a76c5b214db53812c1bcd069acd1f5f834c282101bbad3b4d4"
+}

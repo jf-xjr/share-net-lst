@@ -1,0 +1,75 @@
+{
+  "status": "prospective_before_adaptation_training",
+  "purpose": "Test partial-source exposure separately from additional training, normalization changes, distillation and rule expansion.",
+  "evidence": {
+    "normalization_diagnostic": "../normalization_diagnostic/results.json",
+    "validation_cropping_loss_k": 0.01983393883893246,
+    "same_content_normalization_effect_k": -0.00028195716973065726,
+    "thermal_rule_result": "../thermal_policy_v1/complete.json",
+    "interpretation": "The frozen learner's response to deleting sources is not an information-theoretic lower bound; prior training did not explicitly expose partial source sets."
+  },
+  "initialization": {
+    "wait_for": "Completed current architecture queue and paired validation evaluation",
+    "architecture": "Lower three-seed mean Val macro RMSE among baseline and the queue-selected candidate; exact tie favors baseline",
+    "checkpoint": "Always the selected architecture's seed 20260905 best checkpoint, never its best-performing seed",
+    "same_checkpoint_for_both_arms": true,
+    "new_optimizer_ema_and_scaler": true,
+    "no_test_selection": true
+  },
+  "training": {
+    "arms": ["full_control", "mixed"],
+    "successful_updates": 3000,
+    "batch_size": 4,
+    "learning_rate": 0.0001,
+    "warmup_updates": 100,
+    "weight_decay": 0.0001,
+    "cosine_end_factor": 0.05,
+    "sampling_d4_loss_gradient_clip_ema_amp_backoff": "Same as original trainer, shared seed and sample/D4 schedule between arms",
+    "existing_whole_history_and_emissivity_dropout": 0.25,
+    "mixed_schedule": "Independent reproducible permutation with exactly 1500 full9 and 1500 greedy3 batches; repeated AMP attempts reuse the same action",
+    "partial_input_layout": "Actual variable-length K=3 encoding, not nine-slot zero padding",
+    "full_control_schedule": "Same recorded source schedule but always supplies full9",
+    "greedy3_indices": "Frozen ../fit_subsets.json; all source indices chosen without target temperature",
+    "initial_adaptation_seed": 20260921,
+    "replication_seed_if_screen_passes": 20260922,
+    "distillation": false,
+    "normalization_change": false
+  },
+  "validation": {
+    "steps": "0 and every 250 successful updates through 3000",
+    "weights": ["raw", "ema"],
+    "actions": ["full9", "greedy3"],
+    "weight_candidates_per_arm": 26,
+    "best_pt": "Minimum arithmetic mean of full9 and greedy3 macro RMSE at the same step and weights; earlier candidate wins exact tie",
+    "best_full9_pt": "Minimum full9 macro RMSE from the same 26 weight candidates, retained as an additional strong fixed comparator",
+    "best_greedy3_pt": "Minimum greedy3 macro RMSE from the same 26 weight candidates, retained to prevent a weaker fixed-three-source comparator",
+    "action_scores_per_arm": 52,
+    "report_actual_selection_metric": true,
+    "smoke_has_no_validation_or_selected_best_claim": true
+  },
+  "usage_evaluation": {
+    "primary_rule": "Existing cover_greedy_0: choose greedy3 if it loses none of the nine-source reliable coverage; otherwise full9",
+    "primary_rule_threshold_tuning": false,
+    "fixed_strategies": ["full9", "greedy3", "recent3", "old6", "nearest1"],
+    "strong_fixed_comparators": "Both arms' joint-selected, full9-selected and greedy3-selected checkpoints, plus the frozen initialization and final stronger-network full9; compare common scenes/support and include any stronger fixed strategy",
+    "other_existing_rules": "May be reported under their existing Fit/Val selection protocol, separately from the single primary rule; no new threshold grid",
+    "first_screen": "Fit/Val only; no Test merely because adaptation training completed",
+    "accuracy_cost_gates": {
+      "upper_two_sided_city_95_rmse_degradation_k": 0.005,
+      "minimum_encoder_source_saving_fraction": 0.25,
+      "minimum_measured_total_time_saving_fraction": 0.20,
+      "include_online_source_selection_cost": true,
+      "fixed_strategy_dominance_disqualifies_conditional_value": true
+    },
+    "replication": "Repeat the matched adaptation pair only if first-seed necessary gates pass; confirm across cities before any separate frozen consumed-Test30 evaluation",
+    "source_saving_scope": "Historical encoder tokens, not reduced download or input availability",
+    "goal_one_independent": "This adaptation cannot substitute for the separately required reproducible network improvement over U-TAE."
+  },
+  "execution": {
+    "current_training_queue_unchanged": true,
+    "automatic_gpu_launch": false,
+    "test_opened": false,
+    "paper_edits": false,
+    "source_and_initial_checkpoint_hashes_required_before_formal_training": true
+  }
+}

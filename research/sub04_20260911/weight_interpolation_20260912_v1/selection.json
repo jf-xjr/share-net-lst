@@ -1,0 +1,103 @@
+{
+  "status": "shared_alpha_selected_on_complete_Val45_three_seeds",
+  "selection": "One common alpha per architecture minimizes complete three-seed macro RMSE. Original selected-best alpha0 included equally. No per-seed alpha choice.",
+  "selected_alphas": {
+    "baseline": 0.0,
+    "naf_history": 0.25
+  },
+  "selected_metrics": {
+    "baseline": {
+      "rmse": 0.46744292881687005,
+      "mae": 0.34700828544628615,
+      "hotspot_iou": 0.7809208331563852,
+      "hotspot_mae": 0.4474026528469934
+    },
+    "naf_history": {
+      "rmse": 0.4218943302840652,
+      "mae": 0.31408664740606773,
+      "hotspot_iou": 0.797504004615612,
+      "hotspot_mae": 0.40946882561489395
+    }
+  },
+  "all_candidate_mean_metrics": {
+    "0.0": {
+      "baseline": {
+        "rmse": 0.46744292881687005,
+        "mae": 0.34700828544628615,
+        "hotspot_iou": 0.7809208331563852,
+        "hotspot_mae": 0.4474026528469934
+      },
+      "naf_history": {
+        "rmse": 0.42252438136335163,
+        "mae": 0.31455654550341045,
+        "hotspot_iou": 0.7972716411253075,
+        "hotspot_mae": 0.40926567127278185
+      }
+    },
+    "0.25": {
+      "baseline": {
+        "rmse": 0.4674980885513708,
+        "mae": 0.3470988128679584,
+        "hotspot_iou": 0.7808633642142108,
+        "hotspot_mae": 0.4470943052723233
+      },
+      "naf_history": {
+        "rmse": 0.4218943302840652,
+        "mae": 0.31408664740606773,
+        "hotspot_iou": 0.797504004615612,
+        "hotspot_mae": 0.40946882561489395
+      }
+    },
+    "0.5": {
+      "baseline": {
+        "rmse": 0.46818387242087933,
+        "mae": 0.3476850071575475,
+        "hotspot_iou": 0.7803979463310297,
+        "hotspot_mae": 0.44729247684145396
+      },
+      "naf_history": {
+        "rmse": 0.42330885721108996,
+        "mae": 0.31510827163058314,
+        "hotspot_iou": 0.7967018369638609,
+        "hotspot_mae": 0.4118164701144893
+      }
+    },
+    "0.75": {
+      "baseline": {
+        "rmse": 0.4694980764436563,
+        "mae": 0.34875615837584345,
+        "hotspot_iou": 0.7798218017895597,
+        "hotspot_mae": 0.44799676557421203
+      },
+      "naf_history": {
+        "rmse": 0.4281604163281487,
+        "mae": 0.3186635236380127,
+        "hotspot_iou": 0.7944108917031504,
+        "hotspot_mae": 0.41772823507305246
+      }
+    }
+  },
+  "results": {
+    "0.0": {
+      "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/paired_validation_original/results.json",
+      "sha256": "1179ed1cf7d181373a93162900ae2d09c20fb5586d8600a84f1d8cb63a00dce3"
+    },
+    "0.25": {
+      "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/alpha0.25/results.json",
+      "sha256": "21e9bce3ab5ef9c8f0dfc4a56e8c3da671eb0e32fc5a3e80f13382a86a1ff7e4"
+    },
+    "0.5": {
+      "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/alpha0.5/results.json",
+      "sha256": "3d6478eaa5e9b2ae4b8b1757667e3e0d54c7cbf38b5ae5c645a8acfd70f8375f"
+    },
+    "0.75": {
+      "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/alpha0.75/results.json",
+      "sha256": "05f3388ca5fab793f0f1260fa8c6f78544535c2bc3991b98106812d19ce074a5"
+    }
+  },
+  "absolute_mean_lt_042": false,
+  "ensemble_used": false,
+  "extra_training_updates": 0,
+  "test_opened": false,
+  "scientific_goal_complete": false
+}

@@ -1,0 +1,114 @@
+{
+  "protocol": "d4_self_distillation_20260912_v1",
+  "status": "prepared_before_training",
+  "hypothesis": "Single-forward student absorbs fixed D4 group-mean teacher while retaining direct supervised original formal RMSE",
+  "physical_scope": "No temperature augmentation; teacher group average is not delivered as a Goal1 model",
+  "recipe": {
+    "updates": 1000,
+    "batch_size": 4,
+    "lr": 0.0001,
+    "warmup": 100,
+    "weight_decay": 0.0001,
+    "validation_interval": 250,
+    "evaluation_batch": 2,
+    "history_dropout": 0.25,
+    "emissivity_dropout": 0.25,
+    "seed": 20260921,
+    "ground_truth_loss_weight": 0.5,
+    "teacher_loss_weight": 0.5
+  },
+  "original_sources": [
+    {
+      "architecture": "baseline",
+      "seed": 20260905,
+      "checkpoint": "/home/jf_xjr/uhi_cdc/research/route_a_20260911/utae/best.pt",
+      "checkpoint_sha256": "012185db5fc7832ec2e3216981032ac9162a9aa7d6661b734f5008a568689e8d",
+      "completion": "/home/jf_xjr/uhi_cdc/research/route_a_20260911/utae/complete.json",
+      "completion_sha256": "fb9aba39a89b8a77403ed1367f62a27afd05cf77dd13fc52d9d1ae342b2c76b6"
+    },
+    {
+      "architecture": "naf_history",
+      "seed": 20260905,
+      "checkpoint": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/runs/naf_history_20260905_cuda/best.pt",
+      "checkpoint_sha256": "05b924fca3e73410a64d1f1b81d91c8f0e6d385234c1d5492f5d1c4eb267b620",
+      "completion": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/runs/naf_history_20260905_cuda/complete.json",
+      "completion_sha256": "3a1c5f52da34441fb9397a3fc72b049df9f004ee236266bb584a1d082bd09beb"
+    },
+    {
+      "architecture": "baseline",
+      "seed": 20260912,
+      "checkpoint": "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/runs/baseline_20260912/best.pt",
+      "checkpoint_sha256": "1e9c9297bb17f0a65827258e75faa07e6d6845e7d5208fdaf723916d806e5f7b",
+      "completion": "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/runs/baseline_20260912/complete.json",
+      "completion_sha256": "1a2aa0e86b37c3e21340c3555022eb3392d6131c389ec44f9be638c5f3c15d98"
+    },
+    {
+      "architecture": "naf_history",
+      "seed": 20260912,
+      "checkpoint": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/runs/naf_history_20260912/best.pt",
+      "checkpoint_sha256": "b9bbebe63a804081c3edae8ad6187aa5d887b77f04b68d30f9dfc48253e45582",
+      "completion": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/runs/naf_history_20260912/complete.json",
+      "completion_sha256": "1d139d5fb7f6bbf0deb2aead3a93ca35058f33905e9c346043b317e641a1527a"
+    },
+    {
+      "architecture": "baseline",
+      "seed": 20260913,
+      "checkpoint": "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/runs/baseline_20260913/best.pt",
+      "checkpoint_sha256": "5bdbd44e5bb93a4962b57518d06c8e3764c7cd5976e43d1d3c5bccb3cbc2f974",
+      "completion": "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/runs/baseline_20260913/complete.json",
+      "completion_sha256": "fb377393a6014d0978670779692c7ab7e54e28a5920169fa13e92497f2a39d58"
+    },
+    {
+      "architecture": "naf_history",
+      "seed": 20260913,
+      "checkpoint": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/runs/naf_history_20260913/best.pt",
+      "checkpoint_sha256": "5654ae02c1af9819a0eaaa935e002541355bc20cab0310975c70bf3d02f96590",
+      "completion": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/runs/naf_history_20260913/complete.json",
+      "completion_sha256": "d572e78ebee853fc0baf3ddd4f5b3f6c2559034bd30337d670b4b787942599ab"
+    }
+  ],
+  "network_freeze_sha256": "20292016fe2c954fb895bc40b2226a4fcce084030a99a4b967579ef29d25f5d1",
+  "continuation_gate": "Only NAF905 selected fullVal FP32 RMSE<.42 AND improvement>=.003 against actual alpha25_905 Val score bound by final freeze; not against original initialization",
+  "validation": "Exactly0/250/500/750/1000 raw+EMA (10choices), unchanged full45/15cities/3regions/160 grid; final selected + original initial FP32 TF32off benchmarkFalse with hotspots; no reselect",
+  "hard_deadline_unix": 1789218000,
+  "per_run_limit_seconds": 360,
+  "source_sha256": {
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/naf_history/model.py": "10664005cfd76a7823869f358d15fc5e4be115a89cd75bd9c65d81317b7231d4",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/dropout_models.py": "6bb4ca608b5c39fa2533eab73b0cc1d65a82f21bd04feb50813e5a2a88d718eb",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/subset_adaptation_bridge/train.py": "72d795b92a7e01ae824a7357f5c3c2f72513b6b8c6bcf7bf67744cf35609d63d",
+    "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/usage/subset_adaptation_v1/train.py": "4722b2ddc60e9076f64f7804fec980305a31d79d421587d7388ce0d6ac7e6ac9",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/run.py": "e4262473a7e7d4c02f267e4a4e2e8d0bd24be4ac76ff3c2cc2f87b524df6579c",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/historylst/model.py": "799a0a51c4f8b0ffdfc7a0aae69b2ffaaa58d422c7e8c8c370b638b308ab33b5",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/historylst/data.py": "efc8ef0364756a93986be9a597f7967b1f967ec730d5fa38b3f7fc5c41fb4520",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/historylst/metrics.py": "7cc4442478a4ac4fa7d72f502f1a7e5adec437678435371605678b0947646e09",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/manifest.json": "1eb03fe8b3a57226101f0e3a11215d2b5cae94de0d4bc6bbaede5fa12d1a83ef",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/PREPROCESSING.md": "cb0ca4cbec0554b989bf94ca2c544a042492a7ebf17dc5b38dc67bb756d7f21d",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/provenance/optical_normalization.json": "452d909e209b9e022067a5f0b9240f4ac7f684e51f9be04b6501beb8631de36c",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/provenance/weather_normalization.json": "d9758c51bfc2b975aec6488a95d579f288b06812944f908b3d24ef195bf75da3",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/reference_models/code/g246_r2_data.py": "dc83b931e6379d0bd6eb6ad0a03f727ff584e5df79aa87e9797ead15e59c054b",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/reference_models/code/g246_r2_multisource.py": "cf216eaef939ac3c8138542503378342c29fc73280e4d55d6c83bcf4b13dbe9f",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/reference_models/code/g246_8h_historical_features.py": "431dfaf4ce6f8166e2ca4bc3a020215f555027e31e193f0f3f81fe2c9f216a3a",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/reference_models/code/build_g246_8h_cache.py": "a0c28fcf7f2a1b26a0a562686804dbeb1bef27fba9d68fd9e4d35d04e7e227f2",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/d4_self_distillation_20260912_v1/train.py": "25f54ff1dcde4eb2d97f8f5f47ee8ddd0d021e94a21801e31a72465ebfb59572",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/d4_self_distillation_20260912_v1/teacher.py": "8469314bda94af030b0ef79dcc4cbb01f79e1673680d9a9e6087e2374063d81d",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/d4_self_distillation_20260912_v1/synthetic_check.py": "bd4c990d94d0882e0f0ac603a4df89533facc0714dcd9ef9182d38cb929ca9bb",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/d4_teacher_val_20260912_v1/results.json": "071a39719d8b826538ec46281e4187a61d462942e313fa57538f4739d569acd9",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/d4_fit_teacher_cache_20260912.py": "7871db9e01ac10a475ba2f968d2cd3f4f54329310edb169445d176cf6c1a1baa",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/d4_teacher_feasibility_20260912.py": "43dfed93c1fed5d574a21c187cacfc0b7070762bd8b96d2a9f854110be21ae10",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/reference_models/code/g246_8h_augment.py": "2a451833361eb9ea82f56f62d1a49d342d5d635f47bd55d88b4fb9a05158467e",
+    "/home/jf_xjr/miniconda3/envs/mmwsl/lib/python3.10/site-packages/torch/optim/adamw.py": "54299056b7745c162192132bb6028f3387c05ff4203518ff0240058584968312",
+    "/home/jf_xjr/miniconda3/envs/mmwsl/lib/python3.10/site-packages/torch/optim/adam.py": "691246e104a54c3ff985922a4f551aea088c06c3358a18861e59c34a920d21e1",
+    "/home/jf_xjr/miniconda3/envs/mmwsl/lib/python3.10/site-packages/torch/amp/grad_scaler.py": "bff7b16e0840863f0f4d97c52258176e745d30ae38a017d367e1a4377c74ad54"
+  },
+  "automatic_queue": false,
+  "training_started": false,
+  "test_opened": false,
+  "teacher_feasibility": {
+    "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/d4_teacher_val_20260912_v1/results.json",
+    "sha256": "071a39719d8b826538ec46281e4187a61d462942e313fa57538f4739d569acd9"
+  },
+  "teacher_contract": "Exactly sealed Fit603 fixed alpha25NAF905 eight-view inverse-mean-repair teacher shared by both architectures and all3 original seeds; no GT teacher selection",
+  "optimizer": "Both architectures use CUDA AdamW(fused=True), CPU check ordinary AdamW; supported installed GradScaler UNSCALED+found_inf path; numerical execution changes, not bitwise equivalence to original",
+  "loss": ".5 original formal masked sceneRMSE + .5 teacher input-support masked sceneRMSE, eps1e-6, one student forward; teacher follows same D4 but never input dropout",
+  "prospective_budget_revision": "Before any KD training, root fixed both architectures and all3 seeds to1000updates/10choices, cosine horizon1000, per-run360seconds, due34-minute remaining deadline; teacher/student accuracy gates unchanged. Prior temperature1500/14 evidence unchanged."
+}

@@ -1,0 +1,14 @@
+{
+  "repository_name": "share-net-lst",
+  "version": "v1.0.0-manuscript",
+  "archive": "share-net-lst-v1.0.0-manuscript.zip",
+  "archive_root": "share-net-lst",
+  "configuration_entry": "docs/configuration.md",
+  "status": "prepared_for_private_github_upload",
+  "public_url": null,
+  "manuscript": "Accurate and Efficient Urban Land Surface Temperature Reconstruction with Multiscale Historical Fusion",
+  "target_repository": "jf-xjr/share-net-lst",
+  "visibility": "private",
+  "network_name": "SHaRe-Net",
+  "network_full_name": "Scale-wise Historical Reweighting Network"
+}

@@ -1,0 +1,23 @@
+{
+  "created_unix": 1789284938.7173774,
+  "source": "User: 适当放宽目标一，1000万级别以下的模型达到0.42K以下，600万以下的模型达到0.425即可",
+  "tiers": [
+    {
+      "parameters_lt": 6000000,
+      "three_seed_macro_rmse_lt_k": 0.425
+    },
+    {
+      "parameters_lt": 10000000,
+      "three_seed_macro_rmse_lt_k": 0.42
+    }
+  ],
+  "requirements_unchanged": [
+    "same six input fields, original city splits and formal observation support",
+    "single network, single prediction view; no ensemble or best-seed substitution",
+    "at least .01K mean gain over matched U-TAE-LST and every seed positive",
+    "paired city confidence interval, hotspot metrics and actual online computation costs",
+    "matched final training and model-selection opportunity; historically unequal search disclosed",
+    "consumed Test30 status preserved; no development against its labels",
+    "goal2 original action-benefit controls and criteria unchanged"
+  ]
+}

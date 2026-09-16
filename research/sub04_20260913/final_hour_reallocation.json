@@ -1,0 +1,19 @@
+{
+  "status": "explicit_root_reallocation_within_existing_user_budget",
+  "created_unix": 1789298788.6869557,
+  "authorization_basis": "Latest user requests every feasible effort to complete both goals; no additional time budget. Reallocate unused final evaluation reserve after actual initial Test and costs have already completed.",
+  "original_budget": "research/sub04_20260913/four_hour_extension.json",
+  "original_training_stop_unix": 1789298796,
+  "new_training_stop_unix": 1789301196,
+  "hard_deadline_unix": 1789302396,
+  "hard_deadline_utc": "2026-09-13 12:26:36 UTC",
+  "budget_added_seconds": 0,
+  "remaining_final_evaluation_reserve_seconds": 1200,
+  "protocol_deviation": true,
+  "original_budget_file_unchanged": true,
+  "neural_candidate": "One SAM compact905 pilot; identical two other compact seeds only after actual Val gain >=0.001. No baseline retraining.",
+  "cpu_candidate": "One fixed observable covariance tree calibration on Val-city folds, preserving all previous failures; no Test selection or independent-Val claim.",
+  "numerical_goal_thresholds_unchanged": true,
+  "Test_already_consumed": true,
+  "automatic_expansion": false
+}

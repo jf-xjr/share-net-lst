@@ -1,0 +1,78 @@
+{
+  "status": "explicit_root_budget_authorization_final_six_confirmation",
+  "selection_rule": "lowest_actual_fp32_Val45_macro_rmse_among_three_completed_pilots",
+  "pilots": {
+    "standard": {
+      "completion": {
+        "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260913/strong_kd/naf_history_20260905/complete.json",
+        "sha256": "25662022043766dc51b4a5989b9df5c8f0aacb825dd8f9fd7875f0977581ac56"
+      },
+      "checkpoint": {
+        "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260913/strong_kd/naf_history_20260905/best.pt",
+        "sha256": "3a3c4950d3d0c4d7554002d5dfef4bb31dd6ed60e87cdcb72116b5f4f240d929"
+      }
+    },
+    "fourhead": {
+      "completion": {
+        "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260913/multihead_kd/naf_history_20260905/complete.json",
+        "sha256": "4186f20b609ef5a72404cb9d084449ea37e3b2ec150ba3067abf2c55369bad3d"
+      },
+      "checkpoint": {
+        "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260913/multihead_kd/naf_history_20260905/best.pt",
+        "sha256": "b0da53ce54cd01fd105e57931fb702f1468f9f0d60172d5280a9eb236e53a32e"
+      }
+    },
+    "refinement": {
+      "completion": {
+        "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260913/refinement_kd/naf_history_20260905/complete.json",
+        "sha256": "27124b98f86429bb1e9f9c5a280c7238e272045d11626440ab019274989c89cb"
+      },
+      "checkpoint": {
+        "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260913/refinement_kd/naf_history_20260905/best.pt",
+        "sha256": "c52a9dfcd0d7383c83eaee83a81c42e1f6e63aef448e4117b4aedec436e78ad4"
+      }
+    }
+  },
+  "selected_variant": "fourhead",
+  "selected_pilot": {
+    "completion": {
+      "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260913/multihead_kd/naf_history_20260905/complete.json",
+      "sha256": "4186f20b609ef5a72404cb9d084449ea37e3b2ec150ba3067abf2c55369bad3d"
+    },
+    "checkpoint": {
+      "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260913/multihead_kd/naf_history_20260905/best.pt",
+      "sha256": "b0da53ce54cd01fd105e57931fb702f1468f9f0d60172d5280a9eb236e53a32e"
+    }
+  },
+  "teacher_receipt": {
+    "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260913/strong_teacher/fit/predictions_complete.json",
+    "sha256": "48bfd6b2bdbf672cf6bdc10cb08a77a9811fc3be76b66dc29b584a5bc8857d58"
+  },
+  "recipe": {
+    "updates": 3000,
+    "batch_size": 4,
+    "lr": 0.0001,
+    "warmup": 100,
+    "weight_decay": 0.0001,
+    "validation_interval": 500,
+    "evaluation_batch": 2,
+    "history_dropout": 0.0,
+    "emissivity_dropout": 0.0,
+    "teacher_weight": 0.9,
+    "seed": 20260923,
+    "ema_max_decay": 0.995,
+    "gradient_clip": 1.0
+  },
+  "final_user_criteria": {
+    "test_three_seed_mean_rmse_lt_k": 0.42,
+    "paired_mean_rmse_gain_ge_k": 0.01,
+    "all_three_seed_gains_positive": true,
+    "single_forward_views": 1
+  },
+  "authorized_at_unix": 1789276556.3755195,
+  "original_selected_pilot_gate_pass": false,
+  "old_pilot_gate_modified": false,
+  "user_success_standard_lowered": false,
+  "allocation_only_not_success": true,
+  "automatic_teacher_search": false
+}

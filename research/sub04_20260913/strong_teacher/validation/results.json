@@ -1,0 +1,51 @@
+{
+  "status": "complete_fixed24_teacher_feasibility",
+  "macro": {
+    "rmse": 0.40725759545661777,
+    "mae": 0.3032797831544774,
+    "bias": 0.002606843940357505,
+    "mse": 0.17610343276909923,
+    "hotspot_iou": 0.8037311454584186,
+    "hotspot_mae": 0.39319812012070504
+  },
+  "prior_teacher_rmse": 0.40946886921112036,
+  "prior_teacher_results": {
+    "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/d4_teacher_val_20260912_v1/results.json",
+    "sha256": "071a39719d8b826538ec46281e4187a61d462942e313fa57538f4739d569acd9"
+  },
+  "improvement_over_prior_teacher_k": 0.002211273754502585,
+  "teacher_feasibility_gate_pass": false,
+  "gate": "macro RMSE < .407 K and prior_teacher improvement >= .002 K",
+  "predictions_complete": {
+    "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260913/strong_teacher/validation/predictions_complete.json",
+    "sha256": "0c86b601669ff2837d130a485bef95d008b00d69e8d935c116552e0852db8702"
+  },
+  "source_sha256": {
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260913/strong_teacher/run.py": "faeb3c5bc4a1d02d888b5b0ccc01ac77bbc04f44982569e4c72d501dd1cd33ce",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260913/strong_teacher/design.json": "0fd90daa7ac5d0cfa370beffb8bb799bff13c8efa5fde812bb6153bb236fa546",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260913/five_hour_extension.json": "c350221d61a0b082e208114a441cdfc864ad169e8ec875e40bb0373f44e8b5d0",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/final_delivery_late_20260912/matched/continuation_selection_freeze.json": "eb304811a8b43c743604ecc2237a45fa02ae12d31c8ceb7d8a0b623e95a6be7b",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/d4_self_distillation_20260912_v1/summarize_matched_v2.py": "c68b973515fea01ce05312305558b445944aa3190520e6daf83939193d5eb911",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/d4_teacher_feasibility_20260912.py": "43dfed93c1fed5d574a21c187cacfc0b7070762bd8b96d2a9f854110be21ae10",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/reference_models/code/g246_8h_augment.py": "2a451833361eb9ea82f56f62d1a49d342d5d635f47bd55d88b4fb9a05158467e",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/naf_history/model.py": "10664005cfd76a7823869f358d15fc5e4be115a89cd75bd9c65d81317b7231d4",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/evaluate_finalist.py": "2e43bca8bd4bdb81e76a7f8e6f6a48522ab5c92935dfccad62209f073b4ae6cf",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/evaluate_screens.py": "4e1054b5fc3c46dffd156798eedd7e2233285b8e8a097a2442031222182aec26",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/run.py": "e4262473a7e7d4c02f267e4a4e2e8d0bd24be4ac76ff3c2cc2f87b524df6579c",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/historylst/model.py": "799a0a51c4f8b0ffdfc7a0aae69b2ffaaa58d422c7e8c8c370b638b308ab33b5",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/historylst/data.py": "efc8ef0364756a93986be9a597f7967b1f967ec730d5fa38b3f7fc5c41fb4520",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/historylst/metrics.py": "7cc4442478a4ac4fa7d72f502f1a7e5adec437678435371605678b0947646e09",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/historylst/hotspots.py": "2622cf4fbd3eb7e51e317174bd28633502a80ea62c45a6d6e9cf3ea7c2cc2c74"
+  },
+  "freeze_sha256": "eb304811a8b43c743604ecc2237a45fa02ae12d31c8ceb7d8a0b623e95a6be7b",
+  "counters": {
+    "model_forward_calls": 552,
+    "image_forwards": 1080,
+    "historical_source_encodings": 9720
+  },
+  "seconds": 23.66644179800005,
+  "validation_labels_opened": true,
+  "test_opened": false,
+  "goal_pass": false,
+  "limitation": "Fixed 24-view ensemble teacher feasibility only, not a goal-qualifying single-forward network"
+}

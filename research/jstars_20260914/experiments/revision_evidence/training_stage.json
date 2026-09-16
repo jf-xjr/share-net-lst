@@ -1,0 +1,1563 @@
+{
+  "scores": {
+    "full_parent": {
+      "macro": {
+        "rmse": 0.4275356651250783,
+        "mae": 0.3175903118073267,
+        "bias": -0.003239259735508955,
+        "mse": 0.19250671028627245,
+        "hotspot_iou": 0.803345850321116,
+        "hotspot_mae": 0.395248314019152
+      },
+      "regions": {
+        "china": {
+          "rmse": 0.48632724346714024,
+          "mae": 0.3599977898770213,
+          "bias": -0.005867240752122981,
+          "mse": 0.2498814718397381,
+          "hotspot_iou": 0.7729633224578504,
+          "hotspot_mae": 0.4696416638468833
+        },
+        "europe": {
+          "rmse": 0.3673153857792996,
+          "mae": 0.271405816284711,
+          "bias": -0.0020321728811494855,
+          "mse": 0.13776284056837426,
+          "hotspot_iou": 0.8356492671767599,
+          "hotspot_mae": 0.3534597698314393
+        },
+        "us": {
+          "rmse": 0.4289643661287951,
+          "mae": 0.3213673292602481,
+          "bias": -0.0018183655732543992,
+          "mse": 0.189875818450705,
+          "hotspot_iou": 0.8014249613287379,
+          "hotspot_mae": 0.3626435083791333
+        }
+      },
+      "cities": [
+        {
+          "city": "alexandria_la",
+          "region": "us",
+          "rmse": 0.4712693674588877,
+          "mae": 0.35194226127811556,
+          "bias": -0.018452330927543642,
+          "mse": 0.2259236447533207,
+          "hotspot_iou": 0.8325180350849634,
+          "hotspot_mae": 0.4474303597518276
+        },
+        {
+          "city": "baoji_cn",
+          "region": "china",
+          "rmse": 0.5635830441586543,
+          "mae": 0.421935942418622,
+          "bias": -0.017663158783300294,
+          "mse": 0.32128909407059963,
+          "hotspot_iou": 0.7231512905125445,
+          "hotspot_mae": 0.5543231298995512
+        },
+        {
+          "city": "beijing_cn",
+          "region": "china",
+          "rmse": 0.36064670803713783,
+          "mae": 0.27034859887676355,
+          "bias": 0.0018425885253138307,
+          "mse": 0.13067659724365574,
+          "hotspot_iou": 0.8189546422429114,
+          "hotspot_mae": 0.272204206563164
+        },
+        {
+          "city": "brno_cz",
+          "region": "europe",
+          "rmse": 0.37997783466769214,
+          "mae": 0.2856215920605134,
+          "bias": -0.019312176259866243,
+          "mse": 0.1447194473466883,
+          "hotspot_iou": 0.8337047856323982,
+          "hotspot_mae": 0.37071136006857275
+        },
+        {
+          "city": "caldwell_id",
+          "region": "us",
+          "rmse": 0.5151771318282458,
+          "mae": 0.3817770352565078,
+          "bias": 0.022377307940678992,
+          "mse": 0.27266915603625713,
+          "hotspot_iou": 0.7835236361767959,
+          "hotspot_mae": 0.3824723885377174
+        },
+        {
+          "city": "elizabethtown_ky",
+          "region": "us",
+          "rmse": 0.34971853193129565,
+          "mae": 0.2652061382294643,
+          "bias": 0.0037386390682257707,
+          "mse": 0.12280491926833513,
+          "hotspot_iou": 0.8267186111630691,
+          "hotspot_mae": 0.3316387457988
+        },
+        {
+          "city": "frankfurt_am_main_de",
+          "region": "europe",
+          "rmse": 0.34162616695439635,
+          "mae": 0.24928576177343298,
+          "bias": 0.0006544898253959401,
+          "mse": 0.11716760140595285,
+          "hotspot_iou": 0.8259624417700956,
+          "hotspot_mae": 0.34303836782343566
+        },
+        {
+          "city": "ganzhou_cn",
+          "region": "china",
+          "rmse": 0.5556708334434526,
+          "mae": 0.40457014204355496,
+          "bias": 0.009145797471874969,
+          "mse": 0.3342157342145285,
+          "hotspot_iou": 0.7191154412602586,
+          "hotspot_mae": 0.6237602357970379
+        },
+        {
+          "city": "guankou_cn",
+          "region": "china",
+          "rmse": 0.3171086836327525,
+          "mae": 0.23383939856316435,
+          "bias": 0.0041823406684302795,
+          "mse": 0.1052797069239248,
+          "hotspot_iou": 0.8317819613534153,
+          "hotspot_mae": 0.32694885956678443
+        },
+        {
+          "city": "hanzhong_cn",
+          "region": "china",
+          "rmse": 0.4685710220088009,
+          "mae": 0.35505383635045823,
+          "bias": -0.04168892694335633,
+          "mse": 0.22659808427242878,
+          "hotspot_iou": 0.8096873183918514,
+          "hotspot_mae": 0.3847187611587828
+        },
+        {
+          "city": "hrodna_by",
+          "region": "europe",
+          "rmse": 0.39439030616860715,
+          "mae": 0.2898935644087937,
+          "bias": 0.010092704559487827,
+          "mse": 0.15597578180032082,
+          "hotspot_iou": 0.7925915697333531,
+          "hotspot_mae": 0.39244433664168654
+        },
+        {
+          "city": "indio_ca",
+          "region": "us",
+          "rmse": 0.3959705165806864,
+          "mae": 0.28203515431005327,
+          "bias": 0.005417359666148341,
+          "mse": 0.15830796525004423,
+          "hotspot_iou": 0.8298561235874565,
+          "hotspot_mae": 0.2662228313638186
+        },
+        {
+          "city": "kaunas_lt",
+          "region": "europe",
+          "rmse": 0.3848986838804031,
+          "mae": 0.2867991755364168,
+          "bias": -0.0028797999249342877,
+          "mse": 0.1481957307734621,
+          "hotspot_iou": 0.8456756907084565,
+          "hotspot_mae": 0.38219135667472465
+        },
+        {
+          "city": "kryvyy_rih_ua",
+          "region": "europe",
+          "rmse": 0.2866480498522603,
+          "mae": 0.2093218731572916,
+          "bias": 0.002684630212875371,
+          "mse": 0.08285275846103228,
+          "hotspot_iou": 0.8597515177632519,
+          "hotspot_mae": 0.3178808089433569
+        },
+        {
+          "city": "mianyang_cn",
+          "region": "china",
+          "rmse": 0.5206449931385939,
+          "mae": 0.3849776594640228,
+          "bias": -0.014347440249236757,
+          "mse": 0.28227337922865375,
+          "hotspot_iou": 0.7429285871389024,
+          "hotspot_mae": 0.5870705678777278
+        },
+        {
+          "city": "odessa_tx",
+          "region": "us",
+          "rmse": 0.33648509916920827,
+          "mae": 0.24994400152159654,
+          "bias": 0.0009160911531818794,
+          "mse": 0.11523966646393184,
+          "hotspot_iou": 0.7354897895720994,
+          "hotspot_mae": 0.23368624899606597
+        },
+        {
+          "city": "riga_lv",
+          "region": "europe",
+          "rmse": 0.4374992671325893,
+          "mae": 0.3260189478986175,
+          "bias": 0.01036119547033572,
+          "mse": 0.1923881486197263,
+          "hotspot_iou": 0.8290706953827978,
+          "hotspot_mae": 0.47052912222342685
+        },
+        {
+          "city": "rome_it",
+          "region": "europe",
+          "rmse": 0.35041346682214886,
+          "mae": 0.25988358012426027,
+          "bias": -0.0026706616687802477,
+          "mse": 0.12484873477709847,
+          "hotspot_iou": 0.819075877097009,
+          "hotspot_mae": 0.34291384853142853
+        },
+        {
+          "city": "salisbury_md",
+          "region": "us",
+          "rmse": 0.4267890442019444,
+          "mae": 0.32293996718457446,
+          "bias": -0.03713632638386658,
+          "mse": 0.18359043806794073,
+          "hotspot_iou": 0.8404020706744709,
+          "hotspot_mae": 0.38645768262023245
+        },
+        {
+          "city": "san_angelo_tx",
+          "region": "us",
+          "rmse": 0.4141622259956521,
+          "mae": 0.31342244170456107,
+          "bias": 0.018180433056952303,
+          "mse": 0.17641085506896212,
+          "hotspot_iou": 0.7217959930661806,
+          "hotspot_mae": 0.326963528169352
+        },
+        {
+          "city": "shangrao_cn",
+          "region": "china",
+          "rmse": 0.5195601659379946,
+          "mae": 0.3751900647181467,
+          "bias": 0.009918002410849834,
+          "mse": 0.27019525672628975,
+          "hotspot_iou": 0.7230773445634492,
+          "hotspot_mae": 0.5753041190283107
+        },
+        {
+          "city": "sioux_city_ia",
+          "region": "us",
+          "rmse": 0.46389065777220795,
+          "mae": 0.35273334826027974,
+          "bias": 0.00558622870363571,
+          "mse": 0.2168769670810198,
+          "hotspot_iou": 0.7783975423841731,
+          "hotspot_mae": 0.4257192252030553
+        },
+        {
+          "city": "sofia_bg",
+          "region": "europe",
+          "rmse": 0.32848077602106657,
+          "mae": 0.239020423942395,
+          "bias": 0.006275346185978851,
+          "mse": 0.11001777166533717,
+          "hotspot_iou": 0.8238416224095371,
+          "hotspot_mae": 0.31460036458158913
+        },
+        {
+          "city": "state_college_pa",
+          "region": "us",
+          "rmse": 0.42011642761171336,
+          "mae": 0.31563973098284454,
+          "bias": -0.01633812832393004,
+          "mse": 0.17876791010804013,
+          "hotspot_iou": 0.8286991964889626,
+          "hotspot_mae": 0.38896932872926815
+        },
+        {
+          "city": "tuscaloosa_al",
+          "region": "us",
+          "rmse": 0.49606465873810995,
+          "mae": 0.37803321387448335,
+          "bias": -0.0024729296860267268,
+          "mse": 0.24816666240919816,
+          "hotspot_iou": 0.8368486150892068,
+          "hotspot_mae": 0.43687474462119563
+        },
+        {
+          "city": "xining_cn",
+          "region": "china",
+          "rmse": 0.4381315709593712,
+          "mae": 0.32386402435802664,
+          "bias": 0.005559049013796543,
+          "mse": 0.19335955689898143,
+          "hotspot_iou": 0.7940835333569133,
+          "hotspot_mae": 0.37801849910623764
+        },
+        {
+          "city": "zaragoza_es",
+          "region": "europe",
+          "rmse": 0.41915476307983107,
+          "mae": 0.30699951863941183,
+          "bias": -0.023995775005097683,
+          "mse": 0.17881219556563777,
+          "hotspot_iou": 0.8680509638736561,
+          "hotspot_mae": 0.31701015461886767
+        },
+        {
+          "city": "zhongwei_cn",
+          "region": "china",
+          "rmse": 0.5554514272940109,
+          "mae": 0.4152493379823619,
+          "bias": -0.01263149344411723,
+          "mse": 0.31015495346655736,
+          "hotspot_iou": 0.8435040911930652,
+          "hotspot_mae": 0.49561166885626395
+        },
+        {
+          "city": "zibo_cn",
+          "region": "china",
+          "rmse": 0.5639039860606333,
+          "mae": 0.41494889399509166,
+          "bias": -0.0029891661914846625,
+          "mse": 0.32477235535176135,
+          "hotspot_iou": 0.7233490145651932,
+          "hotspot_mae": 0.49845659061497277
+        },
+        {
+          "city": "zuerich_ch",
+          "region": "europe",
+          "rmse": 0.35006454321400104,
+          "mae": 0.26121372530597653,
+          "bias": -0.001531682206890107,
+          "mse": 0.1226502352684864,
+          "hotspot_iou": 0.8587675073970447,
+          "hotspot_mae": 0.2832779782073049
+        }
+      ],
+      "members": [
+        {
+          "rmse": 0.42672488621892635,
+          "mae": 0.31692789730796045,
+          "bias": -0.003488093140883206,
+          "mse": 0.19181111710033824,
+          "hotspot_iou": 0.8034943238515136,
+          "hotspot_mae": 0.39484068436669045
+        },
+        {
+          "rmse": 0.4285487294411415,
+          "mae": 0.3183496353558467,
+          "bias": -0.0034399211607568287,
+          "mse": 0.19323682354662686,
+          "hotspot_iou": 0.803102591135021,
+          "hotspot_mae": 0.3956024119600945
+        },
+        {
+          "rmse": 0.4273333797151671,
+          "mae": 0.3174934027581731,
+          "bias": -0.0027897649048868305,
+          "mse": 0.19247219021185225,
+          "hotspot_iou": 0.8034406359768135,
+          "hotspot_mae": 0.395301845730671
+        }
+      ]
+    },
+    "utae_matched_stage": {
+      "macro": {
+        "rmse": 0.481815815188481,
+        "mae": 0.3578915487776191,
+        "bias": -0.007238630199786821,
+        "mse": 0.2444419198832224,
+        "hotspot_iou": 0.7850981929549053,
+        "hotspot_mae": 0.44065484625616574
+      },
+      "regions": {
+        "china": {
+          "rmse": 0.5445368621297517,
+          "mae": 0.40495672374799324,
+          "bias": -0.005584246590164543,
+          "mse": 0.3131454271339625,
+          "hotspot_iou": 0.7535408807646621,
+          "hotspot_mae": 0.51818239227077
+        },
+        "europe": {
+          "rmse": 0.4131874548791754,
+          "mae": 0.3041998983556912,
+          "bias": -0.005625193296823642,
+          "mse": 0.17446207590521903,
+          "hotspot_iou": 0.8211319081380996,
+          "hotspot_mae": 0.3906600793552329
+        },
+        "us": {
+          "rmse": 0.4877231285565158,
+          "mae": 0.3645180242291726,
+          "bias": -0.010506450712372278,
+          "mse": 0.2457182566104857,
+          "hotspot_iou": 0.7806217899619542,
+          "hotspot_mae": 0.4131220671424942
+        }
+      },
+      "cities": [
+        {
+          "city": "alexandria_la",
+          "region": "us",
+          "rmse": 0.5314852424394765,
+          "mae": 0.397760681913306,
+          "bias": -0.0347006678584702,
+          "mse": 0.2895569972328351,
+          "hotspot_iou": 0.8195748071750266,
+          "hotspot_mae": 0.5001783527426245
+        },
+        {
+          "city": "baoji_cn",
+          "region": "china",
+          "rmse": 0.6389505034484947,
+          "mae": 0.47961660587937355,
+          "bias": 0.031733260414781854,
+          "mse": 0.4149621219265904,
+          "hotspot_iou": 0.6866419390126216,
+          "hotspot_mae": 0.6019529218712254
+        },
+        {
+          "city": "beijing_cn",
+          "region": "china",
+          "rmse": 0.3919748429207422,
+          "mae": 0.2934850017483243,
+          "bias": 0.00043684629285806274,
+          "mse": 0.1546699262976646,
+          "hotspot_iou": 0.8059890351908283,
+          "hotspot_mae": 0.30299981698221085
+        },
+        {
+          "city": "brno_cz",
+          "region": "europe",
+          "rmse": 0.43133471723969685,
+          "mae": 0.324280680012847,
+          "bias": -0.012592350969603185,
+          "mse": 0.18672906173901804,
+          "hotspot_iou": 0.816696881656742,
+          "hotspot_mae": 0.4105778801373507
+        },
+        {
+          "city": "caldwell_id",
+          "region": "us",
+          "rmse": 0.5829188127017658,
+          "mae": 0.42955635975176903,
+          "bias": 0.03259960250015676,
+          "mse": 0.348058174754917,
+          "hotspot_iou": 0.7677650593786215,
+          "hotspot_mae": 0.4240147921215551
+        },
+        {
+          "city": "elizabethtown_ky",
+          "region": "us",
+          "rmse": 0.3910548099631926,
+          "mae": 0.29496801321508026,
+          "bias": 0.00803525306641055,
+          "mse": 0.15333316706760916,
+          "hotspot_iou": 0.8114239446044635,
+          "hotspot_mae": 0.36066374625767555
+        },
+        {
+          "city": "frankfurt_am_main_de",
+          "region": "europe",
+          "rmse": 0.38476863514933624,
+          "mae": 0.2811437510781117,
+          "bias": -0.01884865586465423,
+          "mse": 0.14929057300838586,
+          "hotspot_iou": 0.8102736966524607,
+          "hotspot_mae": 0.38169047247153326
+        },
+        {
+          "city": "ganzhou_cn",
+          "region": "china",
+          "rmse": 0.5986902486400238,
+          "mae": 0.4379885514244409,
+          "bias": 0.005921480573330471,
+          "mse": 0.3844482988543905,
+          "hotspot_iou": 0.7035408800262773,
+          "hotspot_mae": 0.6668167480430883
+        },
+        {
+          "city": "guankou_cn",
+          "region": "china",
+          "rmse": 0.37040490494510686,
+          "mae": 0.27508613863442216,
+          "bias": 0.024855376778710747,
+          "mse": 0.14078640967578906,
+          "hotspot_iou": 0.8098884925017226,
+          "hotspot_mae": 0.38107262866303776
+        },
+        {
+          "city": "hanzhong_cn",
+          "region": "china",
+          "rmse": 0.526260240749381,
+          "mae": 0.39914597963901816,
+          "bias": -0.07504218470993425,
+          "mse": 0.2892194454725244,
+          "hotspot_iou": 0.7963750034726167,
+          "hotspot_mae": 0.4163007031689631
+        },
+        {
+          "city": "hrodna_by",
+          "region": "europe",
+          "rmse": 0.43703234772291477,
+          "mae": 0.32381934123847267,
+          "bias": 0.028926258201059624,
+          "mse": 0.19203460300981753,
+          "hotspot_iou": 0.7869928947905861,
+          "hotspot_mae": 0.4046508350138538
+        },
+        {
+          "city": "indio_ca",
+          "region": "us",
+          "rmse": 0.4736762815631517,
+          "mae": 0.33508812680681155,
+          "bias": 0.018521100890194635,
+          "mse": 0.2264313103516119,
+          "hotspot_iou": 0.8028536348176086,
+          "hotspot_mae": 0.3229480736614658
+        },
+        {
+          "city": "kaunas_lt",
+          "region": "europe",
+          "rmse": 0.4233211991161698,
+          "mae": 0.3147188750403806,
+          "bias": -0.0006058218677567214,
+          "mse": 0.17926352645836943,
+          "hotspot_iou": 0.827833899289887,
+          "hotspot_mae": 0.4139015180588869
+        },
+        {
+          "city": "kryvyy_rih_ua",
+          "region": "europe",
+          "rmse": 0.32921711515860647,
+          "mae": 0.23876769016125976,
+          "bias": 0.0024913055890264523,
+          "mse": 0.10912817476879644,
+          "hotspot_iou": 0.8438615604365564,
+          "hotspot_mae": 0.36618964680881566
+        },
+        {
+          "city": "mianyang_cn",
+          "region": "china",
+          "rmse": 0.5753431247007059,
+          "mae": 0.4275467806288031,
+          "bias": -0.020242752224277575,
+          "mse": 0.34111499344976143,
+          "hotspot_iou": 0.7225299018141986,
+          "hotspot_mae": 0.6338151270875696
+        },
+        {
+          "city": "odessa_tx",
+          "region": "us",
+          "rmse": 0.37325901549513824,
+          "mae": 0.2762775569252261,
+          "bias": 0.004553821771191642,
+          "mse": 0.14274111313751872,
+          "hotspot_iou": 0.7125357454502982,
+          "hotspot_mae": 0.26389865312806543
+        },
+        {
+          "city": "riga_lv",
+          "region": "europe",
+          "rmse": 0.46685349510192026,
+          "mae": 0.34737690161431095,
+          "bias": 0.02701306730836511,
+          "mse": 0.21987296143286014,
+          "hotspot_iou": 0.8203692955309654,
+          "hotspot_mae": 0.4859039173436015
+        },
+        {
+          "city": "rome_it",
+          "region": "europe",
+          "rmse": 0.4096013607458988,
+          "mae": 0.3006887899526112,
+          "bias": -0.01804128717927034,
+          "mse": 0.16830010471703305,
+          "hotspot_iou": 0.7915959490898873,
+          "hotspot_mae": 0.4202572914992913
+        },
+        {
+          "city": "salisbury_md",
+          "region": "us",
+          "rmse": 0.5043330699072203,
+          "mae": 0.3822042640907078,
+          "bias": -0.07115947298854312,
+          "mse": 0.2588011066461615,
+          "hotspot_iou": 0.8131609841529274,
+          "hotspot_mae": 0.45922012174206484
+        },
+        {
+          "city": "san_angelo_tx",
+          "region": "us",
+          "rmse": 0.4684370066327029,
+          "mae": 0.353389849172332,
+          "bias": 0.01531972557273061,
+          "mse": 0.22508601646072637,
+          "hotspot_iou": 0.6834816191439086,
+          "hotspot_mae": 0.3787650082789615
+        },
+        {
+          "city": "shangrao_cn",
+          "region": "china",
+          "rmse": 0.5743761243576317,
+          "mae": 0.4173792028007813,
+          "bias": 0.010764028541975243,
+          "mse": 0.330162952062989,
+          "hotspot_iou": 0.6950944803374179,
+          "hotspot_mae": 0.6417725041221513
+        },
+        {
+          "city": "sioux_city_ia",
+          "region": "us",
+          "rmse": 0.5031176081732206,
+          "mae": 0.38110431528227445,
+          "bias": -0.0034497672528172006,
+          "mse": 0.2546980778641368,
+          "hotspot_iou": 0.7699763525580489,
+          "hotspot_mae": 0.4724738167517983
+        },
+        {
+          "city": "sofia_bg",
+          "region": "europe",
+          "rmse": 0.3762930571810383,
+          "mae": 0.27124107223497756,
+          "bias": -0.0076300847656071424,
+          "mse": 0.14466147892160708,
+          "hotspot_iou": 0.811706293928088,
+          "hotspot_mae": 0.3620810249338642
+        },
+        {
+          "city": "state_college_pa",
+          "region": "us",
+          "rmse": 0.49918570501108134,
+          "mae": 0.3758568545625636,
+          "bias": -0.0606104706918151,
+          "mse": 0.25385466315661137,
+          "hotspot_iou": 0.8048408815511894,
+          "hotspot_mae": 0.4686002675733651
+        },
+        {
+          "city": "tuscaloosa_al",
+          "region": "us",
+          "rmse": 0.5497637336782083,
+          "mae": 0.4189742205716555,
+          "bias": -0.014173632132761363,
+          "mse": 0.3046219394327289,
+          "hotspot_iou": 0.8206048707874506,
+          "hotspot_mae": 0.48045783916736645
+        },
+        {
+          "city": "xining_cn",
+          "region": "china",
+          "rmse": 0.48521950065217495,
+          "mae": 0.3619719835835191,
+          "bias": 0.023934066045525254,
+          "mse": 0.23731037062269308,
+          "hotspot_iou": 0.7817028406695394,
+          "hotspot_mae": 0.4324505440165598
+        },
+        {
+          "city": "zaragoza_es",
+          "region": "europe",
+          "rmse": 0.49262393070354316,
+          "mae": 0.3572332685857497,
+          "bias": -0.049598940876139135,
+          "mse": 0.25005052176847004,
+          "hotspot_iou": 0.8541171096508794,
+          "hotspot_mae": 0.3522787162027004
+        },
+        {
+          "city": "zhongwei_cn",
+          "region": "china",
+          "rmse": 0.6236244812758839,
+          "mae": 0.4698442194917236,
+          "bias": -0.04085652258945872,
+          "mse": 0.39086832039168756,
+          "hotspot_iou": 0.8398844884479812,
+          "hotspot_mae": 0.5391443568961178
+        },
+        {
+          "city": "zibo_cn",
+          "region": "china",
+          "rmse": 0.6605246496073726,
+          "mae": 0.48750277364952677,
+          "bias": -0.017346065025156513,
+          "mse": 0.4479114325855346,
+          "hotspot_iou": 0.6937617461734175,
+          "hotspot_mae": 0.5654985718567763
+        },
+        {
+          "city": "zuerich_ch",
+          "region": "europe",
+          "rmse": 0.38082869067262953,
+          "mae": 0.2827286136381914,
+          "bias": -0.007365422543656845,
+          "mse": 0.14528975322783286,
+          "hotspot_iou": 0.8478715003549421,
+          "hotspot_mae": 0.30906949108243165
+        }
+      ],
+      "members": [
+        {
+          "rmse": 0.4764980374546393,
+          "mae": 0.35373769460158727,
+          "bias": -0.003397979402667555,
+          "mse": 0.23938558802458942,
+          "hotspot_iou": 0.7863000142436897,
+          "hotspot_mae": 0.43621342811924735
+        },
+        {
+          "rmse": 0.4836829730609756,
+          "mae": 0.35939584677572595,
+          "bias": -0.00955198319872977,
+          "mse": 0.24612670966722586,
+          "hotspot_iou": 0.7853534884666432,
+          "hotspot_mae": 0.4428019966711653
+        },
+        {
+          "rmse": 0.4852664350498281,
+          "mae": 0.360541104955544,
+          "bias": -0.008765927997963137,
+          "mse": 0.24781346195785195,
+          "hotspot_iou": 0.7836410761543829,
+          "hotspot_mae": 0.44294911397808456
+        }
+      ]
+    }
+  },
+  "utae_minus_parent": {
+    "metric": "rmse",
+    "definition": "first minus second",
+    "delta": 0.05428015006340268,
+    "confidence_interval_95": [
+      0.04892068611326218,
+      0.05984463309861258
+    ],
+    "positive_cities": 30,
+    "cities": 30,
+    "regional_delta": {
+      "china": 0.05820961866261156,
+      "europe": 0.04587206909987583,
+      "us": 0.05875876242772067
+    },
+    "city_deltas": [
+      {
+        "city": "alexandria_la",
+        "region": "us",
+        "delta": 0.06021587498058878
+      },
+      {
+        "city": "baoji_cn",
+        "region": "china",
+        "delta": 0.07536745928984034
+      },
+      {
+        "city": "beijing_cn",
+        "region": "china",
+        "delta": 0.031328134883604364
+      },
+      {
+        "city": "brno_cz",
+        "region": "europe",
+        "delta": 0.051356882572004714
+      },
+      {
+        "city": "caldwell_id",
+        "region": "us",
+        "delta": 0.06774168087352006
+      },
+      {
+        "city": "elizabethtown_ky",
+        "region": "us",
+        "delta": 0.041336278031896934
+      },
+      {
+        "city": "frankfurt_am_main_de",
+        "region": "europe",
+        "delta": 0.04314246819493989
+      },
+      {
+        "city": "ganzhou_cn",
+        "region": "china",
+        "delta": 0.043019415196571265
+      },
+      {
+        "city": "guankou_cn",
+        "region": "china",
+        "delta": 0.05329622131235434
+      },
+      {
+        "city": "hanzhong_cn",
+        "region": "china",
+        "delta": 0.05768921874058014
+      },
+      {
+        "city": "hrodna_by",
+        "region": "europe",
+        "delta": 0.04264204155430762
+      },
+      {
+        "city": "indio_ca",
+        "region": "us",
+        "delta": 0.07770576498246534
+      },
+      {
+        "city": "kaunas_lt",
+        "region": "europe",
+        "delta": 0.038422515235766674
+      },
+      {
+        "city": "kryvyy_rih_ua",
+        "region": "europe",
+        "delta": 0.04256906530634619
+      },
+      {
+        "city": "mianyang_cn",
+        "region": "china",
+        "delta": 0.05469813156211201
+      },
+      {
+        "city": "odessa_tx",
+        "region": "us",
+        "delta": 0.03677391632592997
+      },
+      {
+        "city": "riga_lv",
+        "region": "europe",
+        "delta": 0.02935422796933096
+      },
+      {
+        "city": "rome_it",
+        "region": "europe",
+        "delta": 0.05918789392374996
+      },
+      {
+        "city": "salisbury_md",
+        "region": "us",
+        "delta": 0.07754402570527585
+      },
+      {
+        "city": "san_angelo_tx",
+        "region": "us",
+        "delta": 0.05427478063705077
+      },
+      {
+        "city": "shangrao_cn",
+        "region": "china",
+        "delta": 0.054815958419637156
+      },
+      {
+        "city": "sioux_city_ia",
+        "region": "us",
+        "delta": 0.03922695040101265
+      },
+      {
+        "city": "sofia_bg",
+        "region": "europe",
+        "delta": 0.047812281159971715
+      },
+      {
+        "city": "state_college_pa",
+        "region": "us",
+        "delta": 0.07906927739936798
+      },
+      {
+        "city": "tuscaloosa_al",
+        "region": "us",
+        "delta": 0.053699074940098346
+      },
+      {
+        "city": "xining_cn",
+        "region": "china",
+        "delta": 0.04708792969280373
+      },
+      {
+        "city": "zaragoza_es",
+        "region": "europe",
+        "delta": 0.07346916762371208
+      },
+      {
+        "city": "zhongwei_cn",
+        "region": "china",
+        "delta": 0.06817305398187301
+      },
+      {
+        "city": "zibo_cn",
+        "region": "china",
+        "delta": 0.09662066354673926
+      },
+      {
+        "city": "zuerich_ch",
+        "region": "europe",
+        "delta": 0.030764147458628488
+      }
+    ]
+  },
+  "parent_minus_final": {
+    "metric": "rmse",
+    "definition": "first minus second",
+    "delta": 0.0014036694203658235,
+    "confidence_interval_95": [
+      0.0009773091956306957,
+      0.001838764716619407
+    ],
+    "positive_cities": 25,
+    "cities": 30,
+    "regional_delta": {
+      "china": 8.503841296347291e-05,
+      "europe": 0.0015953453221471347,
+      "us": 0.002530624525986863
+    },
+    "city_deltas": [
+      {
+        "city": "alexandria_la",
+        "region": "us",
+        "delta": 0.0017418083483589086
+      },
+      {
+        "city": "baoji_cn",
+        "region": "china",
+        "delta": -0.0006571767714405041
+      },
+      {
+        "city": "beijing_cn",
+        "region": "china",
+        "delta": 0.001409595067373759
+      },
+      {
+        "city": "brno_cz",
+        "region": "europe",
+        "delta": 0.001990340110167188
+      },
+      {
+        "city": "caldwell_id",
+        "region": "us",
+        "delta": 0.003507213660738362
+      },
+      {
+        "city": "elizabethtown_ky",
+        "region": "us",
+        "delta": 0.0017121735471501975
+      },
+      {
+        "city": "frankfurt_am_main_de",
+        "region": "europe",
+        "delta": 0.0014314622141709532
+      },
+      {
+        "city": "ganzhou_cn",
+        "region": "china",
+        "delta": -0.0021748236118835917
+      },
+      {
+        "city": "guankou_cn",
+        "region": "china",
+        "delta": 0.0007965620913902849
+      },
+      {
+        "city": "hanzhong_cn",
+        "region": "china",
+        "delta": -9.861058103299847e-05
+      },
+      {
+        "city": "hrodna_by",
+        "region": "europe",
+        "delta": 0.000876619989839289
+      },
+      {
+        "city": "indio_ca",
+        "region": "us",
+        "delta": 0.0041341954251527535
+      },
+      {
+        "city": "kaunas_lt",
+        "region": "europe",
+        "delta": 0.0012932920077833865
+      },
+      {
+        "city": "kryvyy_rih_ua",
+        "region": "europe",
+        "delta": 0.0013091454265705127
+      },
+      {
+        "city": "mianyang_cn",
+        "region": "china",
+        "delta": -0.002292234244555935
+      },
+      {
+        "city": "odessa_tx",
+        "region": "us",
+        "delta": 0.0017801044526452592
+      },
+      {
+        "city": "riga_lv",
+        "region": "europe",
+        "delta": 0.0034842546480586822
+      },
+      {
+        "city": "rome_it",
+        "region": "europe",
+        "delta": 0.0010375437377997399
+      },
+      {
+        "city": "salisbury_md",
+        "region": "us",
+        "delta": 0.003010013145484214
+      },
+      {
+        "city": "san_angelo_tx",
+        "region": "us",
+        "delta": 0.00123331433631918
+      },
+      {
+        "city": "shangrao_cn",
+        "region": "china",
+        "delta": -0.0020793422212769253
+      },
+      {
+        "city": "sioux_city_ia",
+        "region": "us",
+        "delta": 0.0025029064245817856
+      },
+      {
+        "city": "sofia_bg",
+        "region": "europe",
+        "delta": 0.0018492607456404575
+      },
+      {
+        "city": "state_college_pa",
+        "region": "us",
+        "delta": 0.002722309450691074
+      },
+      {
+        "city": "tuscaloosa_al",
+        "region": "us",
+        "delta": 0.0029622064687468974
+      },
+      {
+        "city": "xining_cn",
+        "region": "china",
+        "delta": 0.001543269885654619
+      },
+      {
+        "city": "zaragoza_es",
+        "region": "europe",
+        "delta": 0.0014254118311899933
+      },
+      {
+        "city": "zhongwei_cn",
+        "region": "china",
+        "delta": 0.0030760968791916365
+      },
+      {
+        "city": "zibo_cn",
+        "region": "china",
+        "delta": 0.0013270476362143846
+      },
+      {
+        "city": "zuerich_ch",
+        "region": "europe",
+        "delta": 0.0012561225102511453
+      }
+    ]
+  },
+  "parent_parameters": 9310501,
+  "final_parameters": 5977045,
+  "parameter_reduction_percent": 35.80318610137091,
+  "records": [
+    {
+      "role": "utae_matched_stage",
+      "seed": 20260905,
+      "parameters": 2985697,
+      "prediction": "research/sub04_20260913/final_confirmation/test/baseline_20260905.npy",
+      "prediction_sha256": "edc71c44968f852dcb00df32c4bb3e2a05a0b04df4b78b99cdbc4adb22cf7a36",
+      "checkpoint": "research/sub04_20260913/final_confirmation/runs/baseline_20260905/best.pt",
+      "checkpoint_sha256": "73ffc240398398c7cb1d9d9d3d64c6ed913baee7eb0a41c2fa61698af8de0147",
+      "configuration": {
+        "updates": 3000,
+        "batch_size": 4,
+        "lr": 0.0001,
+        "warmup": 100,
+        "weight_decay": 0.0001,
+        "validation_interval": 500,
+        "evaluation_batch": 2,
+        "history_dropout": 0.0,
+        "emissivity_dropout": 0.0,
+        "teacher_weight": 0.9,
+        "seed": 20260923,
+        "ema_max_decay": 0.995,
+        "gradient_clip": 1.0,
+        "architecture": "baseline",
+        "original_seed": 20260905,
+        "algorithm": "AdamW_fused_cuda",
+        "protocol": "root_final_confirmation_3000_14_20260913_v1",
+        "confirmation_variant": "fourhead",
+        "loader_class": "dropout_models.DropoutUTAE",
+        "confirmation_authorization": {
+          "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260913/final_confirmation/root_allocation.json",
+          "sha256": "7794793a5d2f81f9257a36efa67de22d9c7fa873fa29950fa1815e48ef1ce574"
+        },
+        "original_selected_pilot_gate_pass": false,
+        "allocation_only_not_success": true
+      },
+      "teacher": {
+        "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260913/strong_teacher/fit/teacher.npy",
+        "sha256": "5dce7f881d454d1d8ac347f9bb7915dcbe894e258184629d485ba2d3f0e5244b",
+        "shape": [
+          603,
+          1,
+          160,
+          160
+        ],
+        "dtype": "float64"
+      },
+      "schedule_sha256": "c710ab2e6a3a52acce03d3b30918bcc4bbd9dc16ef76650a438db6e8fe090032"
+    },
+    {
+      "role": "full_parent",
+      "seed": 20260905,
+      "parameters": 9310501,
+      "prediction": "research/sub04_20260913/final_confirmation/test/naf_history_20260905.npy",
+      "prediction_sha256": "63aef755207408ee0316df627ffaa9809a1a934b894426e23458894bb2aa628e",
+      "checkpoint": "research/sub04_20260913/multihead_kd/naf_history_20260905/best.pt",
+      "checkpoint_sha256": "b0da53ce54cd01fd105e57931fb702f1468f9f0d60172d5280a9eb236e53a32e",
+      "configuration": {
+        "updates": 3000,
+        "batch_size": 4,
+        "lr": 0.0001,
+        "warmup": 100,
+        "weight_decay": 0.0001,
+        "validation_interval": 500,
+        "evaluation_batch": 2,
+        "history_dropout": 0.0,
+        "emissivity_dropout": 0.0,
+        "teacher_weight": 0.9,
+        "seed": 20260923,
+        "ema_max_decay": 0.995,
+        "gradient_clip": 1.0,
+        "architecture": "naf_history",
+        "original_seed": 20260905,
+        "algorithm": "AdamW_fused_cuda",
+        "protocol": "four_head_teacher_kd_20260913_v1",
+        "source_attention_heads": 4,
+        "initialization_transform": "copy_score_last_conv_1_to_4"
+      },
+      "teacher": {
+        "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260913/strong_teacher/fit/teacher.npy",
+        "sha256": "5dce7f881d454d1d8ac347f9bb7915dcbe894e258184629d485ba2d3f0e5244b",
+        "shape": [
+          603,
+          1,
+          160,
+          160
+        ],
+        "dtype": "float64"
+      },
+      "schedule_sha256": "c710ab2e6a3a52acce03d3b30918bcc4bbd9dc16ef76650a438db6e8fe090032"
+    },
+    {
+      "role": "utae_matched_stage",
+      "seed": 20260912,
+      "parameters": 2985697,
+      "prediction": "research/sub04_20260913/final_confirmation/test/baseline_20260912.npy",
+      "prediction_sha256": "26bddf7acf3f712035c043cd96d59e3ca539a84fd7676223e800a1f239095668",
+      "checkpoint": "research/sub04_20260913/final_confirmation/runs/baseline_20260912/best.pt",
+      "checkpoint_sha256": "7895f7ad6fe9bdabde6fdfed01f5c2b22422911e65317df745173be0f2798209",
+      "configuration": {
+        "updates": 3000,
+        "batch_size": 4,
+        "lr": 0.0001,
+        "warmup": 100,
+        "weight_decay": 0.0001,
+        "validation_interval": 500,
+        "evaluation_batch": 2,
+        "history_dropout": 0.0,
+        "emissivity_dropout": 0.0,
+        "teacher_weight": 0.9,
+        "seed": 20260923,
+        "ema_max_decay": 0.995,
+        "gradient_clip": 1.0,
+        "architecture": "baseline",
+        "original_seed": 20260912,
+        "algorithm": "AdamW_fused_cuda",
+        "protocol": "root_final_confirmation_3000_14_20260913_v1",
+        "confirmation_variant": "fourhead",
+        "loader_class": "dropout_models.DropoutUTAE",
+        "confirmation_authorization": {
+          "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260913/final_confirmation/root_allocation.json",
+          "sha256": "7794793a5d2f81f9257a36efa67de22d9c7fa873fa29950fa1815e48ef1ce574"
+        },
+        "original_selected_pilot_gate_pass": false,
+        "allocation_only_not_success": true
+      },
+      "teacher": {
+        "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260913/strong_teacher/fit/teacher.npy",
+        "sha256": "5dce7f881d454d1d8ac347f9bb7915dcbe894e258184629d485ba2d3f0e5244b",
+        "shape": [
+          603,
+          1,
+          160,
+          160
+        ],
+        "dtype": "float64"
+      },
+      "schedule_sha256": "c710ab2e6a3a52acce03d3b30918bcc4bbd9dc16ef76650a438db6e8fe090032"
+    },
+    {
+      "role": "full_parent",
+      "seed": 20260912,
+      "parameters": 9310501,
+      "prediction": "research/sub04_20260913/final_confirmation/test/naf_history_20260912.npy",
+      "prediction_sha256": "5dde5669f7cb4596bf0a3ffe8ce55e4d08b2403c4beed7499b3f467e0d47b5a4",
+      "checkpoint": "research/sub04_20260913/final_confirmation/runs/naf_history_20260912/best.pt",
+      "checkpoint_sha256": "9dfb4d11e6a4269770b514183fb5f2ad0b42d25d92a87c9f8be6a0d5722aa252",
+      "configuration": {
+        "updates": 3000,
+        "batch_size": 4,
+        "lr": 0.0001,
+        "warmup": 100,
+        "weight_decay": 0.0001,
+        "validation_interval": 500,
+        "evaluation_batch": 2,
+        "history_dropout": 0.0,
+        "emissivity_dropout": 0.0,
+        "teacher_weight": 0.9,
+        "seed": 20260923,
+        "ema_max_decay": 0.995,
+        "gradient_clip": 1.0,
+        "architecture": "naf_history",
+        "original_seed": 20260912,
+        "algorithm": "AdamW_fused_cuda",
+        "protocol": "root_final_confirmation_3000_14_20260913_v1",
+        "confirmation_variant": "fourhead",
+        "loader_class": "multihead_fusion.model.FourHeadHistoryNAF",
+        "confirmation_authorization": {
+          "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260913/final_confirmation/root_allocation.json",
+          "sha256": "7794793a5d2f81f9257a36efa67de22d9c7fa873fa29950fa1815e48ef1ce574"
+        },
+        "original_selected_pilot_gate_pass": false,
+        "allocation_only_not_success": true
+      },
+      "teacher": {
+        "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260913/strong_teacher/fit/teacher.npy",
+        "sha256": "5dce7f881d454d1d8ac347f9bb7915dcbe894e258184629d485ba2d3f0e5244b",
+        "shape": [
+          603,
+          1,
+          160,
+          160
+        ],
+        "dtype": "float64"
+      },
+      "schedule_sha256": "c710ab2e6a3a52acce03d3b30918bcc4bbd9dc16ef76650a438db6e8fe090032"
+    },
+    {
+      "role": "utae_matched_stage",
+      "seed": 20260913,
+      "parameters": 2985697,
+      "prediction": "research/sub04_20260913/final_confirmation/test/baseline_20260913.npy",
+      "prediction_sha256": "ed3efd7e82bbd9ccbf2f00a4ba08917289e41517ab097a9a385ff1ac97162d8e",
+      "checkpoint": "research/sub04_20260913/final_confirmation/runs/baseline_20260913/best.pt",
+      "checkpoint_sha256": "c85e95767e1de2425cb2d4f1b6abe4a49377262b4f9ec9639630778d9be26048",
+      "configuration": {
+        "updates": 3000,
+        "batch_size": 4,
+        "lr": 0.0001,
+        "warmup": 100,
+        "weight_decay": 0.0001,
+        "validation_interval": 500,
+        "evaluation_batch": 2,
+        "history_dropout": 0.0,
+        "emissivity_dropout": 0.0,
+        "teacher_weight": 0.9,
+        "seed": 20260923,
+        "ema_max_decay": 0.995,
+        "gradient_clip": 1.0,
+        "architecture": "baseline",
+        "original_seed": 20260913,
+        "algorithm": "AdamW_fused_cuda",
+        "protocol": "root_final_confirmation_3000_14_20260913_v1",
+        "confirmation_variant": "fourhead",
+        "loader_class": "dropout_models.DropoutUTAE",
+        "confirmation_authorization": {
+          "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260913/final_confirmation/root_allocation.json",
+          "sha256": "7794793a5d2f81f9257a36efa67de22d9c7fa873fa29950fa1815e48ef1ce574"
+        },
+        "original_selected_pilot_gate_pass": false,
+        "allocation_only_not_success": true
+      },
+      "teacher": {
+        "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260913/strong_teacher/fit/teacher.npy",
+        "sha256": "5dce7f881d454d1d8ac347f9bb7915dcbe894e258184629d485ba2d3f0e5244b",
+        "shape": [
+          603,
+          1,
+          160,
+          160
+        ],
+        "dtype": "float64"
+      },
+      "schedule_sha256": "c710ab2e6a3a52acce03d3b30918bcc4bbd9dc16ef76650a438db6e8fe090032"
+    },
+    {
+      "role": "full_parent",
+      "seed": 20260913,
+      "parameters": 9310501,
+      "prediction": "research/sub04_20260913/final_confirmation/test/naf_history_20260913.npy",
+      "prediction_sha256": "38b0c1888ea47a1f22d4d6a1d06895fb3cd904ce8aea3bfe3543fcf7d1c4a3a1",
+      "checkpoint": "research/sub04_20260913/final_confirmation/runs/naf_history_20260913/best.pt",
+      "checkpoint_sha256": "38e5eb7d73ae453b332f361dfb1673359e89875380a12b62f15bef6ae11cd7b7",
+      "configuration": {
+        "updates": 3000,
+        "batch_size": 4,
+        "lr": 0.0001,
+        "warmup": 100,
+        "weight_decay": 0.0001,
+        "validation_interval": 500,
+        "evaluation_batch": 2,
+        "history_dropout": 0.0,
+        "emissivity_dropout": 0.0,
+        "teacher_weight": 0.9,
+        "seed": 20260923,
+        "ema_max_decay": 0.995,
+        "gradient_clip": 1.0,
+        "architecture": "naf_history",
+        "original_seed": 20260913,
+        "algorithm": "AdamW_fused_cuda",
+        "protocol": "root_final_confirmation_3000_14_20260913_v1",
+        "confirmation_variant": "fourhead",
+        "loader_class": "multihead_fusion.model.FourHeadHistoryNAF",
+        "confirmation_authorization": {
+          "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260913/final_confirmation/root_allocation.json",
+          "sha256": "7794793a5d2f81f9257a36efa67de22d9c7fa873fa29950fa1815e48ef1ce574"
+        },
+        "original_selected_pilot_gate_pass": false,
+        "allocation_only_not_success": true
+      },
+      "teacher": {
+        "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260913/strong_teacher/fit/teacher.npy",
+        "sha256": "5dce7f881d454d1d8ac347f9bb7915dcbe894e258184629d485ba2d3f0e5244b",
+        "shape": [
+          603,
+          1,
+          160,
+          160
+        ],
+        "dtype": "float64"
+      },
+      "schedule_sha256": "c710ab2e6a3a52acce03d3b30918bcc4bbd9dc16ef76650a438db6e8fe090032"
+    }
+  ],
+  "stage_matching": [
+    {
+      "seed": 20260905,
+      "stage": "reference",
+      "completed_updates_per_model": 18000,
+      "shared_configuration": {
+        "seed": 20260905,
+        "updates": 18000,
+        "batch_size": 4,
+        "lr": 0.001,
+        "warmup": 300,
+        "weight_decay": 0.0001,
+        "validation_interval": 750
+      },
+      "same_teacher": true,
+      "stored_schedule_equal": null,
+      "parent_run": "research/sub04_20260911/runs/naf_history_20260905_cuda/run.json",
+      "utae_run": "research/route_a_20260911/utae/run.json"
+    },
+    {
+      "seed": 20260905,
+      "stage": "first_teacher",
+      "completed_updates_per_model": 1000,
+      "shared_configuration": {
+        "seed": 20260921,
+        "updates": 1000,
+        "batch_size": 4,
+        "lr": 0.0001,
+        "warmup": 100,
+        "weight_decay": 0.0001,
+        "validation_interval": 250,
+        "history_dropout": 0.25,
+        "emissivity_dropout": 0.25,
+        "ground_truth_loss_weight": 0.5,
+        "teacher_loss_weight": 0.5
+      },
+      "same_teacher": true,
+      "stored_schedule_equal": {
+        "fit_ids": true,
+        "d4": true
+      },
+      "parent_run": "research/sub04_20260911/d4_self_distillation_20260912_v1/pilot_naf905/run.json",
+      "utae_run": "research/sub04_20260911/d4_self_distillation_20260912_v1/baseline_20260905/run.json"
+    },
+    {
+      "seed": 20260905,
+      "stage": "second_teacher",
+      "completed_updates_per_model": 3000,
+      "shared_configuration": {
+        "seed": 20260923,
+        "updates": 3000,
+        "batch_size": 4,
+        "lr": 0.0001,
+        "warmup": 100,
+        "weight_decay": 0.0001,
+        "validation_interval": 500,
+        "history_dropout": 0.0,
+        "emissivity_dropout": 0.0,
+        "teacher_weight": 0.9
+      },
+      "same_teacher": true,
+      "stored_schedule_equal": {
+        "fit_ids": true,
+        "d4": true
+      },
+      "parent_run": "research/sub04_20260913/multihead_kd/naf_history_20260905/run.json",
+      "utae_run": "research/sub04_20260913/final_confirmation/runs/baseline_20260905/run.json"
+    },
+    {
+      "seed": 20260912,
+      "stage": "reference",
+      "completed_updates_per_model": 18000,
+      "shared_configuration": {
+        "seed": 20260912,
+        "updates": 18000,
+        "batch_size": 4,
+        "lr": 0.001,
+        "warmup": 300,
+        "weight_decay": 0.0001,
+        "validation_interval": 750
+      },
+      "same_teacher": true,
+      "stored_schedule_equal": null,
+      "parent_run": "research/sub04_20260911/paired_finalist_20260912_v1/runs/naf_history_20260912/run.json",
+      "utae_run": "research/strong_history_20260911/runs/baseline_20260912/run.json"
+    },
+    {
+      "seed": 20260912,
+      "stage": "first_teacher",
+      "completed_updates_per_model": 1000,
+      "shared_configuration": {
+        "seed": 20260921,
+        "updates": 1000,
+        "batch_size": 4,
+        "lr": 0.0001,
+        "warmup": 100,
+        "weight_decay": 0.0001,
+        "validation_interval": 250,
+        "history_dropout": 0.25,
+        "emissivity_dropout": 0.25,
+        "ground_truth_loss_weight": 0.5,
+        "teacher_loss_weight": 0.5
+      },
+      "same_teacher": true,
+      "stored_schedule_equal": {
+        "fit_ids": true,
+        "d4": true
+      },
+      "parent_run": "research/sub04_20260911/d4_self_distillation_20260912_v1/naf_history_20260912/run.json",
+      "utae_run": "research/sub04_20260911/d4_self_distillation_20260912_v1/baseline_20260912/run.json"
+    },
+    {
+      "seed": 20260912,
+      "stage": "second_teacher",
+      "completed_updates_per_model": 3000,
+      "shared_configuration": {
+        "seed": 20260923,
+        "updates": 3000,
+        "batch_size": 4,
+        "lr": 0.0001,
+        "warmup": 100,
+        "weight_decay": 0.0001,
+        "validation_interval": 500,
+        "history_dropout": 0.0,
+        "emissivity_dropout": 0.0,
+        "teacher_weight": 0.9
+      },
+      "same_teacher": true,
+      "stored_schedule_equal": {
+        "fit_ids": true,
+        "d4": true
+      },
+      "parent_run": "research/sub04_20260913/final_confirmation/runs/naf_history_20260912/run.json",
+      "utae_run": "research/sub04_20260913/final_confirmation/runs/baseline_20260912/run.json"
+    },
+    {
+      "seed": 20260913,
+      "stage": "reference",
+      "completed_updates_per_model": 18000,
+      "shared_configuration": {
+        "seed": 20260913,
+        "updates": 18000,
+        "batch_size": 4,
+        "lr": 0.001,
+        "warmup": 300,
+        "weight_decay": 0.0001,
+        "validation_interval": 750
+      },
+      "same_teacher": true,
+      "stored_schedule_equal": null,
+      "parent_run": "research/sub04_20260911/paired_finalist_20260912_v1/runs/naf_history_20260913/run.json",
+      "utae_run": "research/strong_history_20260911/runs/baseline_20260913/run.json"
+    },
+    {
+      "seed": 20260913,
+      "stage": "first_teacher",
+      "completed_updates_per_model": 1000,
+      "shared_configuration": {
+        "seed": 20260921,
+        "updates": 1000,
+        "batch_size": 4,
+        "lr": 0.0001,
+        "warmup": 100,
+        "weight_decay": 0.0001,
+        "validation_interval": 250,
+        "history_dropout": 0.25,
+        "emissivity_dropout": 0.25,
+        "ground_truth_loss_weight": 0.5,
+        "teacher_loss_weight": 0.5
+      },
+      "same_teacher": true,
+      "stored_schedule_equal": {
+        "fit_ids": true,
+        "d4": true
+      },
+      "parent_run": "research/sub04_20260911/d4_self_distillation_20260912_v1/naf_history_20260913/run.json",
+      "utae_run": "research/sub04_20260911/d4_self_distillation_20260912_v1/baseline_20260913/run.json"
+    },
+    {
+      "seed": 20260913,
+      "stage": "second_teacher",
+      "completed_updates_per_model": 3000,
+      "shared_configuration": {
+        "seed": 20260923,
+        "updates": 3000,
+        "batch_size": 4,
+        "lr": 0.0001,
+        "warmup": 100,
+        "weight_decay": 0.0001,
+        "validation_interval": 500,
+        "history_dropout": 0.0,
+        "emissivity_dropout": 0.0,
+        "teacher_weight": 0.9
+      },
+      "same_teacher": true,
+      "stored_schedule_equal": {
+        "fit_ids": true,
+        "d4": true
+      },
+      "parent_run": "research/sub04_20260913/final_confirmation/runs/naf_history_20260913/run.json",
+      "utae_run": "research/sub04_20260913/final_confirmation/runs/baseline_20260913/run.json"
+    }
+  ],
+  "source_sha256": {
+    "research/jstars_20260914/experiments/analyze_training_stage.py": "68f7dadef8be05d6e6a8ab9d5be2b36c18fe80b25f65428c408547110a2fe2a8",
+    "research/near_neighbor_attribution_20260914/evaluate_comparisons.py": "93b58fca4fe5a311a82f8817b20b9af949cbd7b3d6dfaf26647b6ea7acdbe4ef"
+  },
+  "interpretation": "The parent and U-TAE have the same completed supervised and two teacher-refinement update budgets; architecture and parameter count differ. Compact recovery/query refinement follow this parent."
+}

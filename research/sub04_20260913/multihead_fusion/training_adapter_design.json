@@ -1,0 +1,23 @@
+{
+  "status": "prepared_untrained_four_head_adapter",
+  "base_training_source": "/home/jf_xjr/uhi_cdc/research/sub04_20260913/train_strong_kd.py",
+  "base_training_sha256": "c80551e32eb85f091743421d73508c1ed5a0a6040aa324e054cc86e08ecbfc69",
+  "adapter_sha256": "a633c016f5b972ee4755222edc6a46c9f1bde93e463feb934b67ce401660a0c3",
+  "unchanged_recipe": {
+    "updates": 3000,
+    "validation_candidates": 14,
+    "teacher_weight": 0.9,
+    "ground_truth_weight": 0.1,
+    "history_dropout": 0.0,
+    "emissivity_dropout": 0.0,
+    "lr": 0.0001,
+    "warmup": 100
+  },
+  "initialization": "Each architecture and original seed starts its own original completed D4 1000/10 student; never starts the later standard 3000-update pilot.",
+  "candidate_transformation": "Only fusion score final conv outputs 1->4 with exact row copies; all other state tensors preserved.",
+  "pilot_gate": "Val RMSE<.412 and gain over own original D4 initialization>=.005",
+  "original_test_goal_threshold_k": 0.42,
+  "gpu_started": false,
+  "training_started": false,
+  "scientific_goal_complete": false
+}

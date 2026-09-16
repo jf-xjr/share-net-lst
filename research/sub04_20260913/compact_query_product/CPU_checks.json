@@ -1,0 +1,66 @@
+{
+  "status": "actual_compact905_parent_small_CPU_identity_gradients_PASS",
+  "parent_checkpoint": {
+    "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260913/compact_recovery/runs/compact_20260905/best.pt",
+    "sha256": "21432eb1bcf43b787e3fd8df9d198d3b21944bd47b9d53e825b73ecfc5f536ee"
+  },
+  "input_size": 32,
+  "synthetic_inputs": true,
+  "observations_opened": false,
+  "GPU_used": false,
+  "loading": {
+    "parent_parameters": 5911525,
+    "parameters": 5977045,
+    "added_parameters": 65520,
+    "initialized_keys": [
+      "fusion.0.query_product.bias",
+      "fusion.0.query_product.weight",
+      "fusion.1.query_product.bias",
+      "fusion.1.query_product.weight",
+      "fusion.2.query_product.bias",
+      "fusion.2.query_product.weight",
+      "fusion.3.query_product.bias",
+      "fusion.3.query_product.weight"
+    ],
+    "retained_parent_tensors_bitwise_equal": true,
+    "initial_function_identity": true,
+    "heads": 4,
+    "raw_sources": 9,
+    "history_scales": 4,
+    "inference_views": 1,
+    "added_norm_parameters": 0
+  },
+  "identities": {
+    "training_False_empty_False": {
+      "support_output_exact": true,
+      "max_difference_k": 0.0
+    },
+    "training_False_empty_True": {
+      "support_output_exact": true,
+      "max_difference_k": 0.0
+    },
+    "training_True_empty_False": {
+      "support_output_exact": true,
+      "max_difference_k": 0.0
+    },
+    "training_True_empty_True": {
+      "support_output_exact": true,
+      "max_difference_k": 0.0
+    }
+  },
+  "first_backward_query_gradient_norms": {
+    "fusion.0.query_product.weight": 0.0023368641268461943,
+    "fusion.0.query_product.bias": 0.0003168755501974374,
+    "fusion.1.query_product.weight": 0.0018137062434107065,
+    "fusion.1.query_product.bias": 8.792534208623692e-05,
+    "fusion.2.query_product.weight": 0.0017828469863161445,
+    "fusion.2.query_product.bias": 4.622481355909258e-05,
+    "fusion.3.query_product.weight": 9.761229011928663e-05,
+    "fusion.3.query_product.bias": 2.296808588653221e-06
+  },
+  "selected_missing_key_and_dtype_rejected": true,
+  "source_sha256": {
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260913/compact_query_product/model.py": "4ec15b7d27c8dedbfe59f336bb1387034cd20645b8e7266eda7f0e632e633648",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260913/compact_query_product/check_model.py": "3613aafdf983e3e612978f05ed3782edf17eff51df8d13d7c574c5360f67dfa5"
+  }
+}

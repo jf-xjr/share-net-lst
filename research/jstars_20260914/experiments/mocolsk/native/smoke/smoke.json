@@ -1,0 +1,10 @@
+{
+  "status": "smoke_complete",
+  "updates": 5,
+  "seconds": 14.819971134005755,
+  "parameters": 25472601,
+  "peak_cuda_bytes": 3204319744,
+  "fit_only": true,
+  "checkpoint_retained": false,
+  "finite_loss_and_gradients": true
+}

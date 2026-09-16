@@ -1,0 +1,8 @@
+{
+  "file": "utae_best.pt",
+  "sha256": "012185db5fc7832ec2e3216981032ac9162a9aa7d6661b734f5008a568689e8d",
+  "training": "../results/training",
+  "configuration": "../configs/utae.json",
+  "upstream": "../historylst/third_party/utae/UPSTREAM.json",
+  "test_used_for_selection": false
+}

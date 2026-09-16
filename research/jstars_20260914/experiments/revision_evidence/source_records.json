@@ -1,0 +1,18 @@
+{
+  "existing_predictions_only": true,
+  "prediction_receipt_sha256": "262e3febfb2d5c712948db8cef4cf5ff57a15fc1791a7d736e97084d39886e0e",
+  "predictions": {
+    "research/sub04_20260913/compact_query_product/final_evaluation/test/baseline_20260905.npy": "013125cc7b4de0ba9bcd050b5faf91ac3263ae020c059b6a4a64473e8e1e3b97",
+    "research/sub04_20260913/compact_query_product/final_evaluation/test/naf_history_20260905.npy": "af6fb652500b9ae72b556cea6415cf8d83fd8a911e468ceb3d9200e49947ca3e",
+    "research/sub04_20260913/compact_query_product/final_evaluation/test/baseline_20260912.npy": "3d4a3e12aee07fef50f1edf89136b8190f02496885e158bedd4ecc87c8c8934d",
+    "research/sub04_20260913/compact_query_product/final_evaluation/test/naf_history_20260912.npy": "dd6005e334eb9646845258756aa1cc0e50d3a490a3e3478c2eb9e8eeb1c214c8",
+    "research/sub04_20260913/compact_query_product/final_evaluation/test/baseline_20260913.npy": "2466c252daada98800bc5ab18c01b736dd16c856da32a99251821c13d7334cbf",
+    "research/sub04_20260913/compact_query_product/final_evaluation/test/naf_history_20260913.npy": "0b9480d893a2de60f73e8f2bf353a133986b27709621541e16ad34b61d0b4d71"
+  },
+  "sources": {
+    "research/jstars_20260914/experiments/analyze_revision.py": "3f37a928a6fd657279c57205e4ffbbbb670e134988fd93e9dc846a3f4c796f66",
+    "research/near_neighbor_attribution_20260914/evaluate_comparisons.py": "93b58fca4fe5a311a82f8817b20b9af949cbd7b3d6dfaf26647b6ea7acdbe4ef"
+  },
+  "minimum_scored_pixels_per_scene_and_stratum": 32,
+  "coverage_definition": "Mean accepted thermal fraction across all nine historical slots, including empty slots"
+}

@@ -1,0 +1,771 @@
+{
+  "status": "all_three_interpolations_frozen",
+  "alphas": [
+    0.25,
+    0.5,
+    0.75
+  ],
+  "manifest_sha256": "1eb03fe8b3a57226101f0e3a11215d2b5cae94de0d4bc6bbaede5fa12d1a83ef",
+  "original_plan": {
+    "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/finalist_original_plan.json",
+    "sha256": "aea61f25708e7e5a4e7cb58f0f5a92bffd4aaf4c35972e8596f785ca8d4ad69d"
+  },
+  "evaluator_source_sha256": {
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/evaluate_finalist.py": "2e43bca8bd4bdb81e76a7f8e6f6a48522ab5c92935dfccad62209f073b4ae6cf",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/evaluate_screens.py": "4e1054b5fc3c46dffd156798eedd7e2233285b8e8a097a2442031222182aec26",
+    "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/paired_evaluation.py": "afb475e8ad4289c2e3d00ac726fa794d3c4a07f5ec84856ddb45643a044a4743",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/dropout_models.py": "6bb4ca608b5c39fa2533eab73b0cc1d65a82f21bd04feb50813e5a2a88d718eb",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/naf_history/model.py": "10664005cfd76a7823869f358d15fc5e4be115a89cd75bd9c65d81317b7231d4",
+    "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/experiment.py": "c0fd7eeaff3b03c380ec2d4b46d4810f2d17d10e9191c10559961973a2339f0e",
+    "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/run_queue.py": "bbf6d09849eb5306358603789b4025099d276fc981c632d3828428128eff51f6",
+    "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/candidates/network_review.py": "424399b82bb967b2b0ac239efe7cff8287ab000e3a64c7690d90ab84b1afbc40",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/run.py": "e4262473a7e7d4c02f267e4a4e2e8d0bd24be4ac76ff3c2cc2f87b524df6579c",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/historylst/model.py": "799a0a51c4f8b0ffdfc7a0aae69b2ffaaa58d422c7e8c8c370b638b308ab33b5",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/historylst/data.py": "efc8ef0364756a93986be9a597f7967b1f967ec730d5fa38b3f7fc5c41fb4520",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/historylst/metrics.py": "7cc4442478a4ac4fa7d72f502f1a7e5adec437678435371605678b0947646e09",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/historylst/__init__.py": "a4227048a2f1abcd70e165864d47d768acc87168f0082e34994a5d8b2516bc07",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/historylst/hotspots.py": "2622cf4fbd3eb7e51e317174bd28633502a80ea62c45a6d6e9cf3ea7c2cc2c74",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/historylst/third_party/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/historylst/third_party/utae/utae.py": "c5e3e638348775876383b3805ce35aa1207c7c8d732145bea02667d2c28ca5b8",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/historylst/third_party/utae/convlstm.py": "9d501a1d59828f922a7827b76e2c797ac25471737f2b9d0e0516d0be52f890c6",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/historylst/third_party/utae/ltae.py": "b1d88b438ac0c00be9eed7482526be63af39a9ce421d41e4363d1898eba7f092",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/historylst/third_party/utae/positional_encoding.py": "38b2dc8d4d22eabe01559a83ea06b8bbf4457d84e1d3ddc15750a46e7f418e01",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/historylst/third_party/utae/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912.py": "2a525e3b692dcc8b62ddcd1e62abb74c48ab41c8e1318e87b36c0b4ecc8ab8db"
+  },
+  "formula": "theta(alpha)=(1-alpha)*original_selected_best+alpha*last_18000_ema; learned parameters only",
+  "buffers": "All buffers, including BatchNorm statistics, remain exactly the original selected-best buffers",
+  "caveat": "Baseline913 selected best is RAW, not EMA. No best-EMA checkpoint was retained there. NAF endpoints span steps9000/18000; baseline endpoints span17250/18000. This is parameter interpolation, not SWA-trained weights.",
+  "ensemble_used": false,
+  "bn_recalibration": false,
+  "validation_opened": false,
+  "test_opened": false,
+  "candidates": {
+    "0.25": [
+      {
+        "architecture": "baseline",
+        "seed": 20260905,
+        "run": "/home/jf_xjr/uhi_cdc/research/route_a_20260911/utae",
+        "checkpoint": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/baseline_20260905_alpha25.pt",
+        "checkpoint_sha256": "e868b530c3f257c930823114f6a4033dbe09d0783ba7543a8aba0f77a0e0d441",
+        "config": {
+          "model": "U-TAE-LST with local visibility",
+          "seed": 20260905,
+          "updates": 18000,
+          "batch_size": 4,
+          "lr": 0.001,
+          "warmup": 300,
+          "weight_decay": 0.0001,
+          "validation_interval": 750,
+          "evaluation_batch": 2,
+          "selection": "minimum unrounded validation macro RMSE over raw and EMA; earlier wins exact tie",
+          "budget_reason": "Independent random initialization, three times the historical-system continuation updates; same 50 raw/EMA validation opportunities. Not an equal-total-pretraining architecture ablation. No test-based budget extension."
+        },
+        "interpolation": {
+          "alpha": 0.25,
+          "selected_best": {
+            "path": "/home/jf_xjr/uhi_cdc/research/route_a_20260911/utae/best.pt",
+            "sha256": "012185db5fc7832ec2e3216981032ac9162a9aa7d6661b734f5008a568689e8d",
+            "step": 17250,
+            "weights": "ema"
+          },
+          "last": {
+            "path": "/home/jf_xjr/uhi_cdc/research/route_a_20260911/utae/last.pt",
+            "sha256": "3e068f019a7c6af06188cc50faa364413e9991744f689bbfd210b64157e2c39b",
+            "step": 18000,
+            "weights": "ema"
+          },
+          "parameter_count": 2985697,
+          "nonparameter_buffers_unchanged": true
+        },
+        "additional_training_updates": 0,
+        "additional_inference_model_count": 0
+      },
+      {
+        "architecture": "naf_history",
+        "seed": 20260905,
+        "run": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/runs/naf_history_20260905_cuda",
+        "checkpoint": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/naf_history_20260905_alpha25.pt",
+        "checkpoint_sha256": "7e2c2fa8292054a21a90c7b35902850969f9ac4e55a2fde325800cf6f21c4309",
+        "config": {
+          "architecture": "naf_history",
+          "seed": 20260905,
+          "updates": 18000,
+          "batch_size": 4,
+          "lr": 0.001,
+          "warmup": 300,
+          "weight_decay": 0.0001,
+          "validation_interval": 750,
+          "evaluation_batch": 2,
+          "history_dropout": 0.25,
+          "emissivity_dropout": 0.25,
+          "selection": "minimum unrounded validation macro RMSE across the same 50 raw/EMA opportunities",
+          "purpose": "One spatial history reconstruction architecture under the original U-TAE training recipe, six inputs, sampling and projection. GPU batch4 AMP smoke must pass before formal training."
+        },
+        "interpolation": {
+          "alpha": 0.25,
+          "selected_best": {
+            "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/runs/naf_history_20260905_cuda/best.pt",
+            "sha256": "05b924fca3e73410a64d1f1b81d91c8f0e6d385234c1d5492f5d1c4eb267b620",
+            "step": 9000,
+            "weights": "ema"
+          },
+          "last": {
+            "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/runs/naf_history_20260905_cuda/last.pt",
+            "sha256": "cdc3e4727fc7f1de30692e35017ebb4677ecd00ae5e2ab52aaf9c5f98c014e87",
+            "step": 18000,
+            "weights": "ema"
+          },
+          "parameter_count": 9310105,
+          "nonparameter_buffers_unchanged": true
+        },
+        "additional_training_updates": 0,
+        "additional_inference_model_count": 0
+      },
+      {
+        "architecture": "baseline",
+        "seed": 20260912,
+        "run": "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/runs/baseline_20260912",
+        "checkpoint": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/baseline_20260912_alpha25.pt",
+        "checkpoint_sha256": "0a0769c3595ce8323b0394bd95486e6492b6096030d409c1f80fdbf66594b706",
+        "config": {
+          "model": "U-TAE-LST with local visibility",
+          "seed": 20260912,
+          "updates": 18000,
+          "batch_size": 4,
+          "lr": 0.001,
+          "warmup": 300,
+          "weight_decay": 0.0001,
+          "validation_interval": 750,
+          "evaluation_batch": 2,
+          "selection": "minimum unrounded validation macro RMSE over raw and EMA; earlier wins exact tie",
+          "budget_reason": "Independent random initialization, three times the historical-system continuation updates; same 50 raw/EMA validation opportunities. Not an equal-total-pretraining architecture ablation. No test-based budget extension."
+        },
+        "interpolation": {
+          "alpha": 0.25,
+          "selected_best": {
+            "path": "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/runs/baseline_20260912/best.pt",
+            "sha256": "1e9c9297bb17f0a65827258e75faa07e6d6845e7d5208fdaf723916d806e5f7b",
+            "step": 17250,
+            "weights": "ema"
+          },
+          "last": {
+            "path": "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/runs/baseline_20260912/last.pt",
+            "sha256": "f8d7901d81e4fc5ec3e20c056363dfccad39a06cc3e39c758e4ee781afefb4b0",
+            "step": 18000,
+            "weights": "ema"
+          },
+          "parameter_count": 2985697,
+          "nonparameter_buffers_unchanged": true
+        },
+        "additional_training_updates": 0,
+        "additional_inference_model_count": 0
+      },
+      {
+        "architecture": "naf_history",
+        "seed": 20260912,
+        "run": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/runs/naf_history_20260912",
+        "checkpoint": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/naf_history_20260912_alpha25.pt",
+        "checkpoint_sha256": "a254aa55c305bbefc3d5d579340a14ee231e9bc7b86ac5dd6a94dca49fd3604c",
+        "config": {
+          "architecture": "naf_history",
+          "seed": 20260912,
+          "updates": 18000,
+          "batch_size": 4,
+          "lr": 0.001,
+          "warmup": 300,
+          "weight_decay": 0.0001,
+          "validation_interval": 750,
+          "evaluation_batch": 2,
+          "history_dropout": 0.25,
+          "emissivity_dropout": 0.25,
+          "selection": "minimum unrounded validation macro RMSE across the same 50 raw/EMA opportunities",
+          "purpose": "One spatial history reconstruction architecture under the original U-TAE training recipe, six inputs, sampling and projection. GPU batch4 AMP smoke must pass before formal training."
+        },
+        "interpolation": {
+          "alpha": 0.25,
+          "selected_best": {
+            "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/runs/naf_history_20260912/best.pt",
+            "sha256": "b9bbebe63a804081c3edae8ad6187aa5d887b77f04b68d30f9dfc48253e45582",
+            "step": 9000,
+            "weights": "ema"
+          },
+          "last": {
+            "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/runs/naf_history_20260912/last.pt",
+            "sha256": "4e8a271c32015f1373007972067118a8238fdb4ed742535c5891ee8e07842781",
+            "step": 18000,
+            "weights": "ema"
+          },
+          "parameter_count": 9310105,
+          "nonparameter_buffers_unchanged": true
+        },
+        "additional_training_updates": 0,
+        "additional_inference_model_count": 0
+      },
+      {
+        "architecture": "baseline",
+        "seed": 20260913,
+        "run": "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/runs/baseline_20260913",
+        "checkpoint": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/baseline_20260913_alpha25.pt",
+        "checkpoint_sha256": "ce8afa201c63f7a18ade8540e10aa602de4a47d56a0be9dbd21c638542c9ae1d",
+        "config": {
+          "model": "U-TAE-LST with local visibility",
+          "seed": 20260913,
+          "updates": 18000,
+          "batch_size": 4,
+          "lr": 0.001,
+          "warmup": 300,
+          "weight_decay": 0.0001,
+          "validation_interval": 750,
+          "evaluation_batch": 2,
+          "selection": "minimum unrounded validation macro RMSE over raw and EMA; earlier wins exact tie",
+          "budget_reason": "Independent random initialization, three times the historical-system continuation updates; same 50 raw/EMA validation opportunities. Not an equal-total-pretraining architecture ablation. No test-based budget extension."
+        },
+        "interpolation": {
+          "alpha": 0.25,
+          "selected_best": {
+            "path": "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/runs/baseline_20260913/best.pt",
+            "sha256": "5bdbd44e5bb93a4962b57518d06c8e3764c7cd5976e43d1d3c5bccb3cbc2f974",
+            "step": 17250,
+            "weights": "raw"
+          },
+          "last": {
+            "path": "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/runs/baseline_20260913/last.pt",
+            "sha256": "4e26eb7fb5362e5e7477f941e2f83e59ccd443a02fe1c45e8d58f6407865a7fd",
+            "step": 18000,
+            "weights": "ema"
+          },
+          "parameter_count": 2985697,
+          "nonparameter_buffers_unchanged": true
+        },
+        "additional_training_updates": 0,
+        "additional_inference_model_count": 0
+      },
+      {
+        "architecture": "naf_history",
+        "seed": 20260913,
+        "run": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/runs/naf_history_20260913",
+        "checkpoint": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/naf_history_20260913_alpha25.pt",
+        "checkpoint_sha256": "940cc0e8d7d2228e39549e37ec55de3f310f6a7c45b157bd1924d78071cfaa00",
+        "config": {
+          "architecture": "naf_history",
+          "seed": 20260913,
+          "updates": 18000,
+          "batch_size": 4,
+          "lr": 0.001,
+          "warmup": 300,
+          "weight_decay": 0.0001,
+          "validation_interval": 750,
+          "evaluation_batch": 2,
+          "history_dropout": 0.25,
+          "emissivity_dropout": 0.25,
+          "selection": "minimum unrounded validation macro RMSE across the same 50 raw/EMA opportunities",
+          "purpose": "One spatial history reconstruction architecture under the original U-TAE training recipe, six inputs, sampling and projection. GPU batch4 AMP smoke must pass before formal training."
+        },
+        "interpolation": {
+          "alpha": 0.25,
+          "selected_best": {
+            "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/runs/naf_history_20260913/best.pt",
+            "sha256": "5654ae02c1af9819a0eaaa935e002541355bc20cab0310975c70bf3d02f96590",
+            "step": 9000,
+            "weights": "ema"
+          },
+          "last": {
+            "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/runs/naf_history_20260913/last.pt",
+            "sha256": "08c6faa271e48f97a352ab13576d39fc281f180a48f9062767ea0a3adc4b3bd5",
+            "step": 18000,
+            "weights": "ema"
+          },
+          "parameter_count": 9310105,
+          "nonparameter_buffers_unchanged": true
+        },
+        "additional_training_updates": 0,
+        "additional_inference_model_count": 0
+      }
+    ],
+    "0.5": [
+      {
+        "architecture": "baseline",
+        "seed": 20260905,
+        "run": "/home/jf_xjr/uhi_cdc/research/route_a_20260911/utae",
+        "checkpoint": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/baseline_20260905_alpha50.pt",
+        "checkpoint_sha256": "281d45eaf345e2f01453c12a6d97dc056eb095f2a08dd56f253a5e6484633642",
+        "config": {
+          "model": "U-TAE-LST with local visibility",
+          "seed": 20260905,
+          "updates": 18000,
+          "batch_size": 4,
+          "lr": 0.001,
+          "warmup": 300,
+          "weight_decay": 0.0001,
+          "validation_interval": 750,
+          "evaluation_batch": 2,
+          "selection": "minimum unrounded validation macro RMSE over raw and EMA; earlier wins exact tie",
+          "budget_reason": "Independent random initialization, three times the historical-system continuation updates; same 50 raw/EMA validation opportunities. Not an equal-total-pretraining architecture ablation. No test-based budget extension."
+        },
+        "interpolation": {
+          "alpha": 0.5,
+          "selected_best": {
+            "path": "/home/jf_xjr/uhi_cdc/research/route_a_20260911/utae/best.pt",
+            "sha256": "012185db5fc7832ec2e3216981032ac9162a9aa7d6661b734f5008a568689e8d",
+            "step": 17250,
+            "weights": "ema"
+          },
+          "last": {
+            "path": "/home/jf_xjr/uhi_cdc/research/route_a_20260911/utae/last.pt",
+            "sha256": "3e068f019a7c6af06188cc50faa364413e9991744f689bbfd210b64157e2c39b",
+            "step": 18000,
+            "weights": "ema"
+          },
+          "parameter_count": 2985697,
+          "nonparameter_buffers_unchanged": true
+        },
+        "additional_training_updates": 0,
+        "additional_inference_model_count": 0
+      },
+      {
+        "architecture": "naf_history",
+        "seed": 20260905,
+        "run": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/runs/naf_history_20260905_cuda",
+        "checkpoint": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/naf_history_20260905_alpha50.pt",
+        "checkpoint_sha256": "1205b6bef24cdd1a70f0e70a3028eeacb8a823df0bf19fd4769a518bf18bfdb6",
+        "config": {
+          "architecture": "naf_history",
+          "seed": 20260905,
+          "updates": 18000,
+          "batch_size": 4,
+          "lr": 0.001,
+          "warmup": 300,
+          "weight_decay": 0.0001,
+          "validation_interval": 750,
+          "evaluation_batch": 2,
+          "history_dropout": 0.25,
+          "emissivity_dropout": 0.25,
+          "selection": "minimum unrounded validation macro RMSE across the same 50 raw/EMA opportunities",
+          "purpose": "One spatial history reconstruction architecture under the original U-TAE training recipe, six inputs, sampling and projection. GPU batch4 AMP smoke must pass before formal training."
+        },
+        "interpolation": {
+          "alpha": 0.5,
+          "selected_best": {
+            "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/runs/naf_history_20260905_cuda/best.pt",
+            "sha256": "05b924fca3e73410a64d1f1b81d91c8f0e6d385234c1d5492f5d1c4eb267b620",
+            "step": 9000,
+            "weights": "ema"
+          },
+          "last": {
+            "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/runs/naf_history_20260905_cuda/last.pt",
+            "sha256": "cdc3e4727fc7f1de30692e35017ebb4677ecd00ae5e2ab52aaf9c5f98c014e87",
+            "step": 18000,
+            "weights": "ema"
+          },
+          "parameter_count": 9310105,
+          "nonparameter_buffers_unchanged": true
+        },
+        "additional_training_updates": 0,
+        "additional_inference_model_count": 0
+      },
+      {
+        "architecture": "baseline",
+        "seed": 20260912,
+        "run": "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/runs/baseline_20260912",
+        "checkpoint": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/baseline_20260912_alpha50.pt",
+        "checkpoint_sha256": "8a45066826282215fc3b0b47c29df7b0ad521c04386c30b821c8bd253acdd2b5",
+        "config": {
+          "model": "U-TAE-LST with local visibility",
+          "seed": 20260912,
+          "updates": 18000,
+          "batch_size": 4,
+          "lr": 0.001,
+          "warmup": 300,
+          "weight_decay": 0.0001,
+          "validation_interval": 750,
+          "evaluation_batch": 2,
+          "selection": "minimum unrounded validation macro RMSE over raw and EMA; earlier wins exact tie",
+          "budget_reason": "Independent random initialization, three times the historical-system continuation updates; same 50 raw/EMA validation opportunities. Not an equal-total-pretraining architecture ablation. No test-based budget extension."
+        },
+        "interpolation": {
+          "alpha": 0.5,
+          "selected_best": {
+            "path": "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/runs/baseline_20260912/best.pt",
+            "sha256": "1e9c9297bb17f0a65827258e75faa07e6d6845e7d5208fdaf723916d806e5f7b",
+            "step": 17250,
+            "weights": "ema"
+          },
+          "last": {
+            "path": "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/runs/baseline_20260912/last.pt",
+            "sha256": "f8d7901d81e4fc5ec3e20c056363dfccad39a06cc3e39c758e4ee781afefb4b0",
+            "step": 18000,
+            "weights": "ema"
+          },
+          "parameter_count": 2985697,
+          "nonparameter_buffers_unchanged": true
+        },
+        "additional_training_updates": 0,
+        "additional_inference_model_count": 0
+      },
+      {
+        "architecture": "naf_history",
+        "seed": 20260912,
+        "run": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/runs/naf_history_20260912",
+        "checkpoint": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/naf_history_20260912_alpha50.pt",
+        "checkpoint_sha256": "637742b726688cc11518c330c3b412e9d6aeefcfb1d3c7a56ba41e7eb08cae0b",
+        "config": {
+          "architecture": "naf_history",
+          "seed": 20260912,
+          "updates": 18000,
+          "batch_size": 4,
+          "lr": 0.001,
+          "warmup": 300,
+          "weight_decay": 0.0001,
+          "validation_interval": 750,
+          "evaluation_batch": 2,
+          "history_dropout": 0.25,
+          "emissivity_dropout": 0.25,
+          "selection": "minimum unrounded validation macro RMSE across the same 50 raw/EMA opportunities",
+          "purpose": "One spatial history reconstruction architecture under the original U-TAE training recipe, six inputs, sampling and projection. GPU batch4 AMP smoke must pass before formal training."
+        },
+        "interpolation": {
+          "alpha": 0.5,
+          "selected_best": {
+            "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/runs/naf_history_20260912/best.pt",
+            "sha256": "b9bbebe63a804081c3edae8ad6187aa5d887b77f04b68d30f9dfc48253e45582",
+            "step": 9000,
+            "weights": "ema"
+          },
+          "last": {
+            "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/runs/naf_history_20260912/last.pt",
+            "sha256": "4e8a271c32015f1373007972067118a8238fdb4ed742535c5891ee8e07842781",
+            "step": 18000,
+            "weights": "ema"
+          },
+          "parameter_count": 9310105,
+          "nonparameter_buffers_unchanged": true
+        },
+        "additional_training_updates": 0,
+        "additional_inference_model_count": 0
+      },
+      {
+        "architecture": "baseline",
+        "seed": 20260913,
+        "run": "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/runs/baseline_20260913",
+        "checkpoint": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/baseline_20260913_alpha50.pt",
+        "checkpoint_sha256": "1ac87af454c48148d22a25297d5a765daed98511e695f7c767981da89ed31baa",
+        "config": {
+          "model": "U-TAE-LST with local visibility",
+          "seed": 20260913,
+          "updates": 18000,
+          "batch_size": 4,
+          "lr": 0.001,
+          "warmup": 300,
+          "weight_decay": 0.0001,
+          "validation_interval": 750,
+          "evaluation_batch": 2,
+          "selection": "minimum unrounded validation macro RMSE over raw and EMA; earlier wins exact tie",
+          "budget_reason": "Independent random initialization, three times the historical-system continuation updates; same 50 raw/EMA validation opportunities. Not an equal-total-pretraining architecture ablation. No test-based budget extension."
+        },
+        "interpolation": {
+          "alpha": 0.5,
+          "selected_best": {
+            "path": "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/runs/baseline_20260913/best.pt",
+            "sha256": "5bdbd44e5bb93a4962b57518d06c8e3764c7cd5976e43d1d3c5bccb3cbc2f974",
+            "step": 17250,
+            "weights": "raw"
+          },
+          "last": {
+            "path": "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/runs/baseline_20260913/last.pt",
+            "sha256": "4e26eb7fb5362e5e7477f941e2f83e59ccd443a02fe1c45e8d58f6407865a7fd",
+            "step": 18000,
+            "weights": "ema"
+          },
+          "parameter_count": 2985697,
+          "nonparameter_buffers_unchanged": true
+        },
+        "additional_training_updates": 0,
+        "additional_inference_model_count": 0
+      },
+      {
+        "architecture": "naf_history",
+        "seed": 20260913,
+        "run": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/runs/naf_history_20260913",
+        "checkpoint": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/naf_history_20260913_alpha50.pt",
+        "checkpoint_sha256": "fcd8e89af9f00df83379d1af68a938a5d6276d494e2c70c0402076d9b6498f7b",
+        "config": {
+          "architecture": "naf_history",
+          "seed": 20260913,
+          "updates": 18000,
+          "batch_size": 4,
+          "lr": 0.001,
+          "warmup": 300,
+          "weight_decay": 0.0001,
+          "validation_interval": 750,
+          "evaluation_batch": 2,
+          "history_dropout": 0.25,
+          "emissivity_dropout": 0.25,
+          "selection": "minimum unrounded validation macro RMSE across the same 50 raw/EMA opportunities",
+          "purpose": "One spatial history reconstruction architecture under the original U-TAE training recipe, six inputs, sampling and projection. GPU batch4 AMP smoke must pass before formal training."
+        },
+        "interpolation": {
+          "alpha": 0.5,
+          "selected_best": {
+            "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/runs/naf_history_20260913/best.pt",
+            "sha256": "5654ae02c1af9819a0eaaa935e002541355bc20cab0310975c70bf3d02f96590",
+            "step": 9000,
+            "weights": "ema"
+          },
+          "last": {
+            "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/runs/naf_history_20260913/last.pt",
+            "sha256": "08c6faa271e48f97a352ab13576d39fc281f180a48f9062767ea0a3adc4b3bd5",
+            "step": 18000,
+            "weights": "ema"
+          },
+          "parameter_count": 9310105,
+          "nonparameter_buffers_unchanged": true
+        },
+        "additional_training_updates": 0,
+        "additional_inference_model_count": 0
+      }
+    ],
+    "0.75": [
+      {
+        "architecture": "baseline",
+        "seed": 20260905,
+        "run": "/home/jf_xjr/uhi_cdc/research/route_a_20260911/utae",
+        "checkpoint": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/baseline_20260905_alpha75.pt",
+        "checkpoint_sha256": "184a26606e021f291969c112587db460d2f60b749c1ab07db73040bf080ed910",
+        "config": {
+          "model": "U-TAE-LST with local visibility",
+          "seed": 20260905,
+          "updates": 18000,
+          "batch_size": 4,
+          "lr": 0.001,
+          "warmup": 300,
+          "weight_decay": 0.0001,
+          "validation_interval": 750,
+          "evaluation_batch": 2,
+          "selection": "minimum unrounded validation macro RMSE over raw and EMA; earlier wins exact tie",
+          "budget_reason": "Independent random initialization, three times the historical-system continuation updates; same 50 raw/EMA validation opportunities. Not an equal-total-pretraining architecture ablation. No test-based budget extension."
+        },
+        "interpolation": {
+          "alpha": 0.75,
+          "selected_best": {
+            "path": "/home/jf_xjr/uhi_cdc/research/route_a_20260911/utae/best.pt",
+            "sha256": "012185db5fc7832ec2e3216981032ac9162a9aa7d6661b734f5008a568689e8d",
+            "step": 17250,
+            "weights": "ema"
+          },
+          "last": {
+            "path": "/home/jf_xjr/uhi_cdc/research/route_a_20260911/utae/last.pt",
+            "sha256": "3e068f019a7c6af06188cc50faa364413e9991744f689bbfd210b64157e2c39b",
+            "step": 18000,
+            "weights": "ema"
+          },
+          "parameter_count": 2985697,
+          "nonparameter_buffers_unchanged": true
+        },
+        "additional_training_updates": 0,
+        "additional_inference_model_count": 0
+      },
+      {
+        "architecture": "naf_history",
+        "seed": 20260905,
+        "run": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/runs/naf_history_20260905_cuda",
+        "checkpoint": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/naf_history_20260905_alpha75.pt",
+        "checkpoint_sha256": "912ad2181ad0269de869fd17b1edd02ea48e88e6c70b2ed3fbbf8776934b2eda",
+        "config": {
+          "architecture": "naf_history",
+          "seed": 20260905,
+          "updates": 18000,
+          "batch_size": 4,
+          "lr": 0.001,
+          "warmup": 300,
+          "weight_decay": 0.0001,
+          "validation_interval": 750,
+          "evaluation_batch": 2,
+          "history_dropout": 0.25,
+          "emissivity_dropout": 0.25,
+          "selection": "minimum unrounded validation macro RMSE across the same 50 raw/EMA opportunities",
+          "purpose": "One spatial history reconstruction architecture under the original U-TAE training recipe, six inputs, sampling and projection. GPU batch4 AMP smoke must pass before formal training."
+        },
+        "interpolation": {
+          "alpha": 0.75,
+          "selected_best": {
+            "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/runs/naf_history_20260905_cuda/best.pt",
+            "sha256": "05b924fca3e73410a64d1f1b81d91c8f0e6d385234c1d5492f5d1c4eb267b620",
+            "step": 9000,
+            "weights": "ema"
+          },
+          "last": {
+            "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/runs/naf_history_20260905_cuda/last.pt",
+            "sha256": "cdc3e4727fc7f1de30692e35017ebb4677ecd00ae5e2ab52aaf9c5f98c014e87",
+            "step": 18000,
+            "weights": "ema"
+          },
+          "parameter_count": 9310105,
+          "nonparameter_buffers_unchanged": true
+        },
+        "additional_training_updates": 0,
+        "additional_inference_model_count": 0
+      },
+      {
+        "architecture": "baseline",
+        "seed": 20260912,
+        "run": "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/runs/baseline_20260912",
+        "checkpoint": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/baseline_20260912_alpha75.pt",
+        "checkpoint_sha256": "26c3032c01b67e69fee99f1116e7a7a7f211d218fd29edfa036bbcc87895c01d",
+        "config": {
+          "model": "U-TAE-LST with local visibility",
+          "seed": 20260912,
+          "updates": 18000,
+          "batch_size": 4,
+          "lr": 0.001,
+          "warmup": 300,
+          "weight_decay": 0.0001,
+          "validation_interval": 750,
+          "evaluation_batch": 2,
+          "selection": "minimum unrounded validation macro RMSE over raw and EMA; earlier wins exact tie",
+          "budget_reason": "Independent random initialization, three times the historical-system continuation updates; same 50 raw/EMA validation opportunities. Not an equal-total-pretraining architecture ablation. No test-based budget extension."
+        },
+        "interpolation": {
+          "alpha": 0.75,
+          "selected_best": {
+            "path": "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/runs/baseline_20260912/best.pt",
+            "sha256": "1e9c9297bb17f0a65827258e75faa07e6d6845e7d5208fdaf723916d806e5f7b",
+            "step": 17250,
+            "weights": "ema"
+          },
+          "last": {
+            "path": "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/runs/baseline_20260912/last.pt",
+            "sha256": "f8d7901d81e4fc5ec3e20c056363dfccad39a06cc3e39c758e4ee781afefb4b0",
+            "step": 18000,
+            "weights": "ema"
+          },
+          "parameter_count": 2985697,
+          "nonparameter_buffers_unchanged": true
+        },
+        "additional_training_updates": 0,
+        "additional_inference_model_count": 0
+      },
+      {
+        "architecture": "naf_history",
+        "seed": 20260912,
+        "run": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/runs/naf_history_20260912",
+        "checkpoint": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/naf_history_20260912_alpha75.pt",
+        "checkpoint_sha256": "c42f614c421241d9343d7633fc9bc97d3ea8a0dd02c9593b73be04aa55571ff2",
+        "config": {
+          "architecture": "naf_history",
+          "seed": 20260912,
+          "updates": 18000,
+          "batch_size": 4,
+          "lr": 0.001,
+          "warmup": 300,
+          "weight_decay": 0.0001,
+          "validation_interval": 750,
+          "evaluation_batch": 2,
+          "history_dropout": 0.25,
+          "emissivity_dropout": 0.25,
+          "selection": "minimum unrounded validation macro RMSE across the same 50 raw/EMA opportunities",
+          "purpose": "One spatial history reconstruction architecture under the original U-TAE training recipe, six inputs, sampling and projection. GPU batch4 AMP smoke must pass before formal training."
+        },
+        "interpolation": {
+          "alpha": 0.75,
+          "selected_best": {
+            "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/runs/naf_history_20260912/best.pt",
+            "sha256": "b9bbebe63a804081c3edae8ad6187aa5d887b77f04b68d30f9dfc48253e45582",
+            "step": 9000,
+            "weights": "ema"
+          },
+          "last": {
+            "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/runs/naf_history_20260912/last.pt",
+            "sha256": "4e8a271c32015f1373007972067118a8238fdb4ed742535c5891ee8e07842781",
+            "step": 18000,
+            "weights": "ema"
+          },
+          "parameter_count": 9310105,
+          "nonparameter_buffers_unchanged": true
+        },
+        "additional_training_updates": 0,
+        "additional_inference_model_count": 0
+      },
+      {
+        "architecture": "baseline",
+        "seed": 20260913,
+        "run": "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/runs/baseline_20260913",
+        "checkpoint": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/baseline_20260913_alpha75.pt",
+        "checkpoint_sha256": "9fc64a863b7211f767d8eaf7d98d8825672c040edd27e73a3c804108a0ee9a99",
+        "config": {
+          "model": "U-TAE-LST with local visibility",
+          "seed": 20260913,
+          "updates": 18000,
+          "batch_size": 4,
+          "lr": 0.001,
+          "warmup": 300,
+          "weight_decay": 0.0001,
+          "validation_interval": 750,
+          "evaluation_batch": 2,
+          "selection": "minimum unrounded validation macro RMSE over raw and EMA; earlier wins exact tie",
+          "budget_reason": "Independent random initialization, three times the historical-system continuation updates; same 50 raw/EMA validation opportunities. Not an equal-total-pretraining architecture ablation. No test-based budget extension."
+        },
+        "interpolation": {
+          "alpha": 0.75,
+          "selected_best": {
+            "path": "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/runs/baseline_20260913/best.pt",
+            "sha256": "5bdbd44e5bb93a4962b57518d06c8e3764c7cd5976e43d1d3c5bccb3cbc2f974",
+            "step": 17250,
+            "weights": "raw"
+          },
+          "last": {
+            "path": "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/runs/baseline_20260913/last.pt",
+            "sha256": "4e26eb7fb5362e5e7477f941e2f83e59ccd443a02fe1c45e8d58f6407865a7fd",
+            "step": 18000,
+            "weights": "ema"
+          },
+          "parameter_count": 2985697,
+          "nonparameter_buffers_unchanged": true
+        },
+        "additional_training_updates": 0,
+        "additional_inference_model_count": 0
+      },
+      {
+        "architecture": "naf_history",
+        "seed": 20260913,
+        "run": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/runs/naf_history_20260913",
+        "checkpoint": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/naf_history_20260913_alpha75.pt",
+        "checkpoint_sha256": "3345a6030ad1a18b153206a6452770ee214ba4f27019bd26528f6c6f12e482b3",
+        "config": {
+          "architecture": "naf_history",
+          "seed": 20260913,
+          "updates": 18000,
+          "batch_size": 4,
+          "lr": 0.001,
+          "warmup": 300,
+          "weight_decay": 0.0001,
+          "validation_interval": 750,
+          "evaluation_batch": 2,
+          "history_dropout": 0.25,
+          "emissivity_dropout": 0.25,
+          "selection": "minimum unrounded validation macro RMSE across the same 50 raw/EMA opportunities",
+          "purpose": "One spatial history reconstruction architecture under the original U-TAE training recipe, six inputs, sampling and projection. GPU batch4 AMP smoke must pass before formal training."
+        },
+        "interpolation": {
+          "alpha": 0.75,
+          "selected_best": {
+            "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/runs/naf_history_20260913/best.pt",
+            "sha256": "5654ae02c1af9819a0eaaa935e002541355bc20cab0310975c70bf3d02f96590",
+            "step": 9000,
+            "weights": "ema"
+          },
+          "last": {
+            "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/runs/naf_history_20260913/last.pt",
+            "sha256": "08c6faa271e48f97a352ab13576d39fc281f180a48f9062767ea0a3adc4b3bd5",
+            "step": 18000,
+            "weights": "ema"
+          },
+          "parameter_count": 9310105,
+          "nonparameter_buffers_unchanged": true
+        },
+        "additional_training_updates": 0,
+        "additional_inference_model_count": 0
+      }
+    ]
+  }
+}

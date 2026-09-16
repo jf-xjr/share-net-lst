@@ -1,0 +1,11 @@
+{
+  "/home/jf_xjr/uhi_cdc/research/near_neighbor_attribution_20260914/train_attribution.py": "dc5e23c491eb405533a71d5c86b1e7f6c128d775f92be9fa4e4fb36fc31aec85",
+  "/home/jf_xjr/uhi_cdc/research/near_neighbor_attribution_20260914/attribution_models.py": "7feacc4433bb182342f2acc5398d6996fa9191b6fb4919dbce25b38593b0a380",
+  "/home/jf_xjr/uhi_cdc/resources/historylst246/run.py": "e4262473a7e7d4c02f267e4a4e2e8d0bd24be4ac76ff3c2cc2f87b524df6579c",
+  "/home/jf_xjr/uhi_cdc/research/sub04_20260913/compact_query_product/model.py": "4ec15b7d27c8dedbfe59f336bb1387034cd20645b8e7266eda7f0e632e633648",
+  "/home/jf_xjr/uhi_cdc/research/sub04_20260913/compact_recovery/model.py": "538e679f8470bb76dc26beb750148bfc1253d89221eddf90850b5ab1716fcd5c",
+  "/home/jf_xjr/uhi_cdc/research/sub04_20260913/multihead_fusion/model.py": "313f5864c46c47e00be25510752d319986d894fde7757b3ade24f5e27122f8cf",
+  "/home/jf_xjr/uhi_cdc/research/sub04_20260911/naf_history/model.py": "10664005cfd76a7823869f358d15fc5e4be115a89cd75bd9c65d81317b7231d4",
+  "/home/jf_xjr/uhi_cdc/research/jstars_20260914/experiments/train_thermal_bypass.py": "673bc9093867fcf56027e33db4e00985ecc412cf19009e5b9d896c8e0351d745",
+  "/home/jf_xjr/uhi_cdc/research/jstars_20260914/experiments/thermal_bypass_model.py": "3ea486f134be9efc6474172a28fbde0400bf5a6a33376f7ef02bf8ec74cb241d"
+}

@@ -1,0 +1,31 @@
+{
+  "protocol": "fixed_three_frozen_D4_students_times_all_eight_views",
+  "frozen_before_new_teacher_predictions": true,
+  "student_seeds": [
+    20260905,
+    20260912,
+    20260913
+  ],
+  "view_codes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "total_equal_views": 24,
+  "weight_or_view_selection": false,
+  "feasibility_gate": "Full Val45 macro RMSE < .407 K and gain over prior teacher >= .002 K",
+  "fit_cache_only_if_actual_val_passes": true,
+  "single_forward_goal_model": false,
+  "aggregation": "registered_inverse_then_float64_equal_mean_then_original_support_repair",
+  "fp32": true,
+  "tf32": false,
+  "batch": 2,
+  "source_sha256": "faeb3c5bc4a1d02d888b5b0ccc01ac77bbc04f44982569e4c72d501dd1cd33ce",
+  "teacher_use": "Shared Fit603 cache for all subsequent candidate/baseline single-forward students",
+  "gpu_window_deadline_unix": 1789271700
+}

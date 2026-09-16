@@ -1,0 +1,7 @@
+# Thermal bypass ablation, 2026-09-15
+
+Two new runs remove the full-resolution summary returned by fusion level 0. The historical feature encoder, learned source weights, thermal-moment injections at all four encoder scales, spatial skip connections, coarse interpolant and projection remain active. The summary-to-decoder convolution and the gated anomaly contribution to temperature are inactive (1,348 parameters retained for identical initialization but frozen).
+
+Controls are the completed learned-weight scratch runs for seeds 20260914 and 20260915. Each new run copies its control configuration: 12,000 successful updates, reference-only supervision, identical initialization tensors and seeded samples/crops/augmentations, AdamW and AMP, 26 full-scene FP32 validation candidates. Each model is selected solely by minimum validation regional macro RMSE; both seeds and their 90-scene outputs are retained regardless of outcome. The main endpoint is paired city RMSE (ablated minus the learned-weight control); MAE and hotspots are also reported. This comparison measures the thermal bypass under the scratch-training protocol. It does not estimate the isolated contribution of distillation to the final 0.426 K model.
+
+The existing test cohort has already been used for project development. New experiments retain this cohort as a retrospective common comparison. No new cohorts, alternative schedules or model search are included.

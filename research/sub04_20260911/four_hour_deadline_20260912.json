@@ -1,0 +1,15 @@
+{
+  "user_instruction": "Both goals must be completed within the remaining four hours",
+  "recorded_at_utc": "2026-09-12T09:01:09+00:00",
+  "hard_deadline_utc": "2026-09-12T13:00:00+00:00",
+  "hard_deadline_asia_shanghai": "2026-09-12 21:00:00 +08:00",
+  "hard_deadline_unix": 1789218000,
+  "cutoff_note": "Conservative cutoff earlier than four hours after the latest instruction; replaces the prior 13:50 UTC cutoff for all remaining work.",
+  "priority": "Obtain actionable source-adaptation evidence first; network improvement and both final evaluations remain required.",
+  "cancelled_extra_five_network_runs_remain_cancelled": true,
+  "confirmation_policy": "No new blanket repetition queue. Further confirmation must follow an actually successful candidate and fit inside this deadline.",
+  "original_absolute_and_relative_network_gates_preserved": true,
+  "original_usage_rule_accuracy_reliability_cost_gates_preserved": true,
+  "test_selection_policy_unchanged": true,
+  "both_goals_complete": false
+}

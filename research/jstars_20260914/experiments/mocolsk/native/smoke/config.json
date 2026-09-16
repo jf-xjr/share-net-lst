@@ -1,0 +1,18 @@
+{
+  "architecture": "MoCoLSK published x4: width32 blocks4 stages4 guidance155",
+  "seed": 20260916,
+  "updates": 10000,
+  "batch_size": 4,
+  "lr": 0.0001,
+  "warmup": 1,
+  "weight_decay": 1e-05,
+  "validation_interval": 1000,
+  "evaluation_batch": 1,
+  "history_dropout": 0.0,
+  "emissivity_dropout": 0.0,
+  "training_crop": 128,
+  "teacher": false,
+  "loss": "scene-normalized masked L1",
+  "phase": "native",
+  "selection": "minimum full-scene FP32 Val45 macro RMSE among raw and EMA"
+}

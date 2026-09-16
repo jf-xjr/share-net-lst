@@ -1,0 +1,13 @@
+{
+  "model": "U-TAE-LST with local visibility",
+  "seed": 20260905,
+  "updates": 18000,
+  "batch_size": 4,
+  "lr": 0.001,
+  "warmup": 300,
+  "weight_decay": 0.0001,
+  "validation_interval": 750,
+  "evaluation_batch": 2,
+  "selection": "minimum unrounded validation macro RMSE over raw and EMA; earlier wins exact tie",
+  "budget_reason": "Independent random initialization, three times the historical-system continuation updates; same 50 raw/EMA validation opportunities. Not an equal-total-pretraining architecture ablation. No test-based budget extension."
+}

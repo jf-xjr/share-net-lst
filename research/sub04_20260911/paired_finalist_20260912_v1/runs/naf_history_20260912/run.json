@@ -1,0 +1,48 @@
+{
+  "config": {
+    "architecture": "naf_history",
+    "seed": 20260912,
+    "updates": 18000,
+    "batch_size": 4,
+    "lr": 0.001,
+    "warmup": 300,
+    "weight_decay": 0.0001,
+    "validation_interval": 750,
+    "evaluation_batch": 2,
+    "history_dropout": 0.25,
+    "emissivity_dropout": 0.25,
+    "selection": "minimum unrounded validation macro RMSE across the same 50 raw/EMA opportunities",
+    "purpose": "One spatial history reconstruction architecture under the original U-TAE training recipe, six inputs, sampling and projection. GPU batch4 AMP smoke must pass before formal training."
+  },
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 5060 Ti",
+  "parameters": 9310105,
+  "torch": "2.10.0+cu128",
+  "start_time": 1789196990.2673922,
+  "manifest_sha256": "1eb03fe8b3a57226101f0e3a11215d2b5cae94de0d4bc6bbaede5fa12d1a83ef",
+  "code_sha256": {
+    "run.py": "e4262473a7e7d4c02f267e4a4e2e8d0bd24be4ac76ff3c2cc2f87b524df6579c",
+    "historylst/__init__.py": "a4227048a2f1abcd70e165864d47d768acc87168f0082e34994a5d8b2516bc07",
+    "historylst/data.py": "efc8ef0364756a93986be9a597f7967b1f967ec730d5fa38b3f7fc5c41fb4520",
+    "historylst/hotspots.py": "2622cf4fbd3eb7e51e317174bd28633502a80ea62c45a6d6e9cf3ea7c2cc2c74",
+    "historylst/metrics.py": "7cc4442478a4ac4fa7d72f502f1a7e5adec437678435371605678b0947646e09",
+    "historylst/model.py": "799a0a51c4f8b0ffdfc7a0aae69b2ffaaa58d422c7e8c8c370b638b308ab33b5",
+    "historylst/third_party/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "historylst/third_party/utae/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "historylst/third_party/utae/convlstm.py": "9d501a1d59828f922a7827b76e2c797ac25471737f2b9d0e0516d0be52f890c6",
+    "historylst/third_party/utae/ltae.py": "b1d88b438ac0c00be9eed7482526be63af39a9ce421d41e4363d1898eba7f092",
+    "historylst/third_party/utae/positional_encoding.py": "38b2dc8d4d22eabe01559a83ea06b8bbf4457d84e1d3ddc15750a46e7f418e01",
+    "historylst/third_party/utae/utae.py": "c5e3e638348775876383b3805ce35aa1207c7c8d732145bea02667d2c28ca5b8"
+  },
+  "initialization": "Independent random initialization; no original network/checkpoint",
+  "visible_training_inputs": [
+    "fine",
+    "coarse",
+    "support",
+    "context",
+    "emissivity",
+    "history"
+  ],
+  "fit_queries": 603,
+  "validation_queries": 45
+}

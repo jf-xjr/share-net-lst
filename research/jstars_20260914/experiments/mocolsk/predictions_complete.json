@@ -1,0 +1,8 @@
+{
+  "predictions_sha256": {
+    "native": "8b58ec60f803e27b4581a13e870a883890ee8c6474092f98fbd179291a7c152d",
+    "calibrated": "0ecca50e76de15125b478c2069fba5b5cbe370a45bcf02972f1b193cbaa04e58"
+  },
+  "selection_sha256": "b769b3be67f17c3db555b58ac80aa101513bd8c9274e7444178a60f7d8663e67",
+  "labels_opened": false
+}

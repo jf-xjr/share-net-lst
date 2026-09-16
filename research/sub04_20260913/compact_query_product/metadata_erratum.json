@@ -1,0 +1,35 @@
+{
+  "status": "metadata_only_erratum_no_experiment_change",
+  "created_at_unix": 1789298171.1247232,
+  "design": {
+    "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260913/compact_query_product/design.json",
+    "sha256": "47df4e4f20bd7057d79c19c20b219b40e0b4964c0f87fd80a27bf8e69b9e70e7"
+  },
+  "field": "deployment.architecture_changed",
+  "recorded_value": false,
+  "correct_value": true,
+  "explanation": "The false boolean was inherited when preparing this design from a training-only predecessor. This candidate actually adds four zero-initialized query-to-history projections; initial function identity does not imply unchanged architecture.",
+  "actual_factory": "compact_query_product.model.QueryProductCompactHistoryNAF",
+  "parent_parameters": 5911525,
+  "added_parameters": 65520,
+  "actual_parameters": 5977045,
+  "model": {
+    "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260913/compact_query_product/model.py",
+    "sha256": "4ec15b7d27c8dedbfe59f336bb1387034cd20645b8e7266eda7f0e632e633648"
+  },
+  "model_CPU_receipt": {
+    "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260913/compact_query_product/CPU_checks.json",
+    "sha256": "86be867dd63c866b000e196a4197f531e34fae1bba077052804c06ad8a9b44af"
+  },
+  "trainer": {
+    "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260913/compact_query_product/train.py",
+    "sha256": "d0c6fc43803cc9fce23c708dbb1d29970c993d7ba2f07884bd341053fd8ec7b4"
+  },
+  "affected_run": "runs/compact_20260905",
+  "future_freeze_and_readout_rule": "Bind this erratum externally to completion and readout. Determine the new architecture using the actual strict factory, complete selected-state keys and parameter count; never use the copied false boolean as an unchanged-architecture claim.",
+  "source_files_modified": false,
+  "training_changed": false,
+  "observations_changed": false,
+  "numerical_results_changed": false,
+  "retraining_required": false
+}

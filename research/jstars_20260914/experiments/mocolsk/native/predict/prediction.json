@@ -1,0 +1,9 @@
+{
+  "split": "test",
+  "queries": 90,
+  "seconds": 26.518568571002106,
+  "device": "cuda",
+  "checkpoint_sha256": "af2b517d31c579a76c5b214db53812c1bcd069acd1f5f834c282101bbad3b4d4",
+  "prediction_sha256": "8b58ec60f803e27b4581a13e870a883890ee8c6474092f98fbd179291a7c152d",
+  "labels_opened": false
+}

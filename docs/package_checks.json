@@ -1,0 +1,322 @@
+{
+  "full_archive_restoration_passed": true,
+  "restored_dataset_arrays": [
+    {
+      "split": "fit",
+      "field": "fine",
+      "shape": [
+        603,
+        52,
+        160,
+        160
+      ],
+      "dtype": "float32"
+    },
+    {
+      "split": "fit",
+      "field": "coarse",
+      "shape": [
+        603,
+        1,
+        40,
+        40
+      ],
+      "dtype": "float32"
+    },
+    {
+      "split": "fit",
+      "field": "support",
+      "shape": [
+        603,
+        1,
+        160,
+        160
+      ],
+      "dtype": "bool"
+    },
+    {
+      "split": "fit",
+      "field": "context",
+      "shape": [
+        603,
+        15
+      ],
+      "dtype": "float32"
+    },
+    {
+      "split": "fit",
+      "field": "target",
+      "shape": [
+        603,
+        1,
+        160,
+        160
+      ],
+      "dtype": "float32"
+    },
+    {
+      "split": "fit",
+      "field": "formal",
+      "shape": [
+        603,
+        1,
+        160,
+        160
+      ],
+      "dtype": "bool"
+    },
+    {
+      "split": "fit",
+      "field": "valid",
+      "shape": [
+        603,
+        1,
+        160,
+        160
+      ],
+      "dtype": "bool"
+    },
+    {
+      "split": "fit",
+      "field": "history",
+      "shape": [
+        603,
+        9,
+        9,
+        160,
+        160
+      ],
+      "dtype": "float32"
+    },
+    {
+      "split": "fit",
+      "field": "emissivity",
+      "shape": [
+        603,
+        4,
+        160,
+        160
+      ],
+      "dtype": "float32"
+    },
+    {
+      "split": "validation",
+      "field": "fine",
+      "shape": [
+        45,
+        52,
+        160,
+        160
+      ],
+      "dtype": "float32"
+    },
+    {
+      "split": "validation",
+      "field": "coarse",
+      "shape": [
+        45,
+        1,
+        40,
+        40
+      ],
+      "dtype": "float32"
+    },
+    {
+      "split": "validation",
+      "field": "support",
+      "shape": [
+        45,
+        1,
+        160,
+        160
+      ],
+      "dtype": "bool"
+    },
+    {
+      "split": "validation",
+      "field": "context",
+      "shape": [
+        45,
+        15
+      ],
+      "dtype": "float32"
+    },
+    {
+      "split": "validation",
+      "field": "target",
+      "shape": [
+        45,
+        1,
+        160,
+        160
+      ],
+      "dtype": "float32"
+    },
+    {
+      "split": "validation",
+      "field": "formal",
+      "shape": [
+        45,
+        1,
+        160,
+        160
+      ],
+      "dtype": "bool"
+    },
+    {
+      "split": "validation",
+      "field": "valid",
+      "shape": [
+        45,
+        1,
+        160,
+        160
+      ],
+      "dtype": "bool"
+    },
+    {
+      "split": "validation",
+      "field": "history",
+      "shape": [
+        45,
+        9,
+        9,
+        160,
+        160
+      ],
+      "dtype": "float32"
+    },
+    {
+      "split": "validation",
+      "field": "emissivity",
+      "shape": [
+        45,
+        4,
+        160,
+        160
+      ],
+      "dtype": "float32"
+    },
+    {
+      "split": "test",
+      "field": "fine",
+      "shape": [
+        90,
+        52,
+        160,
+        160
+      ],
+      "dtype": "float32"
+    },
+    {
+      "split": "test",
+      "field": "coarse",
+      "shape": [
+        90,
+        1,
+        40,
+        40
+      ],
+      "dtype": "float32"
+    },
+    {
+      "split": "test",
+      "field": "support",
+      "shape": [
+        90,
+        1,
+        160,
+        160
+      ],
+      "dtype": "bool"
+    },
+    {
+      "split": "test",
+      "field": "context",
+      "shape": [
+        90,
+        15
+      ],
+      "dtype": "float32"
+    },
+    {
+      "split": "test",
+      "field": "emissivity",
+      "shape": [
+        90,
+        4,
+        160,
+        160
+      ],
+      "dtype": "float32"
+    },
+    {
+      "split": "test",
+      "field": "history",
+      "shape": [
+        90,
+        9,
+        9,
+        160,
+        160
+      ],
+      "dtype": "float32"
+    },
+    {
+      "split": "test",
+      "field": "target",
+      "shape": [
+        90,
+        1,
+        160,
+        160
+      ],
+      "dtype": "float32"
+    },
+    {
+      "split": "test",
+      "field": "formal",
+      "shape": [
+        90,
+        1,
+        160,
+        160
+      ],
+      "dtype": "bool"
+    },
+    {
+      "split": "test",
+      "field": "valid",
+      "shape": [
+        90,
+        1,
+        160,
+        160
+      ],
+      "dtype": "bool"
+    }
+  ],
+  "selected_checkpoint_count": 17,
+  "compact_model_checks": [
+    {
+      "seed": 20260905,
+      "parameters": 5977045,
+      "strict_loading": "passed",
+      "predictions_generated": false
+    },
+    {
+      "seed": 20260912,
+      "parameters": 5977045,
+      "strict_loading": "passed",
+      "predictions_generated": false
+    },
+    {
+      "seed": 20260913,
+      "parameters": 5977045,
+      "strict_loading": "passed",
+      "predictions_generated": false
+    }
+  ],
+  "predictions_generated": false,
+  "training_run": false
+}

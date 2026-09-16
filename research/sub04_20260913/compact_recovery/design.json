@@ -1,0 +1,60 @@
+{
+  "protocol": "compact_or_full_annealed_teacher_recovery_v1",
+  "created_unix": 1789285319.0009253,
+  "trigger": "User adds4h and permits <6M models below.425; fixed90percent norm teacher distillation had plateaued, compact structure retains exact surviving parameter tensors.",
+  "architectures": {
+    "compact": {
+      "parameters": 5911525,
+      "middle_keep": [
+        0,
+        2,
+        4
+      ],
+      "encoder2_keep": [
+        0,
+        1,
+        3
+      ],
+      "source_count": 9,
+      "history_scales": 4
+    },
+    "full": {
+      "parameters": 9310501
+    },
+    "baseline": {
+      "parameters": 2985697
+    }
+  },
+  "recipe": {
+    "updates": 6000,
+    "batch_size": 4,
+    "lr": 0.0001,
+    "warmup": 100,
+    "weight_decay": 0.0001,
+    "validation_interval": 500,
+    "evaluation_batch": 2,
+    "schedule_seed": 20260943,
+    "ema_max_decay": 0.995,
+    "gradient_clip": 1.0,
+    "history_dropout": 0.0,
+    "emissivity_dropout": 0.0,
+    "teacher_start": 0.9,
+    "teacher_end": 0.1,
+    "teacher_schedule": "wT(step)=.9-.8*step/6000; GT weight=1-wT",
+    "loss": "(1-wT)*original scene RMSE to target on formal + wT*original scene RMSE to fixed24teacher on input support",
+    "optimizer": "AdamW fused CUDA",
+    "validation": "All26 step0 and every500 raw+EMA candidates in FP32 TF32off, original complete Val45 and FP64 repair; select exact minimum"
+  },
+  "initialization": "Each role/seed starts from its actual frozen final_confirmation best; compact copies mapped surviving layers from the corresponding full parent; no completed training is restarted.",
+  "teacher": "Reuse original strong_teacher/fit/predictions_complete.json immutable24view Fit cache; training only.",
+  "pilot_order": [
+    "compact/20260905",
+    "full/20260905"
+  ],
+  "selection": "Among complete two pilot families choose lowest (FP32 Val RMSE - user tier absolute threshold), compact threshold .425/full .42; ties choose fewer parameters. Require this adjusted Val score to improve upon existing frozen full/905 adjusted score before spending matched repetitions; this is a development screen, never a Test achievement claim.",
+  "confirmation": "Retain chosen actual905pilot; train chosen family912/913 and baseline905/912/913 once each with same6000 update schedule,26 exactVal opportunities and teacher. No other family/seed reruns.",
+  "final": "Freeze selected3+baseline3 weight bytes before one full consumed Test30 evaluation. Tiered user rule, ≥.01 mean baseline gain, all3 positive, originalhotspots and actualmatched costs. No ensemble and no test-driven reselection.",
+  "budget": "four_hour_extension.json unchanged hard12:26:36UTC; individual2700sec cap; leave last hour for final evaluation. Prior failed families and prior delivery snapshots preserved.",
+  "no_new_Test_during_development": true,
+  "no_paper_edits_before_both_goals": true
+}

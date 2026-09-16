@@ -1,0 +1,78 @@
+{
+  "fit_city_count": 201,
+  "fit_region_city_counts": {
+    "china": 35,
+    "europe": 35,
+    "us": 131
+  },
+  "fit_region_scene_counts": {
+    "china": 105,
+    "europe": 105,
+    "us": 393
+  },
+  "fit_scene_count": 603,
+  "fit_view_sha256": "7252a2922cf70d07b418ffdbf308c3ebaf0969afff2521217387ad7019c35a54",
+  "locked_test_opened": false,
+  "mean": {
+    "ALLSKY_SFC_SW_DWN": 26.73184853992488,
+    "GWETTOP": 0.4591028716830243,
+    "PRECTOTCORR": 0.3778635647643281,
+    "RH2M": 50.50979910335636,
+    "T2M_MAX": 33.23580540409548,
+    "T2M_MIN": 18.128115836665454,
+    "WS2M": 1.8614351145038166
+  },
+  "moment_formula": "E[x^k]=(1/3) sum_region (1/n_city_region) sum_city (1/n_scene_city) sum_scene x^k, k in {1,2}",
+  "parameters": [
+    "T2M_MAX",
+    "T2M_MIN",
+    "RH2M",
+    "WS2M",
+    "ALLSKY_SFC_SW_DWN",
+    "PRECTOTCORR",
+    "GWETTOP"
+  ],
+  "region_mean": {
+    "china": {
+      "ALLSKY_SFC_SW_DWN": 26.08419047619048,
+      "GWETTOP": 0.5282857142857142,
+      "PRECTOTCORR": 0.26219047619047614,
+      "RH2M": 53.595142857142854,
+      "T2M_MAX": 32.69619047619047,
+      "T2M_MIN": 18.412285714285712,
+      "WS2M": 2.26
+    },
+    "europe": {
+      "ALLSKY_SFC_SW_DWN": 26.263238095238098,
+      "GWETTOP": 0.43866666666666665,
+      "PRECTOTCORR": 0.31961904761904764,
+      "RH2M": 51.18066666666667,
+      "T2M_MAX": 32.48771428571428,
+      "T2M_MIN": 17.836285714285715,
+      "WS2M": 1.6573333333333333
+    },
+    "us": {
+      "ALLSKY_SFC_SW_DWN": 27.848117048346058,
+      "GWETTOP": 0.41035623409669214,
+      "PRECTOTCORR": 0.5517811704834605,
+      "RH2M": 46.753587786259544,
+      "T2M_MAX": 34.523511450381676,
+      "T2M_MIN": 18.13577608142494,
+      "WS2M": 1.6669720101781171
+    }
+  },
+  "schema": "uhi-cdc-g246-r2-weather-normalization-v1",
+  "scope": "fit_only",
+  "std": {
+    "ALLSKY_SFC_SW_DWN": 3.009486074305704,
+    "GWETTOP": 0.17538054992192662,
+    "PRECTOTCORR": 1.8927972350147357,
+    "RH2M": 17.185319923717373,
+    "T2M_MAX": 5.274606240865832,
+    "T2M_MIN": 4.27511747721525,
+    "WS2M": 0.9866947618549889
+  },
+  "target_arrays_opened": false,
+  "validation_values_used": false,
+  "weighting": "equal_region_then_equal_city_then_equal_scene"
+}

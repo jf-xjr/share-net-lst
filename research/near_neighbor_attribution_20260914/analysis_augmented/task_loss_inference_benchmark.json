@@ -1,0 +1,144 @@
+{
+  "results": {
+    "THST_task_loss_all": {
+      "checkpoint": "/home/jf_xjr/uhi_cdc/research/near_neighbor_attribution_20260914/thst_task_loss/best.pt",
+      "checkpoint_sha256": "2d294d116c83c96656404e6337bdb3df2fe5f8de5b163ac377d59cb7a920bdda",
+      "parameters": 35055708,
+      "cases": [
+        {
+          "scene_id": "coeur_d_alene_id:2022:LC09_L2SP_043027_20220731_02_T1",
+          "index": 4,
+          "references": 5,
+          "seconds": [
+            0.6305223550007213,
+            0.5970401320009842,
+            0.5917315179976868,
+            0.6018425319998641,
+            0.6043280519952532,
+            0.6359898149967194,
+            0.6015960080039804,
+            0.5940127840003697,
+            0.5867969690007158,
+            0.6456642569974065
+          ],
+          "median_seconds": 0.6017192700019223,
+          "peak_cuda_bytes": 475958272
+        },
+        {
+          "scene_id": "bucharest_ro:2022:LC09_L2SP_183029_20220720_02_T1",
+          "index": 0,
+          "references": 8,
+          "seconds": [
+            0.8225560309947468,
+            0.8145983799986425,
+            0.8180046240013326,
+            0.8157605129963486,
+            0.8249661649970221,
+            0.7902260330010904,
+            0.7877806379983667,
+            0.7956727920027333,
+            0.8518603620032081,
+            0.8458669300016481
+          ],
+          "median_seconds": 0.8168825684988406,
+          "peak_cuda_bytes": 477187072
+        },
+        {
+          "scene_id": "sevilla_es:2021:LC08_L2SP_202034_20210730_02_T1",
+          "index": 36,
+          "references": 9,
+          "seconds": [
+            1.0253518160025124,
+            0.9897380320035154,
+            0.9892146209967905,
+            1.0588748000009218,
+            1.0027170190005563,
+            1.0248416119939066,
+            1.0226276399989729,
+            1.028577585995663,
+            0.9977780170011101,
+            0.9992038260024856
+          ],
+          "median_seconds": 1.0126723294997646,
+          "peak_cuda_bytes": 477596672
+        }
+      ],
+      "median_across_case_medians": 0.8168825684988406
+    },
+    "THST_task_loss_matched": {
+      "checkpoint": "/home/jf_xjr/uhi_cdc/research/near_neighbor_attribution_20260914/thst_task_loss/best.pt",
+      "checkpoint_sha256": "2d294d116c83c96656404e6337bdb3df2fe5f8de5b163ac377d59cb7a920bdda",
+      "parameters": 35055708,
+      "cases": [
+        {
+          "scene_id": "coeur_d_alene_id:2022:LC09_L2SP_043027_20220731_02_T1",
+          "index": 4,
+          "references": 1,
+          "seconds": [
+            0.20091997599956812,
+            0.19912784799817018,
+            0.2176575449993834,
+            0.19775307399686426,
+            0.1956630619970383,
+            0.19806652599800145,
+            0.19831145599891897,
+            0.27150141799938865,
+            0.19879168899933575,
+            0.19781393599987496
+          ],
+          "median_seconds": 0.19855157249912736,
+          "peak_cuda_bytes": 391302144
+        },
+        {
+          "scene_id": "bucharest_ro:2022:LC09_L2SP_183029_20220720_02_T1",
+          "index": 0,
+          "references": 1,
+          "seconds": [
+            0.19741162499849452,
+            0.19721642700460507,
+            0.19808934100001352,
+            0.22243840699957218,
+            0.21531355800107121,
+            0.2068423230011831,
+            0.19569429799594218,
+            0.2042894679980236,
+            0.19770607099781046,
+            0.19827155899838544
+          ],
+          "median_seconds": 0.19818044999919948,
+          "peak_cuda_bytes": 391302144
+        },
+        {
+          "scene_id": "sevilla_es:2021:LC08_L2SP_202034_20210730_02_T1",
+          "index": 36,
+          "references": 1,
+          "seconds": [
+            0.21676048000517767,
+            0.19742495600075927,
+            0.21671430800051894,
+            0.19654551400162745,
+            0.19715888400241965,
+            0.202598809999472,
+            0.20048735700402176,
+            0.22095485500176437,
+            0.2117999170004623,
+            0.21018333199754125
+          ],
+          "median_seconds": 0.20639107099850662,
+          "peak_cuda_bytes": 391302144
+        }
+      ],
+      "median_across_case_medians": 0.19855157249912736
+    }
+  },
+  "labels_opened": false,
+  "split": "validation",
+  "scene_size": 160,
+  "precision": "FP32, TF32 disabled; common FP64 support projection",
+  "timed": "CPU prepared input arrays through host-to-GPU transfers, complete method inference, projection, CPU output",
+  "selection": "lowest, median, highest number of scene-available histories in Val45",
+  "warmup": 3,
+  "repetitions": 10,
+  "gpu": "NVIDIA GeForce RTX 5060 Ti",
+  "source_sha256": "e1952227334d5be2ae8220ec43055054d18158e1d05b775cb0787626a7afc090"
+}

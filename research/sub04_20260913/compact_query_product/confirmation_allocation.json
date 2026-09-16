@@ -1,0 +1,30 @@
+{
+  "status": "explicit_root_conditional_budget_override_for_best_actual_Val_candidate",
+  "created_unix": 1789299604.245189,
+  "user_basis": "Latest user requests every feasible effort within the existing final hard budget; no repeated baseline training.",
+  "budget_added_seconds": 0,
+  "hard_deadline_unix": 1789302396,
+  "training_stop_unix": 1789301196,
+  "maximum_job_seconds": 700,
+  "original_pilot_completion": {
+    "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260913/compact_query_product/runs/compact_20260905/complete.json",
+    "sha256": "71353e1ac0de99603837c2cc34f152919c096f01407ec5648b01ad8f215fd886"
+  },
+  "original_pilot_gate_pass": false,
+  "original_minimum_gain_k": 0.001,
+  "actual_pilot_gain_k": 0.0003300753210214169,
+  "condition": "Only after actual SAM800 completion, if SAM best Val is not strictly lower than query-product selected Val .4103556188558206. Otherwise retain SAM actual gate logic.",
+  "decision_basis": "Query-product has the lowest actual full Val RMSE among the completed new below6M candidates; use remaining budget for two identical recipe confirmations, acknowledging gain is below original efficiency screen.",
+  "method_selection_uses_Test": false,
+  "methods_or_weights_may_be_chosen_from_new_Test": false,
+  "seeds": [
+    20260912,
+    20260913
+  ],
+  "recipe_unchanged": "Original query-product FP32 1500/8, same corresponding original compact parents, both original parameter groups and same fixed teacher/sampling.",
+  "baseline_retraining": false,
+  "matched_additional_training_budget": false,
+  "original_numeric_final_tiers_and_metric_unchanged": true,
+  "original_pilot_artifacts_unchanged": true,
+  "no_automatic_extra_search": true
+}

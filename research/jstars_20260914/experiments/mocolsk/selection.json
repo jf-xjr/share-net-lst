@@ -1,0 +1,23 @@
+{
+  "criterion": "Minimum complete Val45 macro RMSE; native wins exact tie",
+  "selected_phase": "calibrated",
+  "candidates": {
+    "native": {
+      "checkpoint": "/home/jf_xjr/uhi_cdc/research/jstars_20260914/experiments/mocolsk/native/best.pt",
+      "checkpoint_sha256": "af2b517d31c579a76c5b214db53812c1bcd069acd1f5f834c282101bbad3b4d4",
+      "validation_rmse": 0.49700224761472384,
+      "step": 10000,
+      "weights": "ema"
+    },
+    "calibrated": {
+      "checkpoint": "/home/jf_xjr/uhi_cdc/research/jstars_20260914/experiments/mocolsk/calibrated/best.pt",
+      "checkpoint_sha256": "d5d75c87b77d8610de14a792287554d5851225b6e77bf4a92d825a3580a3a162",
+      "validation_rmse": 0.49420067956751196,
+      "step": 1500,
+      "weights": "raw"
+    }
+  },
+  "test_labels_opened": false,
+  "protocol_sha256": "e355d2b2ff7b619f96687ae5c3a7ce752f45b0afc8fa3cb8d8c39f453228100a",
+  "source_sha256": "b16c383f310ddbf6878107041593b01df18c9c003baf9cb38785f2656cb4bc6d"
+}

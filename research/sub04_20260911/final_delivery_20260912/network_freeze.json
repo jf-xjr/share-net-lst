@@ -1,0 +1,651 @@
+{
+  "protocol": "final_effective_six_weights_20260912_v1",
+  "split": "test",
+  "cohort_identity": "Consumed 30-city follow-up",
+  "test_previously_consumed": true,
+  "independent_holdout": false,
+  "model_selection_complete": true,
+  "frozen_at_utc": "2026-09-12T11:13:06.592348+00:00",
+  "checkpoints": [
+    {
+      "architecture": "baseline",
+      "seed": 20260905,
+      "run": "/home/jf_xjr/uhi_cdc/research/route_a_20260911/utae",
+      "checkpoint": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/bn_selected_best_v1/baseline905/best_bn_recalibrated.pt",
+      "checkpoint_sha256": "a8006b4811804eba81692551e3a9784252fedd81a23473d8ec3112f4b8a834ce",
+      "config": {
+        "model": "U-TAE-LST with local visibility",
+        "seed": 20260905,
+        "updates": 18000,
+        "batch_size": 4,
+        "lr": 0.001,
+        "warmup": 300,
+        "weight_decay": 0.0001,
+        "validation_interval": 750,
+        "evaluation_batch": 2,
+        "selection": "minimum unrounded validation macro RMSE over raw and EMA; earlier wins exact tie",
+        "budget_reason": "Independent random initialization, three times the historical-system continuation updates; same 50 raw/EMA validation opportunities. Not an equal-total-pretraining architecture ablation. No test-based budget extension."
+      },
+      "training": {
+        "status": "complete",
+        "updates": 18000,
+        "seconds": 3669.485304228,
+        "best_validation_rmse": 0.4626829057944673,
+        "validation_candidates": 50,
+        "parameters": 2985697,
+        "peak_cuda_bytes": 2988753920
+      },
+      "bound_run_files": {
+        "run.json": "4fc08a658ec0dd82bbe5644b161030f31359f2d555a350b2036e18fdfb2cad4b",
+        "complete.json": "fb9aba39a89b8a77403ed1367f62a27afd05cf77dd13fc52d9d1ae342b2c76b6",
+        "validation.json": "d691df4770861524675f71262f0949f6e63cb3c42c70b3cf3e0da3ab171ef25e",
+        "best.pt": "012185db5fc7832ec2e3216981032ac9162a9aa7d6661b734f5008a568689e8d"
+      },
+      "original_checkpoint": "/home/jf_xjr/uhi_cdc/research/route_a_20260911/utae/best.pt",
+      "original_checkpoint_sha256": "012185db5fc7832ec2e3216981032ac9162a9aa7d6661b734f5008a568689e8d",
+      "calibration_override": {
+        "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/bn_selected_best_v1/baseline905/best_bn_recalibrated.pt",
+        "sha256": "a8006b4811804eba81692551e3a9784252fedd81a23473d8ec3112f4b8a834ce",
+        "receipt": {
+          "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/bn_selected_best_v1/baseline905/complete.json",
+          "sha256": "71a41034964c79c1273726f51d7e7ddbd86dce2385739cf88f77d28c95d33e62"
+        },
+        "design": {
+          "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/bn_selected_best_v1/design.json",
+          "sha256": "3abe433ab2ac05df2340d1782c8487b38f40626eb067e98e61485b77876e5019"
+        }
+      },
+      "effective_method": "fixed_bn"
+    },
+    {
+      "architecture": "naf_history",
+      "seed": 20260905,
+      "run": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/runs/naf_history_20260905_cuda",
+      "checkpoint": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/naf_history_20260905_alpha25.pt",
+      "checkpoint_sha256": "7e2c2fa8292054a21a90c7b35902850969f9ac4e55a2fde325800cf6f21c4309",
+      "config": {
+        "architecture": "naf_history",
+        "seed": 20260905,
+        "updates": 18000,
+        "batch_size": 4,
+        "lr": 0.001,
+        "warmup": 300,
+        "weight_decay": 0.0001,
+        "validation_interval": 750,
+        "evaluation_batch": 2,
+        "history_dropout": 0.25,
+        "emissivity_dropout": 0.25,
+        "selection": "minimum unrounded validation macro RMSE across the same 50 raw/EMA opportunities",
+        "purpose": "One spatial history reconstruction architecture under the original U-TAE training recipe, six inputs, sampling and projection. GPU batch4 AMP smoke must pass before formal training."
+      },
+      "interpolation": {
+        "alpha": 0.25,
+        "selected_best": {
+          "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/runs/naf_history_20260905_cuda/best.pt",
+          "sha256": "05b924fca3e73410a64d1f1b81d91c8f0e6d385234c1d5492f5d1c4eb267b620",
+          "step": 9000,
+          "weights": "ema"
+        },
+        "last": {
+          "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/runs/naf_history_20260905_cuda/last.pt",
+          "sha256": "cdc3e4727fc7f1de30692e35017ebb4677ecd00ae5e2ab52aaf9c5f98c014e87",
+          "step": 18000,
+          "weights": "ema"
+        },
+        "parameter_count": 9310105,
+        "nonparameter_buffers_unchanged": true
+      },
+      "additional_training_updates": 0,
+      "additional_inference_model_count": 0,
+      "effective_method": "alpha25"
+    },
+    {
+      "architecture": "baseline",
+      "seed": 20260912,
+      "run": "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/runs/baseline_20260912",
+      "checkpoint": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/bn_selected_best_v1/baseline912/best_bn_recalibrated.pt",
+      "checkpoint_sha256": "31566f2eb687bce1a4d4d7f0e07bea88cd4c849a60bd962344fe760c97558a34",
+      "config": {
+        "model": "U-TAE-LST with local visibility",
+        "seed": 20260912,
+        "updates": 18000,
+        "batch_size": 4,
+        "lr": 0.001,
+        "warmup": 300,
+        "weight_decay": 0.0001,
+        "validation_interval": 750,
+        "evaluation_batch": 2,
+        "selection": "minimum unrounded validation macro RMSE over raw and EMA; earlier wins exact tie",
+        "budget_reason": "Independent random initialization, three times the historical-system continuation updates; same 50 raw/EMA validation opportunities. Not an equal-total-pretraining architecture ablation. No test-based budget extension."
+      },
+      "training": {
+        "status": "complete",
+        "updates": 18000,
+        "seconds": 3355.050173057,
+        "best_validation_rmse": 0.46885467923603236,
+        "validation_candidates": 50,
+        "parameters": 2985697,
+        "peak_cuda_bytes": 2988336128
+      },
+      "bound_run_files": {
+        "run.json": "dc001b7e2c3c72902c348b424262fa3a5451656dbd9f539cbafac50b11545971",
+        "complete.json": "1a2aa0e86b37c3e21340c3555022eb3392d6131c389ec44f9be638c5f3c15d98",
+        "validation.json": "761452d82337e1f6a81e93b31bad6763ba1f6c3bf1c5e91a5634a1d09bf5b473",
+        "best.pt": "1e9c9297bb17f0a65827258e75faa07e6d6845e7d5208fdaf723916d806e5f7b"
+      },
+      "original_checkpoint": "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/runs/baseline_20260912/best.pt",
+      "original_checkpoint_sha256": "1e9c9297bb17f0a65827258e75faa07e6d6845e7d5208fdaf723916d806e5f7b",
+      "calibration_override": {
+        "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/bn_selected_best_v1/baseline912/best_bn_recalibrated.pt",
+        "sha256": "31566f2eb687bce1a4d4d7f0e07bea88cd4c849a60bd962344fe760c97558a34",
+        "receipt": {
+          "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/bn_selected_best_v1/baseline912/complete.json",
+          "sha256": "639b3fffa21fb3fd25e02a49d7d06bea913591ccaf942e9c25405e1b23983e62"
+        },
+        "design": {
+          "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/bn_selected_best_v1/design.json",
+          "sha256": "3abe433ab2ac05df2340d1782c8487b38f40626eb067e98e61485b77876e5019"
+        }
+      },
+      "effective_method": "fixed_bn"
+    },
+    {
+      "architecture": "naf_history",
+      "seed": 20260912,
+      "run": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/runs/naf_history_20260912",
+      "checkpoint": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/naf_history_20260912_alpha25.pt",
+      "checkpoint_sha256": "a254aa55c305bbefc3d5d579340a14ee231e9bc7b86ac5dd6a94dca49fd3604c",
+      "config": {
+        "architecture": "naf_history",
+        "seed": 20260912,
+        "updates": 18000,
+        "batch_size": 4,
+        "lr": 0.001,
+        "warmup": 300,
+        "weight_decay": 0.0001,
+        "validation_interval": 750,
+        "evaluation_batch": 2,
+        "history_dropout": 0.25,
+        "emissivity_dropout": 0.25,
+        "selection": "minimum unrounded validation macro RMSE across the same 50 raw/EMA opportunities",
+        "purpose": "One spatial history reconstruction architecture under the original U-TAE training recipe, six inputs, sampling and projection. GPU batch4 AMP smoke must pass before formal training."
+      },
+      "interpolation": {
+        "alpha": 0.25,
+        "selected_best": {
+          "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/runs/naf_history_20260912/best.pt",
+          "sha256": "b9bbebe63a804081c3edae8ad6187aa5d887b77f04b68d30f9dfc48253e45582",
+          "step": 9000,
+          "weights": "ema"
+        },
+        "last": {
+          "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/runs/naf_history_20260912/last.pt",
+          "sha256": "4e8a271c32015f1373007972067118a8238fdb4ed742535c5891ee8e07842781",
+          "step": 18000,
+          "weights": "ema"
+        },
+        "parameter_count": 9310105,
+        "nonparameter_buffers_unchanged": true
+      },
+      "additional_training_updates": 0,
+      "additional_inference_model_count": 0,
+      "effective_method": "alpha25"
+    },
+    {
+      "architecture": "baseline",
+      "seed": 20260913,
+      "run": "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/runs/baseline_20260913",
+      "checkpoint": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/bn_selected_best_v1/baseline913/best_bn_recalibrated.pt",
+      "checkpoint_sha256": "1e6494559dd5962e760aa590624e927da896bc1c66198186691394545ce05f76",
+      "config": {
+        "model": "U-TAE-LST with local visibility",
+        "seed": 20260913,
+        "updates": 18000,
+        "batch_size": 4,
+        "lr": 0.001,
+        "warmup": 300,
+        "weight_decay": 0.0001,
+        "validation_interval": 750,
+        "evaluation_batch": 2,
+        "selection": "minimum unrounded validation macro RMSE over raw and EMA; earlier wins exact tie",
+        "budget_reason": "Independent random initialization, three times the historical-system continuation updates; same 50 raw/EMA validation opportunities. Not an equal-total-pretraining architecture ablation. No test-based budget extension."
+      },
+      "training": {
+        "status": "complete",
+        "updates": 18000,
+        "seconds": 3667.8565068999997,
+        "best_validation_rmse": 0.47073778550977985,
+        "validation_candidates": 50,
+        "parameters": 2985697,
+        "peak_cuda_bytes": 2986947584
+      },
+      "bound_run_files": {
+        "run.json": "71ba383e75b4901aa60812ca13e8a741a812f4a982194d4cd88a371ca43db830",
+        "complete.json": "fb377393a6014d0978670779692c7ab7e54e28a5920169fa13e92497f2a39d58",
+        "validation.json": "0e9405e08549460e628cf441f66229a1f4fe1a250e56827851cd976f307b8cba",
+        "best.pt": "5bdbd44e5bb93a4962b57518d06c8e3764c7cd5976e43d1d3c5bccb3cbc2f974"
+      },
+      "original_checkpoint": "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/runs/baseline_20260913/best.pt",
+      "original_checkpoint_sha256": "5bdbd44e5bb93a4962b57518d06c8e3764c7cd5976e43d1d3c5bccb3cbc2f974",
+      "calibration_override": {
+        "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/bn_selected_best_v1/baseline913/best_bn_recalibrated.pt",
+        "sha256": "1e6494559dd5962e760aa590624e927da896bc1c66198186691394545ce05f76",
+        "receipt": {
+          "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/bn_selected_best_v1/baseline913/complete.json",
+          "sha256": "145da3ae3d39cd9e7939008b54277af562bfc174a538a8aed19471c2315bda1f"
+        },
+        "design": {
+          "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/bn_selected_best_v1/design.json",
+          "sha256": "3abe433ab2ac05df2340d1782c8487b38f40626eb067e98e61485b77876e5019"
+        }
+      },
+      "effective_method": "fixed_bn"
+    },
+    {
+      "architecture": "naf_history",
+      "seed": 20260913,
+      "run": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/runs/naf_history_20260913",
+      "checkpoint": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/naf_history_20260913_alpha25.pt",
+      "checkpoint_sha256": "940cc0e8d7d2228e39549e37ec55de3f310f6a7c45b157bd1924d78071cfaa00",
+      "config": {
+        "architecture": "naf_history",
+        "seed": 20260913,
+        "updates": 18000,
+        "batch_size": 4,
+        "lr": 0.001,
+        "warmup": 300,
+        "weight_decay": 0.0001,
+        "validation_interval": 750,
+        "evaluation_batch": 2,
+        "history_dropout": 0.25,
+        "emissivity_dropout": 0.25,
+        "selection": "minimum unrounded validation macro RMSE across the same 50 raw/EMA opportunities",
+        "purpose": "One spatial history reconstruction architecture under the original U-TAE training recipe, six inputs, sampling and projection. GPU batch4 AMP smoke must pass before formal training."
+      },
+      "interpolation": {
+        "alpha": 0.25,
+        "selected_best": {
+          "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/runs/naf_history_20260913/best.pt",
+          "sha256": "5654ae02c1af9819a0eaaa935e002541355bc20cab0310975c70bf3d02f96590",
+          "step": 9000,
+          "weights": "ema"
+        },
+        "last": {
+          "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/runs/naf_history_20260913/last.pt",
+          "sha256": "08c6faa271e48f97a352ab13576d39fc281f180a48f9062767ea0a3adc4b3bd5",
+          "step": 18000,
+          "weights": "ema"
+        },
+        "parameter_count": 9310105,
+        "nonparameter_buffers_unchanged": true
+      },
+      "additional_training_updates": 0,
+      "additional_inference_model_count": 0,
+      "effective_method": "alpha25"
+    }
+  ],
+  "candidate": "naf_history",
+  "methods": {
+    "baseline": "fixed_bn",
+    "naf_history": "alpha25"
+  },
+  "caller_decision": "Network search is closed after the completed crop, SAM, and history-dropout-zero pilots all selected initialization. Freeze the common three-seed alpha0.25 NAF and fixed-BN U-TAE methods selected from development validation. Validation NAF mean 0.4218943302840652 K has not passed the absolute 0.42 K milestone; retain that failure explicitly. No additional network training or Test-based selection. The separate source-compression policy remains under Fit development and no Test arrays are opened by this freeze.",
+  "selection_scope": "Explicit whole-architecture methods; no per-seed choice or Test selection",
+  "validation": {
+    "seed_count": 3,
+    "seeds": [
+      20260905,
+      20260912,
+      20260913
+    ],
+    "mean_metrics": {
+      "baseline": {
+        "rmse": 0.4660919447636798,
+        "mae": 0.3460236227831493,
+        "hotspot_iou": 0.7813792945901065,
+        "hotspot_mae": 0.4459514459524649
+      },
+      "naf_history": {
+        "rmse": 0.4218943302840652,
+        "mae": 0.31408664740606773,
+        "hotspot_iou": 0.797504004615612,
+        "hotspot_mae": 0.40946882561489395
+      }
+    },
+    "effects": {
+      "rmse": {
+        "baseline_minus_candidate": 0.04419761447961466,
+        "paired_seed_differences": [
+          0.04098461179105231,
+          0.04375307782712584,
+          0.04785515382066582
+        ],
+        "city_95_interval": [
+          0.03903615345894671,
+          0.049729084999698185
+        ],
+        "seed_city_95_interval": [
+          0.03769056260977809,
+          0.05054768986419964
+        ]
+      },
+      "mae": {
+        "baseline_minus_candidate": 0.03193697537708159,
+        "paired_seed_differences": [
+          0.02974523079802591,
+          0.03140327581043812,
+          0.03466241952278072
+        ],
+        "city_95_interval": [
+          0.027849181827478586,
+          0.03636802929135049
+        ],
+        "seed_city_95_interval": [
+          0.026889818737657105,
+          0.03695091929189348
+        ]
+      },
+      "hotspot_iou": {
+        "baseline_minus_candidate": -0.016124710025505456,
+        "paired_seed_differences": [
+          -0.015988034445979484,
+          -0.014543896842528702,
+          -0.017842198788008176
+        ],
+        "city_95_interval": [
+          -0.020111175218525137,
+          -0.012335762811628721
+        ],
+        "seed_city_95_interval": [
+          -0.02070586031552012,
+          -0.011963440792216916
+        ],
+        "improvement_direction": "negative baseline-minus-candidate"
+      },
+      "hotspot_mae": {
+        "baseline_minus_candidate": 0.03648262033757096,
+        "paired_seed_differences": [
+          0.036650534862322386,
+          0.03179098408461842,
+          0.041006342065772056
+        ],
+        "city_95_interval": [
+          0.02983177756766598,
+          0.0435958672490549
+        ],
+        "seed_city_95_interval": [
+          0.027771194387543212,
+          0.04528502248518122
+        ]
+      }
+    },
+    "criteria": {
+      "minimum_mean_rmse_reduction_k": 0.01,
+      "observed_mean_rmse_reduction_k": 0.04419761447961466,
+      "all_three_seed_macro_improvements": true,
+      "network_numeric_criteria_pass": true
+    },
+    "ensemble_used": false,
+    "city_mean_rmse_differences": [
+      {
+        "region": "europe",
+        "city": "bucharest_ro",
+        "baseline_minus_candidate": 0.04030117663567173
+      },
+      {
+        "region": "us",
+        "city": "coeur_d_alene_id",
+        "baseline_minus_candidate": 0.05330771934868139
+      },
+      {
+        "region": "china",
+        "city": "datong_cn",
+        "baseline_minus_candidate": 0.051946029742725865
+      },
+      {
+        "region": "us",
+        "city": "enid_ok",
+        "baseline_minus_candidate": 0.060301186001008256
+      },
+      {
+        "region": "europe",
+        "city": "essen_de",
+        "baseline_minus_candidate": 0.044686263406835514
+      },
+      {
+        "region": "china",
+        "city": "fushun_cn",
+        "baseline_minus_candidate": 0.03479322596644221
+      },
+      {
+        "region": "us",
+        "city": "lawton_ok",
+        "baseline_minus_candidate": 0.030619231908905697
+      },
+      {
+        "region": "us",
+        "city": "lowell_ma",
+        "baseline_minus_candidate": 0.038365765107222095
+      },
+      {
+        "region": "europe",
+        "city": "lublin_pl",
+        "baseline_minus_candidate": 0.03556344281312398
+      },
+      {
+        "region": "europe",
+        "city": "lyon_fr",
+        "baseline_minus_candidate": 0.02637806784183444
+      },
+      {
+        "region": "china",
+        "city": "neijiang_cn",
+        "baseline_minus_candidate": 0.055439075619930445
+      },
+      {
+        "region": "china",
+        "city": "ningbo_cn",
+        "baseline_minus_candidate": 0.04062278050687048
+      },
+      {
+        "region": "europe",
+        "city": "sevilla_es",
+        "baseline_minus_candidate": 0.06549936034440657
+      },
+      {
+        "region": "china",
+        "city": "shijiazhuang_cn",
+        "baseline_minus_candidate": 0.04362348549666537
+      },
+      {
+        "region": "us",
+        "city": "troy_ny",
+        "baseline_minus_candidate": 0.04151740645389581
+      }
+    ],
+    "interval_scope": "Paired sampled cities and three observed training seeds only; descriptive, not full training-population uncertainty"
+  },
+  "validation_evidence_scope": "Existing full Val45 common GPU FP32 sealed predictions and original score JSON; recombined without new inference",
+  "evidence_sha256": {
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/finalist_original_plan.json": "aea61f25708e7e5a4e7cb58f0f5a92bffd4aaf4c35972e8596f785ca8d4ad69d",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/paired_validation_original/results.json": "1179ed1cf7d181373a93162900ae2d09c20fb5586d8600a84f1d8cb63a00dce3",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/paired_validation_original/predictions_complete.json": "807eaad62fea356c71a6c99e27661d660cd37b81c40e0f5e87f587c2c4726ed0",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/paired_validation_original/baseline_20260905_scores.json": "1636a820e4425484c39f3c6798acb703e832f31c51dd5a004015670b6b884da7",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/paired_validation_original/naf_history_20260905_scores.json": "098abd363ef0497380ab069312e56d6e498507a98f05626af19dbed03fdf89f2",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/paired_validation_original/baseline_20260912_scores.json": "b66d6b4f1c728f5a82393ac76ff4c0423daacd801119b309c42b087d280f189a",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/paired_validation_original/naf_history_20260912_scores.json": "cfdfc277334bdace3e8e8ba8a4975689a0f2a4fe68fe2288d939b5d8108ec0da",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/paired_validation_original/baseline_20260913_scores.json": "c3e87d35f1d9bf21df835b3b0a2303fc616fd4f5524d086b22c2549e1835aba5",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/paired_validation_original/naf_history_20260913_scores.json": "720f3c5fa15e27a8b050e3dc2092f5e679b0137a5e06bca4a13d91edade25584",
+    "/home/jf_xjr/uhi_cdc/research/route_a_20260911/utae/best.pt": "012185db5fc7832ec2e3216981032ac9162a9aa7d6661b734f5008a568689e8d",
+    "/home/jf_xjr/uhi_cdc/research/route_a_20260911/utae/run.json": "4fc08a658ec0dd82bbe5644b161030f31359f2d555a350b2036e18fdfb2cad4b",
+    "/home/jf_xjr/uhi_cdc/research/route_a_20260911/utae/complete.json": "fb9aba39a89b8a77403ed1367f62a27afd05cf77dd13fc52d9d1ae342b2c76b6",
+    "/home/jf_xjr/uhi_cdc/research/route_a_20260911/utae/validation.json": "d691df4770861524675f71262f0949f6e63cb3c42c70b3cf3e0da3ab171ef25e",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/runs/naf_history_20260905_cuda/best.pt": "05b924fca3e73410a64d1f1b81d91c8f0e6d385234c1d5492f5d1c4eb267b620",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/runs/naf_history_20260905_cuda/run.json": "58209574c981480131eca5e900dd1e07bd98dd8e631708dec542386c5e7e8b85",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/runs/naf_history_20260905_cuda/complete.json": "3a1c5f52da34441fb9397a3fc72b049df9f004ee236266bb584a1d082bd09beb",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/runs/naf_history_20260905_cuda/validation.json": "2ececefaf103d479a220c5eaf0c9263716fbbc8ba9bc9ec8e11a3d3f64b1d1b0",
+    "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/runs/baseline_20260912/best.pt": "1e9c9297bb17f0a65827258e75faa07e6d6845e7d5208fdaf723916d806e5f7b",
+    "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/runs/baseline_20260912/run.json": "dc001b7e2c3c72902c348b424262fa3a5451656dbd9f539cbafac50b11545971",
+    "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/runs/baseline_20260912/complete.json": "1a2aa0e86b37c3e21340c3555022eb3392d6131c389ec44f9be638c5f3c15d98",
+    "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/runs/baseline_20260912/validation.json": "761452d82337e1f6a81e93b31bad6763ba1f6c3bf1c5e91a5634a1d09bf5b473",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/runs/naf_history_20260912/best.pt": "b9bbebe63a804081c3edae8ad6187aa5d887b77f04b68d30f9dfc48253e45582",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/runs/naf_history_20260912/run.json": "1bbd10b53fc8aa5c78942a1dede3e33160b242980b56f498f473407ed3be9d34",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/runs/naf_history_20260912/complete.json": "1d139d5fb7f6bbf0deb2aead3a93ca35058f33905e9c346043b317e641a1527a",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/runs/naf_history_20260912/validation.json": "65d86a0cc36837762a1f4c8580be83b485fae0825925aa3195ececcd92fbf3cf",
+    "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/runs/baseline_20260913/best.pt": "5bdbd44e5bb93a4962b57518d06c8e3764c7cd5976e43d1d3c5bccb3cbc2f974",
+    "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/runs/baseline_20260913/run.json": "71ba383e75b4901aa60812ca13e8a741a812f4a982194d4cd88a371ca43db830",
+    "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/runs/baseline_20260913/complete.json": "fb377393a6014d0978670779692c7ab7e54e28a5920169fa13e92497f2a39d58",
+    "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/runs/baseline_20260913/validation.json": "0e9405e08549460e628cf441f66229a1f4fe1a250e56827851cd976f307b8cba",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/runs/naf_history_20260913/best.pt": "5654ae02c1af9819a0eaaa935e002541355bc20cab0310975c70bf3d02f96590",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/runs/naf_history_20260913/run.json": "40c32a84e1b203fecfa571b4713b051ca5f25d32eb4c3bcfb95f7432267585eb",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/runs/naf_history_20260913/complete.json": "d572e78ebee853fc0baf3ddd4f5b3f6c2559034bd30337d670b4b787942599ab",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/runs/naf_history_20260913/validation.json": "4ef2aa45fb9134cf2eb54700f7907718a4ddb34de3ad102e03fda5d8bfacd3ea",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_fixed_bn_20260912_v1/fixed_bn_plan.json": "86c0f2bdeede41d28be0d26e776ebdcfb7e5ef27244d761a74342320f2ceb129",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_fixed_bn_20260912_v1/validation/results.json": "4dedb251a57a6464b81e1fd09cef2003967650b914d56ba1959fe554b97ef8f5",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_fixed_bn_20260912_v1/validation/predictions_complete.json": "6e90e7964394ea9e7119e9d55fa0303807d9ee14eb9de4b7c69112a72babe46d",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_fixed_bn_20260912_v1/validation/baseline_20260905_scores.json": "708f102c5cc317176b759a2e0e7a607e47d3b749e61f782a19c6366de199c2d1",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_fixed_bn_20260912_v1/validation/naf_history_20260905_scores.json": "098abd363ef0497380ab069312e56d6e498507a98f05626af19dbed03fdf89f2",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_fixed_bn_20260912_v1/validation/baseline_20260912_scores.json": "8c9da8465966aa6a75d0304d0aa623a693ded4946d6b8537927f33273491902e",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_fixed_bn_20260912_v1/validation/naf_history_20260912_scores.json": "cfdfc277334bdace3e8e8ba8a4975689a0f2a4fe68fe2288d939b5d8108ec0da",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_fixed_bn_20260912_v1/validation/baseline_20260913_scores.json": "9bf6e1fea097f10f713b359c07ea57e0c028c9fc4f62ad7ef2b1ecc0fee7ad4c",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_fixed_bn_20260912_v1/validation/naf_history_20260913_scores.json": "720f3c5fa15e27a8b050e3dc2092f5e679b0137a5e06bca4a13d91edade25584",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/bn_selected_best_v1/baseline905/best_bn_recalibrated.pt": "a8006b4811804eba81692551e3a9784252fedd81a23473d8ec3112f4b8a834ce",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/bn_selected_best_v1/baseline905/complete.json": "71a41034964c79c1273726f51d7e7ddbd86dce2385739cf88f77d28c95d33e62",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/bn_selected_best_v1/design.json": "3abe433ab2ac05df2340d1782c8487b38f40626eb067e98e61485b77876e5019",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_fixed_bn_20260912_v1/naf_history_20260905_bn_identity.pt": "9774289495cec519a8820a2a2e7650d7a0d03b54631c60a857946c5170ecd3ff",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_fixed_bn_20260912_v1/naf_history_20260905_identity_receipt.json": "e907e98373cd59c45db2901b0dd3d4c54dde1105c89558eaf222176d01e32ef9",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_fixed_bn_20260912_v1/design.json": "0729e0ad97d05ec2dd6c828353224e8eefe9eeb46b3114eed2836e08b4833031",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/bn_selected_best_v1/baseline912/best_bn_recalibrated.pt": "31566f2eb687bce1a4d4d7f0e07bea88cd4c849a60bd962344fe760c97558a34",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/bn_selected_best_v1/baseline912/complete.json": "639b3fffa21fb3fd25e02a49d7d06bea913591ccaf942e9c25405e1b23983e62",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_fixed_bn_20260912_v1/naf_history_20260912_bn_identity.pt": "f00dbe3eae7617af11c45a66dc0ea6326d7395f6aa1db9cb85f54333b42867a4",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_fixed_bn_20260912_v1/naf_history_20260912_identity_receipt.json": "094ab9f4cba9db0e72c4b46a117df0fe1a985ee5db678a1714d59b00c8e05d58",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/bn_selected_best_v1/baseline913/best_bn_recalibrated.pt": "1e6494559dd5962e760aa590624e927da896bc1c66198186691394545ce05f76",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/bn_selected_best_v1/baseline913/complete.json": "145da3ae3d39cd9e7939008b54277af562bfc174a538a8aed19471c2315bda1f",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_fixed_bn_20260912_v1/naf_history_20260913_bn_identity.pt": "f99ac8e3aa62734504ca20e26ca7af89d49caf07e02cc3370041ba8c4bd0fdc8",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_fixed_bn_20260912_v1/naf_history_20260913_identity_receipt.json": "27d67253d5be299add13543432c3229146379bcb9228a713c1d0015fcd46c0ff",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/baseline_20260905_alpha25.pt": "e868b530c3f257c930823114f6a4033dbe09d0783ba7543a8aba0f77a0e0d441",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/alpha0.25/baseline_20260905_scores.json": "29772a7cc40294b0da21823bb79d7947ee7fccf7e154ba5786b508c498ffcd55",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/naf_history_20260905_alpha25.pt": "7e2c2fa8292054a21a90c7b35902850969f9ac4e55a2fde325800cf6f21c4309",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/alpha0.25/naf_history_20260905_scores.json": "42be1f0e78cbc40a136170362bf4552a7f38edf2ead7cbc0d80ac6d7408cc478",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/baseline_20260912_alpha25.pt": "0a0769c3595ce8323b0394bd95486e6492b6096030d409c1f80fdbf66594b706",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/alpha0.25/baseline_20260912_scores.json": "0c0c4d99b3b7938010fa14ef7b37e068cc94cd259c716b4274949aa5fb654bed",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/naf_history_20260912_alpha25.pt": "a254aa55c305bbefc3d5d579340a14ee231e9bc7b86ac5dd6a94dca49fd3604c",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/alpha0.25/naf_history_20260912_scores.json": "bb2928d813d2beb928bdad3218763c1aa202787cedf7232ff107f6a6e185b0b8",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/baseline_20260913_alpha25.pt": "ce8afa201c63f7a18ade8540e10aa602de4a47d56a0be9dbd21c638542c9ae1d",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/alpha0.25/baseline_20260913_scores.json": "90c635802a38f59b56b12b4dd2d5939e2f22717a0dec2ccc53758dd4687da3f9",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/naf_history_20260913_alpha25.pt": "940cc0e8d7d2228e39549e37ec55de3f310f6a7c45b157bd1924d78071cfaa00",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/alpha0.25/naf_history_20260913_scores.json": "38ec8f450a56fd439f3f0a05eddf477e5c9fa83e8301f4f8a75faf2207228b7c",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/alpha0.25/results.json": "21e9bce3ab5ef9c8f0dfc4a56e8c3da671eb0e32fc5a3e80f13382a86a1ff7e4",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/alpha0.25/predictions_complete.json": "3a6f43bdc5a68c2afe59d84423fbc136d6f2e10a4d9e7b115348cc6506e6195e",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/baseline_20260905_alpha50.pt": "281d45eaf345e2f01453c12a6d97dc056eb095f2a08dd56f253a5e6484633642",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/alpha0.5/baseline_20260905_scores.json": "7447d156de63eefd067e0d333103a15633553be4d01a1702719f5ed03c35286b",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/naf_history_20260905_alpha50.pt": "1205b6bef24cdd1a70f0e70a3028eeacb8a823df0bf19fd4769a518bf18bfdb6",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/alpha0.5/naf_history_20260905_scores.json": "d194138f9bab513c9841c902cc78a1141b7a62ea40c5ec6d68817da73e118f08",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/baseline_20260912_alpha50.pt": "8a45066826282215fc3b0b47c29df7b0ad521c04386c30b821c8bd253acdd2b5",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/alpha0.5/baseline_20260912_scores.json": "05793ec5a6f4fe6e04efce812410423c97577e2bd1296f731d4729eeb848e436",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/naf_history_20260912_alpha50.pt": "637742b726688cc11518c330c3b412e9d6aeefcfb1d3c7a56ba41e7eb08cae0b",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/alpha0.5/naf_history_20260912_scores.json": "6961a95e6b8ade82ed05be50dd992ff6ba185b4e3bccdd5cdeefee456e24d8e5",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/baseline_20260913_alpha50.pt": "1ac87af454c48148d22a25297d5a765daed98511e695f7c767981da89ed31baa",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/alpha0.5/baseline_20260913_scores.json": "4cab3d600b092a0049fbbb98a6d35c176c7dda35060771610a9385ce876cb3a3",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/naf_history_20260913_alpha50.pt": "fcd8e89af9f00df83379d1af68a938a5d6276d494e2c70c0402076d9b6498f7b",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/alpha0.5/naf_history_20260913_scores.json": "7f6d99ca6cc020781191464c8f04891694501958482a07da40fd5b8711593dd8",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/alpha0.5/results.json": "3d6478eaa5e9b2ae4b8b1757667e3e0d54c7cbf38b5ae5c645a8acfd70f8375f",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/alpha0.5/predictions_complete.json": "285d10db95fb419630116de240eebc3b337d373728eb68f530722cf1e1df719b",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/baseline_20260905_alpha75.pt": "184a26606e021f291969c112587db460d2f60b749c1ab07db73040bf080ed910",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/alpha0.75/baseline_20260905_scores.json": "1d0aab6ec82abe8b51c118473c81409659fd0886d6100ae09e5f979481f4a15f",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/naf_history_20260905_alpha75.pt": "912ad2181ad0269de869fd17b1edd02ea48e88e6c70b2ed3fbbf8776934b2eda",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/alpha0.75/naf_history_20260905_scores.json": "97318754aae618e1e6e3f5935627c12dd9f69666ac68efeb269e49b446f1364b",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/baseline_20260912_alpha75.pt": "26c3032c01b67e69fee99f1116e7a7a7f211d218fd29edfa036bbcc87895c01d",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/alpha0.75/baseline_20260912_scores.json": "13ab706f5eb036f2b7e67a7355ad7cacd485eedf0d67d3723d7564627771f75f",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/naf_history_20260912_alpha75.pt": "c42f614c421241d9343d7633fc9bc97d3ea8a0dd02c9593b73be04aa55571ff2",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/alpha0.75/naf_history_20260912_scores.json": "745683a4d8286a5739adb3388cc259f37698960e4c15383e62fd494c996c4d74",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/baseline_20260913_alpha75.pt": "9fc64a863b7211f767d8eaf7d98d8825672c040edd27e73a3c804108a0ee9a99",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/alpha0.75/baseline_20260913_scores.json": "b7ce0a11f24861308ba2c6a4fba720100c5f56623fae1a8f69c2d4ce269ea3c1",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/naf_history_20260913_alpha75.pt": "3345a6030ad1a18b153206a6452770ee214ba4f27019bd26528f6c6f12e482b3",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/alpha0.75/naf_history_20260913_scores.json": "71e7a89eeaa0da90e73a4a64ec60990bdf30fa2b93f4eaba1edc45a8e2e6d3ad",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/alpha0.75/results.json": "05f3388ca5fab793f0f1260fa8c6f78544535c2bc3991b98106812d19ce074a5",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/alpha0.75/predictions_complete.json": "3c539399d893d9763d5bbd84eeca4eae74d0664c2b2edb8b848672ed7d164149",
+    "/home/jf_xjr/uhi_cdc/research/route_a_20260911/utae/last.pt": "3e068f019a7c6af06188cc50faa364413e9991744f689bbfd210b64157e2c39b",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/runs/naf_history_20260905_cuda/last.pt": "cdc3e4727fc7f1de30692e35017ebb4677ecd00ae5e2ab52aaf9c5f98c014e87",
+    "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/runs/baseline_20260912/last.pt": "f8d7901d81e4fc5ec3e20c056363dfccad39a06cc3e39c758e4ee781afefb4b0",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/runs/naf_history_20260912/last.pt": "4e8a271c32015f1373007972067118a8238fdb4ed742535c5891ee8e07842781",
+    "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/runs/baseline_20260913/last.pt": "4e26eb7fb5362e5e7477f941e2f83e59ccd443a02fe1c45e8d58f6407865a7fd",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/paired_finalist_20260912_v1/runs/naf_history_20260913/last.pt": "08c6faa271e48f97a352ab13576d39fc281f180a48f9062767ea0a3adc4b3bd5",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/interpolation_plan.json": "fb57b1500c29e02aa127ecaad31c0c49d4b104928bce01c9c432ad7d62e7f22d",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/selection.json": "68a57de45cabc3154ad7df7629e13ae4acd7e311c11c3682aca5758740cb3994",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/evaluate_finalist.py": "2e43bca8bd4bdb81e76a7f8e6f6a48522ab5c92935dfccad62209f073b4ae6cf",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/evaluate_screens.py": "4e1054b5fc3c46dffd156798eedd7e2233285b8e8a097a2442031222182aec26",
+    "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/paired_evaluation.py": "afb475e8ad4289c2e3d00ac726fa794d3c4a07f5ec84856ddb45643a044a4743",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/dropout_models.py": "6bb4ca608b5c39fa2533eab73b0cc1d65a82f21bd04feb50813e5a2a88d718eb",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/naf_history/model.py": "10664005cfd76a7823869f358d15fc5e4be115a89cd75bd9c65d81317b7231d4",
+    "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/experiment.py": "c0fd7eeaff3b03c380ec2d4b46d4810f2d17d10e9191c10559961973a2339f0e",
+    "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/run_queue.py": "bbf6d09849eb5306358603789b4025099d276fc981c632d3828428128eff51f6",
+    "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/candidates/network_review.py": "424399b82bb967b2b0ac239efe7cff8287ab000e3a64c7690d90ab84b1afbc40",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/run.py": "e4262473a7e7d4c02f267e4a4e2e8d0bd24be4ac76ff3c2cc2f87b524df6579c",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/historylst/model.py": "799a0a51c4f8b0ffdfc7a0aae69b2ffaaa58d422c7e8c8c370b638b308ab33b5",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/historylst/data.py": "efc8ef0364756a93986be9a597f7967b1f967ec730d5fa38b3f7fc5c41fb4520",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/historylst/metrics.py": "7cc4442478a4ac4fa7d72f502f1a7e5adec437678435371605678b0947646e09",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/historylst/__init__.py": "a4227048a2f1abcd70e165864d47d768acc87168f0082e34994a5d8b2516bc07",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/historylst/hotspots.py": "2622cf4fbd3eb7e51e317174bd28633502a80ea62c45a6d6e9cf3ea7c2cc2c74",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/historylst/third_party/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/historylst/third_party/utae/utae.py": "c5e3e638348775876383b3805ce35aa1207c7c8d732145bea02667d2c28ca5b8",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/historylst/third_party/utae/convlstm.py": "9d501a1d59828f922a7827b76e2c797ac25471737f2b9d0e0516d0be52f890c6",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/historylst/third_party/utae/ltae.py": "b1d88b438ac0c00be9eed7482526be63af39a9ce421d41e4363d1898eba7f092",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/historylst/third_party/utae/positional_encoding.py": "38b2dc8d4d22eabe01559a83ea06b8bbf4457d84e1d3ddc15750a46e7f418e01",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/historylst/third_party/utae/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/final_effective_evaluation_20260912.py": "6d25d79bf73cf27d8e0ac357f0a9a6bc0b69cde8d5b5efb53a16fa498bb67f4b",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/freeze_network_test_20260912.py": "0fb568f5422e0e56ccd8699f3e644ba517b6cd72bf30059fd7376f45a5c5c6c4",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912.py": "2a525e3b692dcc8b62ddcd1e62abb74c48ab41c8e1318e87b36c0b4ecc8ab8db",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/sam_finetune_20260912_v1/train.py": "2c3695218bc317acb7edaac76622946ce1de77e01a3a8c5607ce27a9e544924b",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/sam_finetune_20260912_v1/sam_step.py": "108e03276363fcd432a6640f2658763f2ebd79443cb2f09dce87168662bd3f97",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/sam_finetune_20260912_v1/design.json": "ad6273b758d3e89544206759398c4698080bd204f1be81b98bf0aca3108c83f3",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/manifest.json": "1eb03fe8b3a57226101f0e3a11215d2b5cae94de0d4bc6bbaede5fa12d1a83ef",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/resume_20260912_v1/resume.json": "f94a00a399077fef947f019e80bddcfd30d950fa37910eb6424a1ebbbb2832f4"
+  },
+  "evaluator_source_sha256": {
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/evaluate_finalist.py": "2e43bca8bd4bdb81e76a7f8e6f6a48522ab5c92935dfccad62209f073b4ae6cf",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/evaluate_screens.py": "4e1054b5fc3c46dffd156798eedd7e2233285b8e8a097a2442031222182aec26",
+    "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/paired_evaluation.py": "afb475e8ad4289c2e3d00ac726fa794d3c4a07f5ec84856ddb45643a044a4743",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/dropout_models.py": "6bb4ca608b5c39fa2533eab73b0cc1d65a82f21bd04feb50813e5a2a88d718eb",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/naf_history/model.py": "10664005cfd76a7823869f358d15fc5e4be115a89cd75bd9c65d81317b7231d4",
+    "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/experiment.py": "c0fd7eeaff3b03c380ec2d4b46d4810f2d17d10e9191c10559961973a2339f0e",
+    "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/run_queue.py": "bbf6d09849eb5306358603789b4025099d276fc981c632d3828428128eff51f6",
+    "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/candidates/network_review.py": "424399b82bb967b2b0ac239efe7cff8287ab000e3a64c7690d90ab84b1afbc40",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/run.py": "e4262473a7e7d4c02f267e4a4e2e8d0bd24be4ac76ff3c2cc2f87b524df6579c",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/historylst/model.py": "799a0a51c4f8b0ffdfc7a0aae69b2ffaaa58d422c7e8c8c370b638b308ab33b5",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/historylst/data.py": "efc8ef0364756a93986be9a597f7967b1f967ec730d5fa38b3f7fc5c41fb4520",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/historylst/metrics.py": "7cc4442478a4ac4fa7d72f502f1a7e5adec437678435371605678b0947646e09",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/historylst/__init__.py": "a4227048a2f1abcd70e165864d47d768acc87168f0082e34994a5d8b2516bc07",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/historylst/hotspots.py": "2622cf4fbd3eb7e51e317174bd28633502a80ea62c45a6d6e9cf3ea7c2cc2c74",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/historylst/third_party/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/historylst/third_party/utae/utae.py": "c5e3e638348775876383b3805ce35aa1207c7c8d732145bea02667d2c28ca5b8",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/historylst/third_party/utae/convlstm.py": "9d501a1d59828f922a7827b76e2c797ac25471737f2b9d0e0516d0be52f890c6",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/historylst/third_party/utae/ltae.py": "b1d88b438ac0c00be9eed7482526be63af39a9ce421d41e4363d1898eba7f092",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/historylst/third_party/utae/positional_encoding.py": "38b2dc8d4d22eabe01559a83ea06b8bbf4457d84e1d3ddc15750a46e7f418e01",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/historylst/third_party/utae/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/final_effective_evaluation_20260912.py": "6d25d79bf73cf27d8e0ac357f0a9a6bc0b69cde8d5b5efb53a16fa498bb67f4b",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/freeze_network_test_20260912.py": "0fb568f5422e0e56ccd8699f3e644ba517b6cd72bf30059fd7376f45a5c5c6c4",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912.py": "2a525e3b692dcc8b62ddcd1e62abb74c48ab41c8e1318e87b36c0b4ecc8ab8db",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/sam_finetune_20260912_v1/train.py": "2c3695218bc317acb7edaac76622946ce1de77e01a3a8c5607ce27a9e544924b",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/sam_finetune_20260912_v1/sam_step.py": "108e03276363fcd432a6640f2658763f2ebd79443cb2f09dce87168662bd3f97",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/sam_finetune_20260912_v1/design.json": "ad6273b758d3e89544206759398c4698080bd204f1be81b98bf0aca3108c83f3"
+  },
+  "manifest_sha256": "1eb03fe8b3a57226101f0e3a11215d2b5cae94de0d4bc6bbaede5fa12d1a83ef",
+  "absolute_three_seed_mean_lt_042": false,
+  "absolute_three_seed_mean_lt_040": false,
+  "ensemble_used": false,
+  "test_opened": false,
+  "predictions_created": false,
+  "scientific_goal_complete": false,
+  "scope": "Network only. Source policy, benchmark and total scientific acceptance remain separate",
+  "cost_note": "SAM adds 3000 updates and at least 6000 training forwards/backwards per run. Interpolation adds no training. BN calibration and candidate screening costs remain real. NAF905 original cost also includes discarded work recorded in resume_20260912_v1/resume.json. Per-run elapsed sums are not node wall-clock time; prediction duration is not a benchmark",
+  "discarded_original_work": {
+    "receipt": {
+      "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/resume_20260912_v1/resume.json",
+      "sha256": "f94a00a399077fef947f019e80bddcfd30d950fa37910eb6424a1ebbbb2832f4"
+    },
+    "uncheckpointed_logged_updates": 500,
+    "discarded_training_seconds_lower_bound": 111.06324507400132,
+    "timing_note": "Trainer completion time excludes discarded unsaved work; retain this lower bound when reporting actual compute"
+  }
+}

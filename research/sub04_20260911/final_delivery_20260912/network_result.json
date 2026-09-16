@@ -1,0 +1,161 @@
+{
+  "status": "final_network_evaluation_complete_absolute_target_not_met",
+  "updated_at_utc": "2026-09-12T11:36:10.476794+00:00",
+  "goal1_complete": false,
+  "relative_network_improvement_pass": true,
+  "absolute_target_lt_042_pass": false,
+  "original_target_lt_040_pass": false,
+  "validation": {
+    "baseline": {
+      "rmse": 0.4660919447636798,
+      "mae": 0.3460236227831493,
+      "hotspot_iou": 0.7813792945901065,
+      "hotspot_mae": 0.4459514459524649
+    },
+    "naf_history": {
+      "rmse": 0.4218943302840652,
+      "mae": 0.31408664740606773,
+      "hotspot_iou": 0.797504004615612,
+      "hotspot_mae": 0.40946882561489395
+    }
+  },
+  "test": {
+    "baseline": {
+      "rmse": 0.48310900619978026,
+      "mae": 0.3589459090257665,
+      "hotspot_iou": 0.7854736935514918,
+      "hotspot_mae": 0.44072196046730666
+    },
+    "naf_history": {
+      "rmse": 0.4373720546249693,
+      "mae": 0.3251483186137842,
+      "hotspot_iou": 0.7994919768630876,
+      "hotspot_mae": 0.406169248333232
+    }
+  },
+  "test_effects": {
+    "rmse": {
+      "baseline_minus_candidate": 0.04573695157481087,
+      "paired_seed_differences": [
+        0.040341855729334845,
+        0.045989615835990566,
+        0.05087938315910721
+      ],
+      "city_95_interval": [
+        0.040325469437364536,
+        0.0513660513529363
+      ],
+      "seed_city_95_interval": [
+        0.03812866407329917,
+        0.05349475854403071
+      ]
+    },
+    "mae": {
+      "baseline_minus_candidate": 0.03379759041198238,
+      "paired_seed_differences": [
+        0.029884198391328106,
+        0.03388196041152552,
+        0.03762661243309352
+      ],
+      "city_95_interval": [
+        0.029780066578008756,
+        0.03792316839604361
+      ],
+      "seed_city_95_interval": [
+        0.028113302218927834,
+        0.03939729908966121
+      ]
+    },
+    "hotspot_iou": {
+      "baseline_minus_candidate": -0.014018283311595797,
+      "paired_seed_differences": [
+        -0.013920040163847033,
+        -0.013107267665918567,
+        -0.015027542105021793
+      ],
+      "city_95_interval": [
+        -0.016984106201914,
+        -0.011030032633300232
+      ],
+      "seed_city_95_interval": [
+        -0.017338325041844366,
+        -0.010764984119479785
+      ],
+      "improvement_direction": "negative baseline-minus-candidate"
+    },
+    "hotspot_mae": {
+      "baseline_minus_candidate": 0.03455271213407473,
+      "paired_seed_differences": [
+        0.02927420998640969,
+        0.03651131769582053,
+        0.03787260871999396
+      ],
+      "city_95_interval": [
+        0.029142244295842903,
+        0.040109823208203374
+      ],
+      "seed_city_95_interval": [
+        0.0272259338009242,
+        0.04198022989991626
+      ]
+    }
+  },
+  "test_cohort": "Consumed 30-city follow-up",
+  "test_previously_consumed": true,
+  "independent_holdout": false,
+  "ensemble_used": false,
+  "weights": [
+    {
+      "architecture": "baseline",
+      "seed": 20260905,
+      "checkpoint": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/bn_selected_best_v1/baseline905/best_bn_recalibrated.pt",
+      "checkpoint_sha256": "a8006b4811804eba81692551e3a9784252fedd81a23473d8ec3112f4b8a834ce",
+      "effective_method": "fixed_bn"
+    },
+    {
+      "architecture": "naf_history",
+      "seed": 20260905,
+      "checkpoint": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/naf_history_20260905_alpha25.pt",
+      "checkpoint_sha256": "7e2c2fa8292054a21a90c7b35902850969f9ac4e55a2fde325800cf6f21c4309",
+      "effective_method": "alpha25"
+    },
+    {
+      "architecture": "baseline",
+      "seed": 20260912,
+      "checkpoint": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/bn_selected_best_v1/baseline912/best_bn_recalibrated.pt",
+      "checkpoint_sha256": "31566f2eb687bce1a4d4d7f0e07bea88cd4c849a60bd962344fe760c97558a34",
+      "effective_method": "fixed_bn"
+    },
+    {
+      "architecture": "naf_history",
+      "seed": 20260912,
+      "checkpoint": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/naf_history_20260912_alpha25.pt",
+      "checkpoint_sha256": "a254aa55c305bbefc3d5d579340a14ee231e9bc7b86ac5dd6a94dca49fd3604c",
+      "effective_method": "alpha25"
+    },
+    {
+      "architecture": "baseline",
+      "seed": 20260913,
+      "checkpoint": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/bn_selected_best_v1/baseline913/best_bn_recalibrated.pt",
+      "checkpoint_sha256": "1e6494559dd5962e760aa590624e927da896bc1c66198186691394545ce05f76",
+      "effective_method": "fixed_bn"
+    },
+    {
+      "architecture": "naf_history",
+      "seed": 20260913,
+      "checkpoint": "/home/jf_xjr/uhi_cdc/research/sub04_20260911/weight_interpolation_20260912_v1/naf_history_20260913_alpha25.pt",
+      "checkpoint_sha256": "940cc0e8d7d2228e39549e37ec55de3f310f6a7c45b157bd1924d78071cfaa00",
+      "effective_method": "alpha25"
+    }
+  ],
+  "evidence": {
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/final_delivery_20260912/network_freeze.json": "20292016fe2c954fb895bc40b2226a4fcce084030a99a4b967579ef29d25f5d1",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/final_delivery_20260912/network_test/results.json": "94902f1f34071796cd187a44c7adeac4d1b49abd3ed2779cec794b0ea301c50a",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/final_delivery_20260912/network_test/predictions_complete.json": "6c010cbcbe52f6fadc1185014febefb6d2a06af8eab9cf4c1889ad7141e1bf9f",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/final_delivery_20260912/network_benchmark/benchmark.json": "485d5eb6381d7a1eede80e7543d582c3bc56e59d72113d0104cc274f1c332427",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/final_delivery_20260912/network_training_cost_audit.json": "d201829a02e0f940ba585dfd52acc6025266cea47117b6c7b9dcbb064671600f",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260911/final_delivery_20260912/search_closed_before_final_test.json": "73cd8a199d4b2868af3e81c8147519b095099a5f4b1e00ad91d067813d3e8feb"
+  },
+  "goal2_independent_and_pending": true,
+  "no_paper_edits": true
+}

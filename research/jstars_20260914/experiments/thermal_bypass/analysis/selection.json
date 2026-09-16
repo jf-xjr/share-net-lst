@@ -1,0 +1,21 @@
+{
+  "criterion": "minimum validation regional macro RMSE",
+  "models": [
+    {
+      "seed": 20260914,
+      "checkpoint": "/home/jf_xjr/uhi_cdc/research/jstars_20260914/experiments/thermal_bypass/runs/20260914/best.pt",
+      "checkpoint_sha256": "576d296be8d2b7ebbbbf50214f5df689620226e17c55d01cf38b70a943387fd3",
+      "step": 7000,
+      "weights": "ema",
+      "validation_rmse": 0.4363320036757674
+    },
+    {
+      "seed": 20260915,
+      "checkpoint": "/home/jf_xjr/uhi_cdc/research/jstars_20260914/experiments/thermal_bypass/runs/20260915/best.pt",
+      "checkpoint_sha256": "5a0ec581266adb2d93734217c3c679d47cf460164622e5c8f10060d2b41a2aa9",
+      "step": 8000,
+      "weights": "ema",
+      "validation_rmse": 0.43954536911182585
+    }
+  ]
+}

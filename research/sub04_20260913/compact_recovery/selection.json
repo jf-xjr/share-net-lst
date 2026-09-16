@@ -1,0 +1,49 @@
+{
+  "status": "two_actual_6000_26_pilots_selected_by_fixed_Val_minus_tier",
+  "protocol": "six_actual_tiered_annealed_recovery_weights_v1",
+  "selected_family": "compact",
+  "adjusted_val_scores": {
+    "compact": -0.014314305823157958,
+    "full": -0.009435363320871915
+  },
+  "existing_full905_adjusted_val": -0.008341648409263991,
+  "development_gate_pass": true,
+  "created_at_unix": 1789288472.865743,
+  "runs_root": "/home/jf_xjr/uhi_cdc/research/sub04_20260913/compact_recovery/runs",
+  "source_sha256": {
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260913/compact_recovery/final_reader.py": "57f3298c600125c86381ec6e3a26a0d5b7cb655c6956dd5ed0fed52d8b084231",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260913/compact_recovery/final_run.py": "74c69581f6a011d3d5c21a956cd8b6e7c78c77fd723637c04e7009d93fcd5644",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260913/compact_recovery/final_loader.py": "cf59e12abdaa41b8457ee9d2afbe65021fa5c75826b3aaf95c01ebd90dc6e38c",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260913/compact_recovery/train.py": "390d066c591a0bbcd30cc57e3d55a9c99e67189bc8772eebdd3285467056fd18",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260913/compact_recovery/model.py": "538e679f8470bb76dc26beb750148bfc1253d89221eddf90850b5ab1716fcd5c",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260913/compact_recovery/design.json": "a22002a513363eb8ea3341fcba199db871bc9f4d3408682089a1fe836542d866",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260913/four_hour_extension.json": "3ffe172c7c6c4967a49f77066174c5f39ee5bad388a5bc6fffc1784d4311c8d1",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260913/network_acceptance_20260913_revision.json": "61c65c347f0283341d57abc244ac03d3cbe19a3654b696e9d4fb6f816a908efb",
+    "/home/jf_xjr/uhi_cdc/resources/historylst246/manifest.json": "1eb03fe8b3a57226101f0e3a11215d2b5cae94de0d4bc6bbaede5fa12d1a83ef",
+    "/home/jf_xjr/uhi_cdc/research/strong_history_20260911/paired_evaluation.py": "afb475e8ad4289c2e3d00ac726fa794d3c4a07f5ec84856ddb45643a044a4743",
+    "/home/jf_xjr/uhi_cdc/research/sub04_20260913/final_confirmation/reader.py": "11f8a8bebe1177def793256d89ae0bc298c49e1dd253af0db55a796518e7c169"
+  },
+  "pilots": {
+    "compact": {
+      "completion": {
+        "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260913/compact_recovery/runs/compact_20260905/complete.json",
+        "sha256": "4e9e3712aa18f2bb81b28de7792f83a659979d01a6cf515aafa983588350d1b8"
+      },
+      "checkpoint": {
+        "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260913/compact_recovery/runs/compact_20260905/best.pt",
+        "sha256": "21432eb1bcf43b787e3fd8df9d198d3b21944bd47b9d53e825b73ecfc5f536ee"
+      }
+    },
+    "full": {
+      "completion": {
+        "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260913/compact_recovery/runs/full_20260905/complete.json",
+        "sha256": "3b307fe1e6dedc340731cc248a5de0b06641c2b25032079c9755b5d6e4c8dfc0"
+      },
+      "checkpoint": {
+        "path": "/home/jf_xjr/uhi_cdc/research/sub04_20260913/compact_recovery/runs/full_20260905/best.pt",
+        "sha256": "eab4c3eba1061fa5247c3a25a39725e7ea8f0ecd6df1f5e91ed23a5a4d160edd"
+      }
+    }
+  },
+  "Test_opened": false
+}

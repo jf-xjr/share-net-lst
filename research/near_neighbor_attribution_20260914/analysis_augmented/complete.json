@@ -1,0 +1,2258 @@
+{
+  "queries": 90,
+  "thst_selected": "THST_task_loss_all",
+  "selection": {
+    "reference": "all",
+    "validation_rmse": {
+      "all": 0.589968659234885,
+      "matched": 0.5923610416355445
+    },
+    "checkpoint_sha256": "2d294d116c83c96656404e6337bdb3df2fe5f8de5b163ac377d59cb7a920bdda",
+    "native_reference": "all",
+    "native_validation_rmse": 0.6492739800517175,
+    "final_family": "task_loss",
+    "protocol_sha256": "a183cce6eac33ece7231d42d1ca1d557070dc9e041e1d72891434ef7af0ccb6c",
+    "source_sha256": "73af9e02896c452efdf3b38e8a5f4a2dd8b9c069dcfdaeab22dc1196e10e2c73",
+    "validation_references": [
+      {
+        "scene_id": "bucharest_ro:2022:LC09_L2SP_183029_20220720_02_T1",
+        "reference": 8,
+        "candidates": [
+          {
+            "reference": 0,
+            "correlation": 0.7609520795745962,
+            "age": 0.38329917192459106,
+            "parents": 889
+          },
+          {
+            "reference": 1,
+            "correlation": 0.7906917076512021,
+            "age": 0.293224960565567,
+            "parents": 1382
+          },
+          {
+            "reference": 2,
+            "correlation": 0.8571315099758706,
+            "age": 0.1880914717912674,
+            "parents": 1378
+          },
+          {
+            "reference": 3,
+            "correlation": 0.5630821106400034,
+            "age": 0.39644089341163635,
+            "parents": 969
+          },
+          {
+            "reference": 4,
+            "correlation": 0.5795895567003638,
+            "age": 0.3000684380531311,
+            "parents": 1168
+          },
+          {
+            "reference": 5,
+            "correlation": 0.5715565070189004,
+            "age": 0.19931553304195404,
+            "parents": 829
+          },
+          {
+            "reference": 6,
+            "correlation": 0.905809098715474,
+            "age": 0.004107885528355837,
+            "parents": 164
+          },
+          {
+            "reference": 8,
+            "correlation": 0.9321719132510641,
+            "age": 0.006298234686255455,
+            "parents": 290
+          }
+        ]
+      },
+      {
+        "scene_id": "bucharest_ro:2023:LC09_L2SP_182029_20230630_02_T1",
+        "reference": 6,
+        "candidates": [
+          {
+            "reference": 0,
+            "correlation": 0.35833336601144067,
+            "age": 0.47775375843048096,
+            "parents": 865
+          },
+          {
+            "reference": 1,
+            "correlation": 0.6911754678547772,
+            "age": 0.3876795470714569,
+            "parents": 1304
+          },
+          {
+            "reference": 2,
+            "correlation": 0.45424960752698224,
+            "age": 0.2825460731983185,
+            "parents": 1304
+          },
+          {
+            "reference": 4,
+            "correlation": 0.9007749701100725,
+            "age": 0.4008212685585022,
+            "parents": 1298
+          },
+          {
+            "reference": 5,
+            "correlation": 0.8460746991180413,
+            "age": 0.30006837844848633,
+            "parents": 450
+          },
+          {
+            "reference": 6,
+            "correlation": 0.9393551962646698,
+            "age": 0.002462915610522032,
+            "parents": 982
+          },
+          {
+            "reference": 7,
+            "correlation": null,
+            "age": 0.004380584694445133,
+            "parents": 19
+          },
+          {
+            "reference": 8,
+            "correlation": 0.7607959104339668,
+            "age": 0.006570857483893633,
+            "parents": 946
+          }
+        ]
+      },
+      {
+        "scene_id": "bucharest_ro:2024:LC08_L2SP_183029_20240802_02_T1",
+        "reference": 2,
+        "candidates": [
+          {
+            "reference": 0,
+            "correlation": 0.8526933631650455,
+            "age": 0.5869951844215393,
+            "parents": 879
+          },
+          {
+            "reference": 1,
+            "correlation": 0.8121439605073919,
+            "age": 0.49692100286483765,
+            "parents": 1365
+          },
+          {
+            "reference": 2,
+            "correlation": 0.9275781896297633,
+            "age": 0.3917875289916992,
+            "parents": 1362
+          },
+          {
+            "reference": 3,
+            "correlation": 0.5212623177143287,
+            "age": 0.600136935710907,
+            "parents": 962
+          },
+          {
+            "reference": 4,
+            "correlation": 0.40628906891690686,
+            "age": 0.4993838965892792,
+            "parents": 672
+          },
+          {
+            "reference": 5,
+            "correlation": 0.8813498722355554,
+            "age": 0.40054866671562195,
+            "parents": 1381
+          },
+          {
+            "reference": 7,
+            "correlation": 0.8143555430023827,
+            "age": 0.004107979126274586,
+            "parents": 1370
+          },
+          {
+            "reference": 8,
+            "correlation": 0.6035551163392285,
+            "age": 0.004380575381219387,
+            "parents": 1370
+          }
+        ]
+      },
+      {
+        "scene_id": "coeur_d_alene_id:2021:LC08_L2SP_043027_20210602_02_T1",
+        "reference": 6,
+        "candidates": [
+          {
+            "reference": 0,
+            "correlation": 0.87750998761761,
+            "age": 0.2803559899330139,
+            "parents": 1142
+          },
+          {
+            "reference": 1,
+            "correlation": 0.8949689809680135,
+            "age": 0.18398351967334747,
+            "parents": 1267
+          },
+          {
+            "reference": 2,
+            "correlation": 0.9155889827928068,
+            "age": 0.0832306295633316,
+            "parents": 1277
+          },
+          {
+            "reference": 3,
+            "correlation": 0.775419663876487,
+            "age": 0.2934977412223816,
+            "parents": 437
+          },
+          {
+            "reference": 4,
+            "correlation": 0.9434654111266927,
+            "age": 0.20150582492351532,
+            "parents": 1199
+          },
+          {
+            "reference": 6,
+            "correlation": 0.944067183420184,
+            "age": 0.004380588885396719,
+            "parents": 1105
+          },
+          {
+            "reference": 7,
+            "correlation": 0.7599035847180701,
+            "age": 0.008761163800954819,
+            "parents": 463
+          },
+          {
+            "reference": 8,
+            "correlation": 0.876633429180633,
+            "age": 0.013141697272658348,
+            "parents": 973
+          }
+        ]
+      },
+      {
+        "scene_id": "coeur_d_alene_id:2022:LC09_L2SP_043027_20220731_02_T1",
+        "reference": 2,
+        "candidates": [
+          {
+            "reference": 0,
+            "correlation": 0.904842986585721,
+            "age": 0.39644092321395874,
+            "parents": 1310
+          },
+          {
+            "reference": 1,
+            "correlation": 0.9386000080594135,
+            "age": 0.3000684380531311,
+            "parents": 1408
+          },
+          {
+            "reference": 2,
+            "correlation": 0.9408657519770537,
+            "age": 0.19931556284427643,
+            "parents": 1421
+          },
+          {
+            "reference": 3,
+            "correlation": 0.9334312426833785,
+            "age": 0.4008215069770813,
+            "parents": 1461
+          },
+          {
+            "reference": 7,
+            "correlation": 0.889382841939998,
+            "age": 0.010951373726129532,
+            "parents": 899
+          }
+        ]
+      },
+      {
+        "scene_id": "coeur_d_alene_id:2023:LC09_L2SP_043027_20230803_02_T1",
+        "reference": 6,
+        "candidates": [
+          {
+            "reference": 0,
+            "correlation": 0.9147744580614351,
+            "age": 0.49719375371932983,
+            "parents": 1235
+          },
+          {
+            "reference": 1,
+            "correlation": 0.9304323606294719,
+            "age": 0.4008212983608246,
+            "parents": 1350
+          },
+          {
+            "reference": 2,
+            "correlation": 0.9381301929006658,
+            "age": 0.3000684082508087,
+            "parents": 1357
+          },
+          {
+            "reference": 3,
+            "correlation": 0.9545869715459433,
+            "age": 0.5015743374824524,
+            "parents": 1397
+          },
+          {
+            "reference": 6,
+            "correlation": 0.9578254824758085,
+            "age": 0.004380585625767708,
+            "parents": 1261
+          },
+          {
+            "reference": 7,
+            "correlation": 0.930826986536499,
+            "age": 0.008761167526245117,
+            "parents": 1251
+          },
+          {
+            "reference": 8,
+            "correlation": 0.927671369556422,
+            "age": 0.010951446369290352,
+            "parents": 1110
+          }
+        ]
+      },
+      {
+        "scene_id": "datong_cn:2021:LC08_L2SP_125032_20210601_02_T1",
+        "reference": 0,
+        "candidates": [
+          {
+            "reference": 0,
+            "correlation": 0.7895564873960415,
+            "age": 0.3066394031047821,
+            "parents": 1254
+          },
+          {
+            "reference": 1,
+            "correlation": 0.3230373331039515,
+            "age": 0.170841783285141,
+            "parents": 1252
+          },
+          {
+            "reference": 2,
+            "correlation": 0.7414574855785206,
+            "age": 0.09637236595153809,
+            "parents": 1283
+          },
+          {
+            "reference": 3,
+            "correlation": 0.6862935447755284,
+            "age": 0.3022588789463043,
+            "parents": 1183
+          },
+          {
+            "reference": 4,
+            "correlation": 0.5730790566994957,
+            "age": 0.20150582492351532,
+            "parents": 1191
+          },
+          {
+            "reference": 5,
+            "correlation": 0.7673560941119769,
+            "age": 0.10075296461582184,
+            "parents": 740
+          },
+          {
+            "reference": 6,
+            "correlation": 0.35290349179177133,
+            "age": 0.004380589816719294,
+            "parents": 1257
+          },
+          {
+            "reference": 7,
+            "correlation": 0.7717009215619816,
+            "age": 0.013141692616045475,
+            "parents": 1195
+          }
+        ]
+      },
+      {
+        "scene_id": "datong_cn:2022:LC09_L2SP_125032_20220612_02_T1",
+        "reference": 1,
+        "candidates": [
+          {
+            "reference": 0,
+            "correlation": 0.10277943098776844,
+            "age": 0.40958255529403687,
+            "parents": 1271
+          },
+          {
+            "reference": 1,
+            "correlation": 0.6276276605106855,
+            "age": 0.27378493547439575,
+            "parents": 1292
+          },
+          {
+            "reference": 2,
+            "correlation": 0.5891122018890766,
+            "age": 0.19931553304195404,
+            "parents": 1299
+          },
+          {
+            "reference": 3,
+            "correlation": 0.1191078686163078,
+            "age": 0.4052020311355591,
+            "parents": 1194
+          },
+          {
+            "reference": 4,
+            "correlation": 0.2948030189563183,
+            "age": 0.3044489920139313,
+            "parents": 1220
+          },
+          {
+            "reference": 6,
+            "correlation": 0.12636797988247475,
+            "age": 0.0043805749155581,
+            "parents": 1233
+          },
+          {
+            "reference": 7,
+            "correlation": 0.239345633307014,
+            "age": 0.010951357893645763,
+            "parents": 1123
+          },
+          {
+            "reference": 8,
+            "correlation": 0.45255125103565286,
+            "age": 0.013141648843884468,
+            "parents": 834
+          }
+        ]
+      },
+      {
+        "scene_id": "datong_cn:2024:LC09_L2SP_125032_20240601_02_T1",
+        "reference": 7,
+        "candidates": [
+          {
+            "reference": 0,
+            "correlation": 0.7147224780635836,
+            "age": 0.6067078113555908,
+            "parents": 1233
+          },
+          {
+            "reference": 1,
+            "correlation": 0.3474268167701391,
+            "age": 0.4709101617336273,
+            "parents": 1219
+          },
+          {
+            "reference": 2,
+            "correlation": 0.8412918351027933,
+            "age": 0.3964407444000244,
+            "parents": 1244
+          },
+          {
+            "reference": 3,
+            "correlation": 0.550925909607362,
+            "age": 0.602327287197113,
+            "parents": 1170
+          },
+          {
+            "reference": 4,
+            "correlation": 0.6468265525538616,
+            "age": 0.5015742182731628,
+            "parents": 1135
+          },
+          {
+            "reference": 5,
+            "correlation": 0.7225956225381498,
+            "age": 0.400821328163147,
+            "parents": 703
+          },
+          {
+            "reference": 6,
+            "correlation": 0.786986684282295,
+            "age": 0.00438053859397769,
+            "parents": 266
+          },
+          {
+            "reference": 7,
+            "correlation": 0.8846245990504804,
+            "age": 0.006570857018232346,
+            "parents": 1224
+          },
+          {
+            "reference": 8,
+            "correlation": 0.6486724391113934,
+            "age": 0.00876107532531023,
+            "parents": 1241
+          }
+        ]
+      },
+      {
+        "scene_id": "enid_ok:2022:LC08_L2SP_028035_20220612_02_T1",
+        "reference": 1,
+        "candidates": [
+          {
+            "reference": 0,
+            "correlation": 0.4026791425687852,
+            "age": 0.40301188826560974,
+            "parents": 1460
+          },
+          {
+            "reference": 1,
+            "correlation": 0.5422463286442103,
+            "age": 0.297878235578537,
+            "parents": 1463
+          },
+          {
+            "reference": 2,
+            "correlation": 0.4004060040913426,
+            "age": 0.17960302531719208,
+            "parents": 1474
+          },
+          {
+            "reference": 3,
+            "correlation": 0.5305263454585133,
+            "age": 0.3986313045024872,
+            "parents": 1119
+          },
+          {
+            "reference": 5,
+            "correlation": 0.46805987479337074,
+            "age": 0.20150592923164368,
+            "parents": 1474
+          },
+          {
+            "reference": 7,
+            "correlation": 0.4801499513814192,
+            "age": 0.0043806047178804874,
+            "parents": 1413
+          },
+          {
+            "reference": 8,
+            "correlation": null,
+            "age": 0.008761168457567692,
+            "parents": 4
+          }
+        ]
+      },
+      {
+        "scene_id": "enid_ok:2023:LC08_L2SP_028035_20230802_02_T1",
+        "reference": 4,
+        "candidates": [
+          {
+            "reference": 0,
+            "correlation": 0.28324374412472025,
+            "age": 0.5169064402580261,
+            "parents": 1443
+          },
+          {
+            "reference": 1,
+            "correlation": 0.47403927049816974,
+            "age": 0.411772757768631,
+            "parents": 1446
+          },
+          {
+            "reference": 2,
+            "correlation": 0.5810086685078827,
+            "age": 0.29349756240844727,
+            "parents": 1457
+          },
+          {
+            "reference": 3,
+            "correlation": 0.4244420195666621,
+            "age": 0.5037646889686584,
+            "parents": 1457
+          },
+          {
+            "reference": 4,
+            "correlation": 0.6846160505099453,
+            "age": 0.3986310362815857,
+            "parents": 1457
+          },
+          {
+            "reference": 5,
+            "correlation": 0.4081781610079883,
+            "age": 0.2978781461715698,
+            "parents": 1442
+          },
+          {
+            "reference": 6,
+            "correlation": 0.5133317693059622,
+            "age": 0.0021903300657868385,
+            "parents": 99
+          },
+          {
+            "reference": 7,
+            "correlation": 0.476953992903141,
+            "age": 0.004380588885396719,
+            "parents": 304
+          },
+          {
+            "reference": 8,
+            "correlation": 0.5507980845723568,
+            "age": 0.008761167526245117,
+            "parents": 1331
+          }
+        ]
+      },
+      {
+        "scene_id": "enid_ok:2024:LC08_L2SP_028035_20240804_02_T1",
+        "reference": 6,
+        "candidates": [
+          {
+            "reference": 0,
+            "correlation": 0.25133217140672237,
+            "age": 0.6176592707633972,
+            "parents": 1446
+          },
+          {
+            "reference": 1,
+            "correlation": 0.38968013312867306,
+            "age": 0.5125256180763245,
+            "parents": 1449
+          },
+          {
+            "reference": 2,
+            "correlation": 0.611264344470882,
+            "age": 0.39425042271614075,
+            "parents": 1460
+          },
+          {
+            "reference": 3,
+            "correlation": 0.5790735255594844,
+            "age": 0.6045175194740295,
+            "parents": 1460
+          },
+          {
+            "reference": 4,
+            "correlation": 0.727636540705634,
+            "age": 0.4993838965892792,
+            "parents": 1460
+          },
+          {
+            "reference": 5,
+            "correlation": 0.4377289606409289,
+            "age": 0.3986310064792633,
+            "parents": 1445
+          },
+          {
+            "reference": 6,
+            "correlation": 0.8539593773238683,
+            "age": 0.0021903072483837605,
+            "parents": 358
+          },
+          {
+            "reference": 7,
+            "correlation": 0.8054377555716956,
+            "age": 0.004380563274025917,
+            "parents": 1460
+          },
+          {
+            "reference": 8,
+            "correlation": 0.690288850339536,
+            "age": 0.006570876110345125,
+            "parents": 1460
+          }
+        ]
+      },
+      {
+        "scene_id": "essen_de:2021:LC08_L2SP_196024_20210602_02_T1",
+        "reference": 7,
+        "candidates": [
+          {
+            "reference": 0,
+            "correlation": 0.6475392554622246,
+            "age": 0.26721423864364624,
+            "parents": 824
+          },
+          {
+            "reference": 1,
+            "correlation": 0.9119286927985953,
+            "age": 0.1927446722984314,
+            "parents": 1419
+          },
+          {
+            "reference": 2,
+            "correlation": 0.4567671973895929,
+            "age": 0.07008888572454453,
+            "parents": 1311
+          },
+          {
+            "reference": 3,
+            "correlation": 0.937952253308228,
+            "age": 0.3066394031047821,
+            "parents": 1147
+          },
+          {
+            "reference": 5,
+            "correlation": 0.8509982627203463,
+            "age": 0.10075296461582184,
+            "parents": 715
+          },
+          {
+            "reference": 6,
+            "correlation": null,
+            "age": 0.011224036104977131,
+            "parents": 53
+          },
+          {
+            "reference": 7,
+            "correlation": 0.9446530232100933,
+            "age": 0.017522240057587624,
+            "parents": 1370
+          }
+        ]
+      },
+      {
+        "scene_id": "essen_de:2023:LC08_L2SP_196024_20230811_02_T1",
+        "reference": 6,
+        "candidates": [
+          {
+            "reference": 0,
+            "correlation": 0.7177428273583903,
+            "age": 0.4862423241138458,
+            "parents": 858
+          },
+          {
+            "reference": 1,
+            "correlation": 0.9001436825971859,
+            "age": 0.411772757768631,
+            "parents": 1412
+          },
+          {
+            "reference": 2,
+            "correlation": 0.5039761020874699,
+            "age": 0.2891169786453247,
+            "parents": 1301
+          },
+          {
+            "reference": 3,
+            "correlation": 0.590933099455436,
+            "age": 0.501846969127655,
+            "parents": 1169
+          },
+          {
+            "reference": 4,
+            "correlation": 0.8462483437134127,
+            "age": 0.39671334624290466,
+            "parents": 1393
+          },
+          {
+            "reference": 5,
+            "correlation": null,
+            "age": 0.29157987236976624,
+            "parents": 21
+          },
+          {
+            "reference": 6,
+            "correlation": 0.9714588510595185,
+            "age": 0.009033787064254284,
+            "parents": 1412
+          },
+          {
+            "reference": 7,
+            "correlation": 0.9531284203936704,
+            "age": 0.01314175222069025,
+            "parents": 1388
+          },
+          {
+            "reference": 8,
+            "correlation": null,
+            "age": 0.013414395973086357,
+            "parents": 6
+          }
+        ]
+      },
+      {
+        "scene_id": "essen_de:2024:LC09_L2SP_196024_20240720_02_T1",
+        "reference": 7,
+        "candidates": [
+          {
+            "reference": 0,
+            "correlation": 0.6767840710565712,
+            "age": 0.5804243087768555,
+            "parents": 835
+          },
+          {
+            "reference": 1,
+            "correlation": 0.9288967135398272,
+            "age": 0.5059547424316406,
+            "parents": 1464
+          },
+          {
+            "reference": 2,
+            "correlation": 0.5366761819409039,
+            "age": 0.38329896330833435,
+            "parents": 1338
+          },
+          {
+            "reference": 6,
+            "correlation": null,
+            "age": 0.0024629016406834126,
+            "parents": 1
+          },
+          {
+            "reference": 7,
+            "correlation": 0.9684655469737514,
+            "age": 0.006570875179022551,
+            "parents": 1439
+          },
+          {
+            "reference": 8,
+            "correlation": 0.9543824956590218,
+            "age": 0.006843528710305691,
+            "parents": 1359
+          }
+        ]
+      },
+      {
+        "scene_id": "fushun_cn:2021:LC08_L2SP_119031_20211013_02_T1",
+        "reference": 1,
+        "candidates": [
+          {
+            "reference": 0,
+            "correlation": 0.8462934344965873,
+            "age": 0.31978118419647217,
+            "parents": 1344
+          },
+          {
+            "reference": 1,
+            "correlation": 0.9210835660639776,
+            "age": 0.20588639378547668,
+            "parents": 1368
+          },
+          {
+            "reference": 2,
+            "correlation": 0.779341863056044,
+            "age": 0.12265580892562866,
+            "parents": 1193
+          },
+          {
+            "reference": 5,
+            "correlation": 0.7098660957994465,
+            "age": 0.11389465630054474,
+            "parents": 126
+          },
+          {
+            "reference": 8,
+            "correlation": 0.6254793348251938,
+            "age": 0.013141726143658161,
+            "parents": 272
+          }
+        ]
+      },
+      {
+        "scene_id": "fushun_cn:2022:LC08_L2SP_118031_20220907_02_T1",
+        "reference": 4,
+        "candidates": [
+          {
+            "reference": 0,
+            "correlation": 0.8964969899086752,
+            "age": 0.40985533595085144,
+            "parents": 1300
+          },
+          {
+            "reference": 1,
+            "correlation": 0.9496758342900411,
+            "age": 0.29596054553985596,
+            "parents": 1335
+          },
+          {
+            "reference": 2,
+            "correlation": 0.9242043549951454,
+            "age": 0.21272996068000793,
+            "parents": 1167
+          },
+          {
+            "reference": 4,
+            "correlation": 0.9822803655031778,
+            "age": 0.297878235578537,
+            "parents": 1397
+          },
+          {
+            "reference": 5,
+            "correlation": 0.7264159080232666,
+            "age": 0.203968808054924,
+            "parents": 125
+          },
+          {
+            "reference": 7,
+            "correlation": 0.8585617741466647,
+            "age": 0.015604639425873756,
+            "parents": 399
+          }
+        ]
+      },
+      {
+        "scene_id": "fushun_cn:2024:LC08_L2SP_118031_20240827_02_T1",
+        "reference": 8,
+        "candidates": [
+          {
+            "reference": 0,
+            "correlation": 0.8642894351702574,
+            "age": 0.6069804430007935,
+            "parents": 1216
+          },
+          {
+            "reference": 1,
+            "correlation": 0.9220313768587178,
+            "age": 0.493085652589798,
+            "parents": 1262
+          },
+          {
+            "reference": 2,
+            "correlation": 0.9045925722312459,
+            "age": 0.40985506772994995,
+            "parents": 1095
+          },
+          {
+            "reference": 4,
+            "correlation": 0.7362060561802614,
+            "age": 0.5018467903137207,
+            "parents": 194
+          },
+          {
+            "reference": 5,
+            "correlation": 0.7726538105773144,
+            "age": 0.40109390020370483,
+            "parents": 122
+          },
+          {
+            "reference": 8,
+            "correlation": 0.9824563838196878,
+            "age": 0.01314175222069025,
+            "parents": 1332
+          }
+        ]
+      },
+      {
+        "scene_id": "lawton_ok:2022:LC09_L2SP_028036_20220706_02_T1",
+        "reference": 6,
+        "candidates": [
+          {
+            "reference": 0,
+            "correlation": 0.7338150475349483,
+            "age": 0.4008215069770813,
+            "parents": 1363
+          },
+          {
+            "reference": 1,
+            "correlation": 0.4670792112204145,
+            "age": 0.3132101893424988,
+            "parents": 1372
+          },
+          {
+            "reference": 2,
+            "correlation": 0.6604573273790286,
+            "age": 0.17741264402866364,
+            "parents": 1467
+          },
+          {
+            "reference": 4,
+            "correlation": 0.5771901452179842,
+            "age": 0.3044489920139313,
+            "parents": 265
+          },
+          {
+            "reference": 5,
+            "correlation": null,
+            "age": 0.19931554794311523,
+            "parents": 2
+          },
+          {
+            "reference": 6,
+            "correlation": 0.9150099873935676,
+            "age": 0.00438058003783226,
+            "parents": 1491
+          },
+          {
+            "reference": 7,
+            "correlation": 0.6284164670454857,
+            "age": 0.0065707853063941,
+            "parents": 1491
+          },
+          {
+            "reference": 8,
+            "correlation": 0.6334505961474559,
+            "age": 0.010951390489935875,
+            "parents": 1456
+          }
+        ]
+      },
+      {
+        "scene_id": "lawton_ok:2023:LC09_L2SP_028036_20230826_02_T1",
+        "reference": 6,
+        "candidates": [
+          {
+            "reference": 0,
+            "correlation": 0.7383768566049931,
+            "age": 0.5147160887718201,
+            "parents": 1256
+          },
+          {
+            "reference": 1,
+            "correlation": 0.3785526556553307,
+            "age": 0.42710477113723755,
+            "parents": 1261
+          },
+          {
+            "reference": 2,
+            "correlation": 0.5257007056546186,
+            "age": 0.2913072407245636,
+            "parents": 1351
+          },
+          {
+            "reference": 3,
+            "correlation": 0.5003498374372956,
+            "age": 0.5015743374824524,
+            "parents": 1308
+          },
+          {
+            "reference": 4,
+            "correlation": 0.4288037113068781,
+            "age": 0.3964407444000244,
+            "parents": 663
+          },
+          {
+            "reference": 5,
+            "correlation": 0.7589140806952722,
+            "age": 0.3000684082508087,
+            "parents": 125
+          },
+          {
+            "reference": 6,
+            "correlation": 0.9096356923813437,
+            "age": 0.0043805851601064205,
+            "parents": 1368
+          },
+          {
+            "reference": 7,
+            "correlation": 0.8479137681563372,
+            "age": 0.006570850964635611,
+            "parents": 1368
+          },
+          {
+            "reference": 8,
+            "correlation": 0.6046886505794861,
+            "age": 0.008761181496083736,
+            "parents": 283
+          }
+        ]
+      },
+      {
+        "scene_id": "lawton_ok:2024:LC08_L2SP_028036_20240820_02_T1",
+        "reference": 6,
+        "candidates": [
+          {
+            "reference": 0,
+            "correlation": 0.637739312835283,
+            "age": 0.6132786870002747,
+            "parents": 1399
+          },
+          {
+            "reference": 1,
+            "correlation": 0.2536257508145778,
+            "age": 0.5256673693656921,
+            "parents": 1411
+          },
+          {
+            "reference": 2,
+            "correlation": 0.5665782908600362,
+            "age": 0.3898698389530182,
+            "parents": 1505
+          },
+          {
+            "reference": 3,
+            "correlation": 0.41175982751773993,
+            "age": 0.600136935710907,
+            "parents": 1452
+          },
+          {
+            "reference": 4,
+            "correlation": 0.5037298266208625,
+            "age": 0.5037644505500793,
+            "parents": 318
+          },
+          {
+            "reference": 5,
+            "correlation": 0.7362101839441533,
+            "age": 0.3986310064792633,
+            "parents": 141
+          },
+          {
+            "reference": 6,
+            "correlation": 0.8721067380140062,
+            "age": 0.004380594007670879,
+            "parents": 1111
+          },
+          {
+            "reference": 8,
+            "correlation": null,
+            "age": 0.008761157281696796,
+            "parents": 57
+          }
+        ]
+      },
+      {
+        "scene_id": "lowell_ma:2022:LC09_L2SP_012030_20220722_02_T1",
+        "reference": 6,
+        "candidates": [
+          {
+            "reference": 0,
+            "correlation": 0.9638930989804206,
+            "age": 0.4008215069770813,
+            "parents": 1444
+          },
+          {
+            "reference": 1,
+            "correlation": 0.87318575808137,
+            "age": 0.28254613280296326,
+            "parents": 212
+          },
+          {
+            "reference": 2,
+            "correlation": 0.9531429246709644,
+            "age": 0.21683788299560547,
+            "parents": 1408
+          },
+          {
+            "reference": 4,
+            "correlation": null,
+            "age": 0.30444902181625366,
+            "parents": 11
+          },
+          {
+            "reference": 5,
+            "correlation": 0.7691249781469338,
+            "age": 0.2124572992324829,
+            "parents": 258
+          },
+          {
+            "reference": 6,
+            "correlation": 0.9757153264936218,
+            "age": 0.008761158213019371,
+            "parents": 1306
+          },
+          {
+            "reference": 7,
+            "correlation": 0.8768019048204789,
+            "age": 0.010951362550258636,
+            "parents": 312
+          }
+        ]
+      },
+      {
+        "scene_id": "lowell_ma:2024:LC09_L2SP_012030_20240625_02_T1",
+        "reference": 6,
+        "candidates": [
+          {
+            "reference": 0,
+            "correlation": 0.9750473672217889,
+            "age": 0.5935660004615784,
+            "parents": 1323
+          },
+          {
+            "reference": 1,
+            "correlation": 0.8707868627322759,
+            "age": 0.4752906560897827,
+            "parents": 212
+          },
+          {
+            "reference": 2,
+            "correlation": 0.9609551636842465,
+            "age": 0.4095824062824249,
+            "parents": 1298
+          },
+          {
+            "reference": 3,
+            "correlation": 0.9745128040556096,
+            "age": 0.6023272275924683,
+            "parents": 1416
+          },
+          {
+            "reference": 4,
+            "correlation": null,
+            "age": 0.4971935451030731,
+            "parents": 1
+          },
+          {
+            "reference": 5,
+            "correlation": 0.8281367479734282,
+            "age": 0.40520182251930237,
+            "parents": 240
+          },
+          {
+            "reference": 6,
+            "correlation": 0.9792546990508737,
+            "age": 0.0065708402544260025,
+            "parents": 1246
+          },
+          {
+            "reference": 7,
+            "correlation": 0.9744330433330949,
+            "age": 0.00876105111092329,
+            "parents": 1367
+          },
+          {
+            "reference": 8,
+            "correlation": 0.9457371187083681,
+            "age": 0.01752212643623352,
+            "parents": 1416
+          }
+        ]
+      },
+      {
+        "scene_id": "lowell_ma:2025:LC09_L2SP_012030_20250730_02_T1",
+        "reference": 6,
+        "candidates": [
+          {
+            "reference": 0,
+            "correlation": 0.8608301055316524,
+            "age": 0.7030802369117737,
+            "parents": 1319
+          },
+          {
+            "reference": 1,
+            "correlation": 0.694077475418312,
+            "age": 0.5848048329353333,
+            "parents": 174
+          },
+          {
+            "reference": 2,
+            "correlation": 0.8244173162848074,
+            "age": 0.5190966129302979,
+            "parents": 1299
+          },
+          {
+            "reference": 4,
+            "correlation": null,
+            "age": 0.606707751750946,
+            "parents": 11
+          },
+          {
+            "reference": 5,
+            "correlation": 0.7471059770041756,
+            "age": 0.5147160291671753,
+            "parents": 237
+          },
+          {
+            "reference": 6,
+            "correlation": 0.872413722958387,
+            "age": 0.0021902816370129585,
+            "parents": 1184
+          },
+          {
+            "reference": 7,
+            "correlation": 0.7843800211375166,
+            "age": 0.013141748495399952,
+            "parents": 1361
+          },
+          {
+            "reference": 8,
+            "correlation": 0.7567927199495922,
+            "age": 0.015332045033574104,
+            "parents": 1433
+          }
+        ]
+      },
+      {
+        "scene_id": "lublin_pl:2023:LC09_L2SP_186024_20230813_02_T1",
+        "reference": 6,
+        "candidates": [
+          {
+            "reference": 0,
+            "correlation": 0.6572949062016034,
+            "age": 0.49719375371932983,
+            "parents": 1299
+          },
+          {
+            "reference": 1,
+            "correlation": 0.7500317613553865,
+            "age": 0.41204532980918884,
+            "parents": 1391
+          },
+          {
+            "reference": 2,
+            "correlation": 0.8226887506729017,
+            "age": 0.2937701344490051,
+            "parents": 1436
+          },
+          {
+            "reference": 3,
+            "correlation": 0.7042440344821215,
+            "age": 0.49965664744377136,
+            "parents": 1463
+          },
+          {
+            "reference": 4,
+            "correlation": 0.800786384706264,
+            "age": 0.39890360832214355,
+            "parents": 1311
+          },
+          {
+            "reference": 5,
+            "correlation": 0.6753772760820533,
+            "age": 0.3000684082508087,
+            "parents": 672
+          },
+          {
+            "reference": 6,
+            "correlation": 0.8345027964541746,
+            "age": 0.0068434844724833965,
+            "parents": 834
+          },
+          {
+            "reference": 7,
+            "correlation": 0.6755971219294324,
+            "age": 0.01095142774283886,
+            "parents": 558
+          },
+          {
+            "reference": 8,
+            "correlation": null,
+            "age": 0.013141767121851444,
+            "parents": 31
+          }
+        ]
+      },
+      {
+        "scene_id": "lublin_pl:2024:LC08_L2SP_187024_20240627_02_T1",
+        "reference": 6,
+        "candidates": [
+          {
+            "reference": 0,
+            "correlation": 0.4090299060712668,
+            "age": 0.5845322608947754,
+            "parents": 1278
+          },
+          {
+            "reference": 1,
+            "correlation": 0.8254568980984299,
+            "age": 0.4993838667869568,
+            "parents": 1363
+          },
+          {
+            "reference": 2,
+            "correlation": 0.7252395769943639,
+            "age": 0.38110867142677307,
+            "parents": 1407
+          },
+          {
+            "reference": 3,
+            "correlation": null,
+            "age": 0.6020546555519104,
+            "parents": 15
+          },
+          {
+            "reference": 5,
+            "correlation": 0.794538615307309,
+            "age": 0.40054866671562195,
+            "parents": 212
+          },
+          {
+            "reference": 6,
+            "correlation": 0.8612924181818373,
+            "age": 0.002190310275182128,
+            "parents": 745
+          },
+          {
+            "reference": 8,
+            "correlation": null,
+            "age": 0.004380600526928902,
+            "parents": 38
+          }
+        ]
+      },
+      {
+        "scene_id": "lublin_pl:2025:LC09_L2SP_186024_20250701_02_T1",
+        "reference": 8,
+        "candidates": [
+          {
+            "reference": 0,
+            "correlation": 0.39267824497615383,
+            "age": 0.6855579018592834,
+            "parents": 1196
+          },
+          {
+            "reference": 1,
+            "correlation": 0.8753676873583738,
+            "age": 0.6004094481468201,
+            "parents": 1285
+          },
+          {
+            "reference": 2,
+            "correlation": 0.7597359267873323,
+            "age": 0.48213425278663635,
+            "parents": 1324
+          },
+          {
+            "reference": 3,
+            "correlation": 0.914158064315866,
+            "age": 0.6986996531486511,
+            "parents": 592
+          },
+          {
+            "reference": 5,
+            "correlation": 0.6928312699551773,
+            "age": 0.5015742778778076,
+            "parents": 243
+          },
+          {
+            "reference": 6,
+            "correlation": 0.9345107017634592,
+            "age": 0.00438058702275157,
+            "parents": 962
+          },
+          {
+            "reference": 7,
+            "correlation": null,
+            "age": 0.004653188865631819,
+            "parents": 25
+          },
+          {
+            "reference": 8,
+            "correlation": 0.9470847870330021,
+            "age": 0.00876117404550314,
+            "parents": 1362
+          }
+        ]
+      },
+      {
+        "scene_id": "lyon_fr:2021:LC08_L2SP_196028_20210821_02_T1",
+        "reference": 7,
+        "candidates": [
+          {
+            "reference": 0,
+            "correlation": 0.8206856190087434,
+            "age": 0.3003411889076233,
+            "parents": 920
+          },
+          {
+            "reference": 1,
+            "correlation": 0.8175792811235694,
+            "age": 0.19958814978599548,
+            "parents": 563
+          },
+          {
+            "reference": 2,
+            "correlation": 0.909303221911309,
+            "age": 0.1119769886136055,
+            "parents": 1155
+          },
+          {
+            "reference": 5,
+            "correlation": 0.8440665881375795,
+            "age": 0.10075293481349945,
+            "parents": 467
+          },
+          {
+            "reference": 6,
+            "correlation": 0.8977803857128853,
+            "age": 0.0024628990795463324,
+            "parents": 130
+          },
+          {
+            "reference": 7,
+            "correlation": 0.9583809879128581,
+            "age": 0.008761163800954819,
+            "parents": 1220
+          },
+          {
+            "reference": 8,
+            "correlation": null,
+            "age": 0.01122406404465437,
+            "parents": 19
+          }
+        ]
+      },
+      {
+        "scene_id": "lyon_fr:2022:LC09_L2SP_197028_20220722_02_T1",
+        "reference": 2,
+        "candidates": [
+          {
+            "reference": 0,
+            "correlation": 0.887069090100895,
+            "age": 0.3920603096485138,
+            "parents": 1020
+          },
+          {
+            "reference": 1,
+            "correlation": 0.7466152467120686,
+            "age": 0.291307270526886,
+            "parents": 638
+          },
+          {
+            "reference": 2,
+            "correlation": 0.9132189554721916,
+            "age": 0.2036961168050766,
+            "parents": 1295
+          },
+          {
+            "reference": 3,
+            "correlation": 0.8182613731398445,
+            "age": 0.4008215069770813,
+            "parents": 1205
+          },
+          {
+            "reference": 4,
+            "correlation": 0.869451295886761,
+            "age": 0.3000684380531311,
+            "parents": 1105
+          },
+          {
+            "reference": 5,
+            "correlation": 0.8418816156873654,
+            "age": 0.19931553304195404,
+            "parents": 569
+          },
+          {
+            "reference": 6,
+            "correlation": 0.8900347190437591,
+            "age": 0.004107892047613859,
+            "parents": 1462
+          },
+          {
+            "reference": 7,
+            "correlation": 0.8885780390704434,
+            "age": 0.004380576312541962,
+            "parents": 1451
+          },
+          {
+            "reference": 8,
+            "correlation": 0.8143046874446874,
+            "age": 0.006298242136836052,
+            "parents": 317
+          }
+        ]
+      },
+      {
+        "scene_id": "lyon_fr:2023:LC09_L2SP_196028_20230819_02_T1",
+        "reference": 2,
+        "candidates": [
+          {
+            "reference": 0,
+            "correlation": 0.862617520518854,
+            "age": 0.49965664744377136,
+            "parents": 983
+          },
+          {
+            "reference": 1,
+            "correlation": 0.6787427008143989,
+            "age": 0.39890360832214355,
+            "parents": 602
+          },
+          {
+            "reference": 2,
+            "correlation": 0.8921104550789889,
+            "age": 0.311292439699173,
+            "parents": 1236
+          },
+          {
+            "reference": 5,
+            "correlation": 0.837657205447839,
+            "age": 0.3000684082508087,
+            "parents": 505
+          },
+          {
+            "reference": 6,
+            "correlation": 0.8650794740665565,
+            "age": 0.004653159994632006,
+            "parents": 734
+          },
+          {
+            "reference": 7,
+            "correlation": 0.8363156859963787,
+            "age": 0.008761157281696796,
+            "parents": 179
+          },
+          {
+            "reference": 8,
+            "correlation": 0.4581417303258896,
+            "age": 0.009033748880028725,
+            "parents": 205
+          }
+        ]
+      },
+      {
+        "scene_id": "neijiang_cn:2022:LC08_L2SP_128040_20220812_02_T1",
+        "reference": 0,
+        "candidates": [
+          {
+            "reference": 0,
+            "correlation": 0.8307785950944147,
+            "age": 0.4186166226863861,
+            "parents": 236
+          },
+          {
+            "reference": 1,
+            "correlation": 0.8046197291525212,
+            "age": 0.3003412187099457,
+            "parents": 914
+          },
+          {
+            "reference": 2,
+            "correlation": 0.8142761312581078,
+            "age": 0.22778938710689545,
+            "parents": 1342
+          },
+          {
+            "reference": 3,
+            "correlation": null,
+            "age": 0.40547484159469604,
+            "parents": 6
+          },
+          {
+            "reference": 5,
+            "correlation": 0.7447755344762319,
+            "age": 0.20396889746189117,
+            "parents": 626
+          },
+          {
+            "reference": 8,
+            "correlation": null,
+            "age": 0.008761174976825714,
+            "parents": 7
+          }
+        ]
+      },
+      {
+        "scene_id": "neijiang_cn:2023:LC08_L2SP_129039_20230416_02_T1",
+        "reference": 2,
+        "candidates": [
+          {
+            "reference": 0,
+            "correlation": 0.6675453918935985,
+            "age": 0.4862424433231354,
+            "parents": 237
+          },
+          {
+            "reference": 1,
+            "correlation": 0.5236927703944665,
+            "age": 0.36796703934669495,
+            "parents": 861
+          },
+          {
+            "reference": 2,
+            "correlation": 0.8583492917135773,
+            "age": 0.2954152226448059,
+            "parents": 1305
+          },
+          {
+            "reference": 4,
+            "correlation": 0.7139457156760114,
+            "age": 0.38986992835998535,
+            "parents": 218
+          },
+          {
+            "reference": 6,
+            "correlation": null,
+            "age": 0.004107797052711248,
+            "parents": 7
+          }
+        ]
+      },
+      {
+        "scene_id": "neijiang_cn:2024:LC09_L2SP_128040_20240825_02_T1",
+        "reference": 1,
+        "candidates": [
+          {
+            "reference": 0,
+            "correlation": 0.7293863978121539,
+            "age": 0.6223125457763672,
+            "parents": 233
+          },
+          {
+            "reference": 1,
+            "correlation": 0.8386399210139921,
+            "age": 0.5040371417999268,
+            "parents": 906
+          },
+          {
+            "reference": 2,
+            "correlation": 0.6114970518887551,
+            "age": 0.4314853549003601,
+            "parents": 1332
+          },
+          {
+            "reference": 5,
+            "correlation": 0.6831807927688816,
+            "age": 0.396440714597702,
+            "parents": 783
+          },
+          {
+            "reference": 6,
+            "correlation": null,
+            "age": 0.002190292114391923,
+            "parents": 20
+          }
+        ]
+      },
+      {
+        "scene_id": "ningbo_cn:2021:LC08_L2SP_118039_20210429_02_T1",
+        "reference": 5,
+        "candidates": [
+          {
+            "reference": 1,
+            "correlation": null,
+            "age": 0.17522236704826355,
+            "parents": 18
+          },
+          {
+            "reference": 2,
+            "correlation": 0.7111586600869712,
+            "age": 0.07008889317512512,
+            "parents": 366
+          },
+          {
+            "reference": 4,
+            "correlation": 0.8293018675928705,
+            "age": 0.19712527096271515,
+            "parents": 1177
+          },
+          {
+            "reference": 5,
+            "correlation": 0.8521580722938513,
+            "age": 0.09637238085269928,
+            "parents": 1343
+          },
+          {
+            "reference": 6,
+            "correlation": 0.7586323087984143,
+            "age": 0.008761079050600529,
+            "parents": 82
+          }
+        ]
+      },
+      {
+        "scene_id": "ningbo_cn:2023:LC09_L2SP_118039_20230427_02_T1",
+        "reference": 5,
+        "candidates": [
+          {
+            "reference": 1,
+            "correlation": null,
+            "age": 0.37453794479370117,
+            "parents": 21
+          },
+          {
+            "reference": 2,
+            "correlation": 0.7652468102297878,
+            "age": 0.26940447092056274,
+            "parents": 372
+          },
+          {
+            "reference": 4,
+            "correlation": 0.8694523083422276,
+            "age": 0.3964408338069916,
+            "parents": 1247
+          },
+          {
+            "reference": 5,
+            "correlation": 0.9219478169788957,
+            "age": 0.2956879436969757,
+            "parents": 1485
+          },
+          {
+            "reference": 6,
+            "correlation": 0.7503286306624224,
+            "age": 0.008761076256632805,
+            "parents": 220
+          }
+        ]
+      },
+      {
+        "scene_id": "ningbo_cn:2025:LC09_L2SP_118039_20250502_02_T1",
+        "reference": 5,
+        "candidates": [
+          {
+            "reference": 1,
+            "correlation": null,
+            "age": 0.5760437250137329,
+            "parents": 21
+          },
+          {
+            "reference": 2,
+            "correlation": 0.7389154936972143,
+            "age": 0.47091028094291687,
+            "parents": 384
+          },
+          {
+            "reference": 4,
+            "correlation": 0.8416377145258889,
+            "age": 0.5979466438293457,
+            "parents": 1275
+          },
+          {
+            "reference": 5,
+            "correlation": 0.8777549863440639,
+            "age": 0.49719375371932983,
+            "parents": 1536
+          },
+          {
+            "reference": 6,
+            "correlation": 0.7023092955387763,
+            "age": 0.004380534868687391,
+            "parents": 934
+          },
+          {
+            "reference": 7,
+            "correlation": 0.8122683458479434,
+            "age": 0.006570862606167793,
+            "parents": 546
+          },
+          {
+            "reference": 8,
+            "correlation": 0.8040168780692937,
+            "age": 0.010951410047709942,
+            "parents": 686
+          }
+        ]
+      },
+      {
+        "scene_id": "sevilla_es:2021:LC08_L2SP_202034_20210730_02_T1",
+        "reference": 6,
+        "candidates": [
+          {
+            "reference": 0,
+            "correlation": 0.7751244645442845,
+            "age": 0.2847365438938141,
+            "parents": 1413
+          },
+          {
+            "reference": 1,
+            "correlation": 0.8424170499881874,
+            "age": 0.19712524116039276,
+            "parents": 1413
+          },
+          {
+            "reference": 2,
+            "correlation": 0.35842546290275107,
+            "age": 0.11827526986598969,
+            "parents": 1413
+          },
+          {
+            "reference": 3,
+            "correlation": 0.7607722659674608,
+            "age": 0.3022588789463043,
+            "parents": 1413
+          },
+          {
+            "reference": 4,
+            "correlation": 0.6725500721904107,
+            "age": 0.20150582492351532,
+            "parents": 1057
+          },
+          {
+            "reference": 5,
+            "correlation": 0.7960746450533508,
+            "age": 0.10075292736291885,
+            "parents": 1413
+          },
+          {
+            "reference": 6,
+            "correlation": 0.9366235128940127,
+            "age": 0.00438058702275157,
+            "parents": 1413
+          },
+          {
+            "reference": 7,
+            "correlation": 0.9029229475175112,
+            "age": 0.008761151693761349,
+            "parents": 1413
+          },
+          {
+            "reference": 8,
+            "correlation": 0.7371354890362052,
+            "age": 0.013141726143658161,
+            "parents": 1221
+          }
+        ]
+      },
+      {
+        "scene_id": "sevilla_es:2022:LC09_L2SP_202034_20220709_02_T1",
+        "reference": 5,
+        "candidates": [
+          {
+            "reference": 0,
+            "correlation": 0.718459155741693,
+            "age": 0.3789185881614685,
+            "parents": 1491
+          },
+          {
+            "reference": 1,
+            "correlation": 0.8113150041238184,
+            "age": 0.291307270526886,
+            "parents": 1491
+          },
+          {
+            "reference": 2,
+            "correlation": 0.4488309486278216,
+            "age": 0.2124572992324829,
+            "parents": 1491
+          },
+          {
+            "reference": 3,
+            "correlation": 0.8003914976035506,
+            "age": 0.4008215069770813,
+            "parents": 1491
+          },
+          {
+            "reference": 4,
+            "correlation": 0.8281509479001175,
+            "age": 0.3000684380531311,
+            "parents": 1333
+          },
+          {
+            "reference": 5,
+            "correlation": 0.8746731345140369,
+            "age": 0.19931553304195404,
+            "parents": 1491
+          },
+          {
+            "reference": 6,
+            "correlation": 0.8230001946337786,
+            "age": 0.008761179633438587,
+            "parents": 1491
+          },
+          {
+            "reference": 7,
+            "correlation": 0.38957411533089986,
+            "age": 0.01533194724470377,
+            "parents": 1421
+          }
+        ]
+      },
+      {
+        "scene_id": "sevilla_es:2023:LC08_L2SP_202034_20230821_02_T1",
+        "reference": 8,
+        "candidates": [
+          {
+            "reference": 0,
+            "correlation": 0.798614773552285,
+            "age": 0.4906229078769684,
+            "parents": 1418
+          },
+          {
+            "reference": 1,
+            "correlation": 0.75174827248037,
+            "age": 0.40301162004470825,
+            "parents": 1418
+          },
+          {
+            "reference": 2,
+            "correlation": 0.3142199804971905,
+            "age": 0.3241616487503052,
+            "parents": 1418
+          },
+          {
+            "reference": 3,
+            "correlation": 0.7234865483784823,
+            "age": 0.4993840754032135,
+            "parents": 1418
+          },
+          {
+            "reference": 5,
+            "correlation": 0.7081408220077842,
+            "age": 0.2978781461715698,
+            "parents": 1418
+          },
+          {
+            "reference": 6,
+            "correlation": 0.952804515841948,
+            "age": 0.002190319588407874,
+            "parents": 1418
+          },
+          {
+            "reference": 7,
+            "correlation": 0.9541735904794341,
+            "age": 0.004380584228783846,
+            "parents": 1418
+          },
+          {
+            "reference": 8,
+            "correlation": 0.9688240301467477,
+            "age": 0.006570905912667513,
+            "parents": 1418
+          }
+        ]
+      },
+      {
+        "scene_id": "shijiazhuang_cn:2021:LC08_L2SP_124034_20210525_02_T1",
+        "reference": 2,
+        "candidates": [
+          {
+            "reference": 0,
+            "correlation": 0.7502055887001211,
+            "age": 0.2715948224067688,
+            "parents": 1458
+          },
+          {
+            "reference": 1,
+            "correlation": 0.7374966323740556,
+            "age": 0.20150582492351532,
+            "parents": 1447
+          },
+          {
+            "reference": 2,
+            "correlation": 0.7558131736179098,
+            "age": 0.10075295716524124,
+            "parents": 1489
+          },
+          {
+            "reference": 3,
+            "correlation": null,
+            "age": 0.2847365736961365,
+            "parents": 52
+          },
+          {
+            "reference": 6,
+            "correlation": 0.7405144654238338,
+            "age": 0.004380594007670879,
+            "parents": 1379
+          },
+          {
+            "reference": 7,
+            "correlation": 0.5605580344631055,
+            "age": 0.013141672126948833,
+            "parents": 1493
+          },
+          {
+            "reference": 8,
+            "correlation": 0.2858049630172777,
+            "age": 0.01752222143113613,
+            "parents": 1099
+          }
+        ]
+      },
+      {
+        "scene_id": "shijiazhuang_cn:2022:LC09_L2SP_124034_20220707_02_T1",
+        "reference": 7,
+        "candidates": [
+          {
+            "reference": 0,
+            "correlation": 0.7816926171931186,
+            "age": 0.38329917192459106,
+            "parents": 1450
+          },
+          {
+            "reference": 1,
+            "correlation": 0.5463207472102956,
+            "age": 0.3132101595401764,
+            "parents": 1400
+          },
+          {
+            "reference": 2,
+            "correlation": 0.6474114218501135,
+            "age": 0.2124572992324829,
+            "parents": 1455
+          },
+          {
+            "reference": 3,
+            "correlation": null,
+            "age": 0.39644092321395874,
+            "parents": 48
+          },
+          {
+            "reference": 4,
+            "correlation": 0.8471292991066277,
+            "age": 0.29568785429000854,
+            "parents": 1498
+          },
+          {
+            "reference": 5,
+            "correlation": 0.7342167812514548,
+            "age": 0.1905543953180313,
+            "parents": 516
+          },
+          {
+            "reference": 7,
+            "correlation": 0.9106088021649326,
+            "age": 0.006570784375071526,
+            "parents": 1355
+          },
+          {
+            "reference": 8,
+            "correlation": 0.5993525662267557,
+            "age": 0.010951388627290726,
+            "parents": 1204
+          }
+        ]
+      },
+      {
+        "scene_id": "shijiazhuang_cn:2023:LC09_L2SP_124034_20230624_02_T1",
+        "reference": 8,
+        "candidates": [
+          {
+            "reference": 0,
+            "correlation": 0.6912941735997389,
+            "age": 0.4796714186668396,
+            "parents": 1505
+          },
+          {
+            "reference": 1,
+            "correlation": 0.5763231259293194,
+            "age": 0.4095824062824249,
+            "parents": 1460
+          },
+          {
+            "reference": 2,
+            "correlation": 0.6469188308267675,
+            "age": 0.30882954597473145,
+            "parents": 1517
+          },
+          {
+            "reference": 3,
+            "correlation": null,
+            "age": 0.4928131699562073,
+            "parents": 51
+          },
+          {
+            "reference": 4,
+            "correlation": 0.6810140444334728,
+            "age": 0.3920601010322571,
+            "parents": 1559
+          },
+          {
+            "reference": 6,
+            "correlation": 0.720065735910887,
+            "age": 0.004380541387945414,
+            "parents": 1556
+          },
+          {
+            "reference": 7,
+            "correlation": 0.284655869409317,
+            "age": 0.008761088363826275,
+            "parents": 376
+          },
+          {
+            "reference": 8,
+            "correlation": 0.7724977800393833,
+            "age": 0.013141619972884655,
+            "parents": 1555
+          }
+        ]
+      },
+      {
+        "scene_id": "troy_ny:2021:LC08_L2SP_014030_20210607_02_T1",
+        "reference": 5,
+        "candidates": [
+          {
+            "reference": 0,
+            "correlation": 0.927318670130955,
+            "age": 0.3022589087486267,
+            "parents": 562
+          },
+          {
+            "reference": 1,
+            "correlation": 0.9469423326433886,
+            "age": 0.18398351967334747,
+            "parents": 1255
+          },
+          {
+            "reference": 2,
+            "correlation": 0.942728238195957,
+            "age": 0.09199178218841553,
+            "parents": 1071
+          },
+          {
+            "reference": 5,
+            "correlation": 0.9593217817155687,
+            "age": 0.10075295716524124,
+            "parents": 1206
+          },
+          {
+            "reference": 6,
+            "correlation": 0.7876419386962873,
+            "age": 0.008761181496083736,
+            "parents": 170
+          }
+        ]
+      },
+      {
+        "scene_id": "troy_ny:2023:LC09_L2SP_014030_20230723_02_T1",
+        "reference": 1,
+        "candidates": [
+          {
+            "reference": 0,
+            "correlation": 0.8841112186515098,
+            "age": 0.5147160887718201,
+            "parents": 647
+          },
+          {
+            "reference": 1,
+            "correlation": 0.9788990679515096,
+            "age": 0.39644068479537964,
+            "parents": 1512
+          },
+          {
+            "reference": 2,
+            "correlation": 0.9592374342347849,
+            "age": 0.3044489622116089,
+            "parents": 1204
+          },
+          {
+            "reference": 6,
+            "correlation": null,
+            "age": 0.008761171251535416,
+            "parents": 0
+          },
+          {
+            "reference": 7,
+            "correlation": 0.8809670284265505,
+            "age": 0.015332016162574291,
+            "parents": 1458
+          }
+        ]
+      },
+      {
+        "scene_id": "troy_ny:2024:LC09_L2SP_013030_20240616_02_T1",
+        "reference": 1,
+        "candidates": [
+          {
+            "reference": 0,
+            "correlation": 0.9060112229102942,
+            "age": 0.6047901511192322,
+            "parents": 583
+          },
+          {
+            "reference": 1,
+            "correlation": 0.9435146338513756,
+            "age": 0.48651474714279175,
+            "parents": 1269
+          },
+          {
+            "reference": 2,
+            "correlation": 0.9194437549973113,
+            "age": 0.3945229947566986,
+            "parents": 985
+          },
+          {
+            "reference": 5,
+            "correlation": 0.9240720232899713,
+            "age": 0.39890357851982117,
+            "parents": 977
+          },
+          {
+            "reference": 6,
+            "correlation": 0.9068852093705785,
+            "age": 0.006843403447419405,
+            "parents": 1020
+          },
+          {
+            "reference": 7,
+            "correlation": 0.931324890306115,
+            "age": 0.009033741429448128,
+            "parents": 1294
+          },
+          {
+            "reference": 8,
+            "correlation": 0.8442569833297764,
+            "age": 0.013414256274700165,
+            "parents": 1202
+          }
+        ]
+      }
+    ]
+  },
+  "sources": {
+    "/home/jf_xjr/uhi_cdc/research/near_neighbor_attribution_20260914/augment_comparison.py": "5dfe021da1ffa2c236858828118887d6e3340260022642274bbe540fa9505c38",
+    "/home/jf_xjr/uhi_cdc/research/near_neighbor_attribution_20260914/THST_TASK_LOSS_PROTOCOL.md": "a183cce6eac33ece7231d42d1ca1d557070dc9e041e1d72891434ef7af0ccb6c",
+    "/home/jf_xjr/uhi_cdc/research/near_neighbor_attribution_20260914/analysis/complete.json": "334fd24e509af81ec38a0b02f2a8ad68c6061f9f648066e2bc0c3519af84bca8",
+    "/home/jf_xjr/uhi_cdc/research/near_neighbor_attribution_20260914/thst_task_loss/predictions_complete.json": "a48e244d7c3450d956618816c87d1a194477551dcdab647324d26ae274a22028"
+  },
+  "primary_selection": "Val45 only; original and task-loss adaptation retained"
+}

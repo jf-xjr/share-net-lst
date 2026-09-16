@@ -1,0 +1,100 @@
+{
+  "protocol": "compact_query_product_fp32_half_teacher_half_GT_1500_8_v1",
+  "purpose": "One genuine capacity candidate: four current-query to history-channel projections add head-specific normalized dot-product source logits, initialized as exact parent identity; no wider backbone or source removal.",
+  "architectures": {
+    "compact": 5977045
+  },
+  "pilot": {
+    "architecture": "compact",
+    "original_seed": 20260905,
+    "parent_checkpoint_sha256": "21432eb1bcf43b787e3fd8df9d198d3b21944bd47b9d53e825b73ecfc5f536ee",
+    "parent_complete_sha256": "4e9e3712aa18f2bb81b28de7792f83a659979d01a6cf515aafa983588350d1b8",
+    "parent_validation_rmse": 0.41068569417684203,
+    "minimum_validation_improvement_k": 0.001
+  },
+  "recipe": {
+    "updates": 1500,
+    "batch_size": 4,
+    "lr": 5e-05,
+    "warmup": 50,
+    "cosine_floor": 0.1,
+    "weight_decay": 0.0001,
+    "validation_interval": 500,
+    "evaluation_batch": 2,
+    "schedule_seed": 20260943,
+    "ema_max_decay": 0.995,
+    "gradient_clip": 1.0,
+    "history_dropout": 0.0,
+    "emissivity_dropout": 0.0,
+    "loss": "Original .5 formalGT sceneRMSE + .5 supportteacher sceneRMSE, each sqrt(maskedSSE/count+1e-6), micro2x2 weighted half each",
+    "teacher_weight": 0.5,
+    "ground_truth_weight": 0.5,
+    "optimizer": "AdamW fused CUDA",
+    "training_precision": "FP32 forward/objective/backward/optimizer; autocast disabled; TF32 off; no GradScaler or retries",
+    "validation": "Full original160 Val45; raw/EMA0/500/1000/1500 eight choices then selected repeat with hotspots",
+    "microbatch_size": 2,
+    "gradient_accumulation": 2,
+    "query_product_lr": 0.0005
+  },
+  "teacher": {
+    "receipt": "research/sub04_20260913/strong_teacher/fit/predictions_complete.json",
+    "receipt_sha256": "48bfd6b2bdbf672cf6bdc10cb08a77a9811fc3be76b66dc29b584a5bc8857d58",
+    "array_sha256": "5dce7f881d454d1d8ac347f9bb7915dcbe894e258184629d485ba2d3f0e5244b",
+    "validation_rmse": 0.40725759545661777,
+    "new_teacher_generation_seconds": 0
+  },
+  "initialization": "Actual original compact6000 selected best per seed; strict original keys plus only eight zero query-projection tensors. No failed-polish or crop checkpoint is an initializer.",
+  "sampling": "Exact first1500 originalFit603 ids and D4 from corresponding original6000 schedule, seed20260943, full160 throughout. No crop or new sampler.",
+  "expansion": "Only actual complete9051500/8 Val improvement>=.001 permits separately authorized912/913 stage; no baseline training, no automatic expansion, no Test. Root must approve model and CPU checks before first GPU execution.",
+  "budget": {
+    "maximum_job_seconds": 700,
+    "stop_training_unix": 1789298796,
+    "hard_deadline_unix": 1789302396
+  },
+  "deployment": {
+    "input_fields": [
+      "fine",
+      "coarse",
+      "support",
+      "context",
+      "emissivity",
+      "history"
+    ],
+    "single_forward_views": 1,
+    "teacher_used_at_inference": false,
+    "ensemble_used": false,
+    "architecture_changed": false
+  },
+  "boundaries": {
+    "Fit_ground_truth_opened": true,
+    "validation_labels_for_selection": true,
+    "Test_opened": false,
+    "automatic_training": false,
+    "automatic_expansion": false,
+    "original_user_final_tiers_and_paired_criteria_changed": false,
+    "Test_previously_consumed": true,
+    "training_budget_matched_to_baseline": false
+  },
+  "added_parameters": 65520,
+  "model_class": "compact_query_product.model.QueryProductCompactHistoryNAF",
+  "parameter_groups": {
+    "backbone": {
+      "parameters": 5911525,
+      "lr": 5e-05
+    },
+    "query_product": {
+      "parameters": 65520,
+      "lr": 0.0005,
+      "names": [
+        "fusion.0.query_product.weight",
+        "fusion.0.query_product.bias",
+        "fusion.1.query_product.weight",
+        "fusion.1.query_product.bias",
+        "fusion.2.query_product.weight",
+        "fusion.2.query_product.bias",
+        "fusion.3.query_product.weight",
+        "fusion.3.query_product.bias"
+      ]
+    }
+  }
+}

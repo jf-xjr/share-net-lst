@@ -1,0 +1,78 @@
+{
+  "entries": [
+    {
+      "variant": "archive_only",
+      "seed": 20260905,
+      "prediction": "/home/jf_xjr/uhi_cdc/research/jstars_20260914/experiments/history_availability/archive_only_20260905.npy",
+      "prediction_sha256": "c560ac842bc1a9830b8008d392186cd7e529dd09a2990e94213c93cb22252d25",
+      "freeze_sha256": "759ca27cb38c0f2cb4c98b9d8e673cf7fb993dedbd632cfefceb9da3a01638f5",
+      "checkpoint_sha256": "9fb45471adf1f2acfcbc81d70dd8f352517c6bd9efef188f50a6b7e67266ee54",
+      "queries": 90,
+      "labels_opened": false,
+      "original_first_scene_maximum_difference_K": 0.0,
+      "seconds": 13.194337139000709
+    },
+    {
+      "variant": "recent_only",
+      "seed": 20260905,
+      "prediction": "/home/jf_xjr/uhi_cdc/research/jstars_20260914/experiments/history_availability/recent_only_20260905.npy",
+      "prediction_sha256": "677aa2979342a8a4d582ca54c4f4c93c23417d9017ca2861116df786c00244ca",
+      "freeze_sha256": "759ca27cb38c0f2cb4c98b9d8e673cf7fb993dedbd632cfefceb9da3a01638f5",
+      "checkpoint_sha256": "9fb45471adf1f2acfcbc81d70dd8f352517c6bd9efef188f50a6b7e67266ee54",
+      "queries": 90,
+      "labels_opened": false,
+      "original_first_scene_maximum_difference_K": 0.0,
+      "seconds": 4.512935500999447
+    },
+    {
+      "variant": "archive_only",
+      "seed": 20260912,
+      "prediction": "/home/jf_xjr/uhi_cdc/research/jstars_20260914/experiments/history_availability/archive_only_20260912.npy",
+      "prediction_sha256": "1050fe29e96bef3347f152163119c90353abc61580e684c5e1718605ca1e4189",
+      "freeze_sha256": "759ca27cb38c0f2cb4c98b9d8e673cf7fb993dedbd632cfefceb9da3a01638f5",
+      "checkpoint_sha256": "705e8a4b66d5c78b5f5d6af457af75443e5f357e6200c158fc6120f403f3fdd1",
+      "queries": 90,
+      "labels_opened": false,
+      "original_first_scene_maximum_difference_K": 0.0,
+      "seconds": 4.767534404003527
+    },
+    {
+      "variant": "recent_only",
+      "seed": 20260912,
+      "prediction": "/home/jf_xjr/uhi_cdc/research/jstars_20260914/experiments/history_availability/recent_only_20260912.npy",
+      "prediction_sha256": "b7e6516a6d726db3f162fbbad3cf4ef3ada087e61af11f92bfd9f36e048dbe6b",
+      "freeze_sha256": "759ca27cb38c0f2cb4c98b9d8e673cf7fb993dedbd632cfefceb9da3a01638f5",
+      "checkpoint_sha256": "705e8a4b66d5c78b5f5d6af457af75443e5f357e6200c158fc6120f403f3fdd1",
+      "queries": 90,
+      "labels_opened": false,
+      "original_first_scene_maximum_difference_K": 0.0,
+      "seconds": 4.942822256998625
+    },
+    {
+      "variant": "archive_only",
+      "seed": 20260913,
+      "prediction": "/home/jf_xjr/uhi_cdc/research/jstars_20260914/experiments/history_availability/archive_only_20260913.npy",
+      "prediction_sha256": "22ed0993c269a7332ca91ab41bad09460aea0739080b429c7cc37b823fcdb6f4",
+      "freeze_sha256": "759ca27cb38c0f2cb4c98b9d8e673cf7fb993dedbd632cfefceb9da3a01638f5",
+      "checkpoint_sha256": "88dbe6c74dcea9d1209f0fdc6f6468405351b7b9e3c2a8343383b6c595243c19",
+      "queries": 90,
+      "labels_opened": false,
+      "original_first_scene_maximum_difference_K": 0.0,
+      "seconds": 5.220073151001998
+    },
+    {
+      "variant": "recent_only",
+      "seed": 20260913,
+      "prediction": "/home/jf_xjr/uhi_cdc/research/jstars_20260914/experiments/history_availability/recent_only_20260913.npy",
+      "prediction_sha256": "7676936ecfdcd53fb8228e6f1efb9ac935f41a836a6d4e1092d0bdf4d61f96df",
+      "freeze_sha256": "759ca27cb38c0f2cb4c98b9d8e673cf7fb993dedbd632cfefceb9da3a01638f5",
+      "checkpoint_sha256": "88dbe6c74dcea9d1209f0fdc6f6468405351b7b9e3c2a8343383b6c595243c19",
+      "queries": 90,
+      "labels_opened": false,
+      "original_first_scene_maximum_difference_K": 0.0,
+      "seconds": 4.958938980002131
+    }
+  ],
+  "labels_opened": false,
+  "freeze_sha256": "759ca27cb38c0f2cb4c98b9d8e673cf7fb993dedbd632cfefceb9da3a01638f5"
+}

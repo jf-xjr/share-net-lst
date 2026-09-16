@@ -1,0 +1,9 @@
+{
+  "status": "complete",
+  "updates": 18000,
+  "seconds": 3355.050173057,
+  "best_validation_rmse": 0.46885467923603236,
+  "validation_candidates": 50,
+  "parameters": 2985697,
+  "peak_cuda_bytes": 2988336128
+}

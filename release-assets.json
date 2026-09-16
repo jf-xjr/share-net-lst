@@ -1,0 +1,290 @@
+{
+  "schema": 1,
+  "repository": "jf-xjr/share-net-lst",
+  "tag": "v1.0.0-manuscript",
+  "part_limit_bytes": 1073741824,
+  "groups": [
+    {
+      "name": "historylst246-test",
+      "format": "concatenated-gzip-tar",
+      "parts": [
+        {
+          "name": "historylst246-test.tar.gz.part001",
+          "bytes": 433481225,
+          "sha256": "1a02e4a43bad662c1aa503caeada7482c93e6481824e2228220cd58fdc0cf7d7"
+        }
+      ],
+      "files": [
+        {
+          "path": "resources/historylst246/data/test/inputs/coarse.npy",
+          "bytes": 576128,
+          "sha256": "a4a4d3abf50dec1138c216b8d3c8ffa12d0f875a13a7ae069db67d4773b27431"
+        },
+        {
+          "path": "resources/historylst246/data/test/inputs/context.npy",
+          "bytes": 5528,
+          "sha256": "80f2e570210bf5e4d91856bc21c7b3273e7e713d90e348dd4484fd6ce95e7b50"
+        },
+        {
+          "path": "resources/historylst246/data/test/inputs/emissivity.npy",
+          "bytes": 36864128,
+          "sha256": "4ba4acf14ec68539f5fb15fae79ed0d32bc398a4b044443d06f25e468338003f"
+        },
+        {
+          "path": "resources/historylst246/data/test/inputs/fine.npy",
+          "bytes": 479232128,
+          "sha256": "aea99ff036382416db0c3e69a49616cc5579fa4339b464a8e14e5ef26b384010"
+        },
+        {
+          "path": "resources/historylst246/data/test/inputs/history.npy",
+          "bytes": 746496128,
+          "sha256": "24392149aa987b4ad8aba867ada2bfd0cb351c40b9bab93d1388930b0c803215"
+        },
+        {
+          "path": "resources/historylst246/data/test/inputs/support.npy",
+          "bytes": 2304128,
+          "sha256": "f49482f499918a06f1bbc5cf8f0af95951773f089ee389857f9b24a9b597b471"
+        },
+        {
+          "path": "resources/historylst246/data/test/labels/formal.npy",
+          "bytes": 2304128,
+          "sha256": "1fc5eab440fed36653c0158474604290c0b8c4f9e8b79a12d1f3964b6d3bed72"
+        },
+        {
+          "path": "resources/historylst246/data/test/labels/target.npy",
+          "bytes": 9216128,
+          "sha256": "3f206fb4c4eb77cd97b045c574f257de6285ee70b2b662a7ae48dd4096933b81"
+        },
+        {
+          "path": "resources/historylst246/data/test/labels/valid.npy",
+          "bytes": 2304128,
+          "sha256": "4f720877d469cca866e0992e9e5f7321d94fcddce3a5015cdde129382e73394b"
+        }
+      ]
+    },
+    {
+      "name": "historylst246-validation",
+      "format": "concatenated-gzip-tar",
+      "parts": [
+        {
+          "name": "historylst246-validation.tar.gz.part001",
+          "bytes": 219698623,
+          "sha256": "6e84adccfd130faf731fad8b158faa7a4d7055cc95d49d19524408ed00f96c7b"
+        }
+      ],
+      "files": [
+        {
+          "path": "resources/historylst246/data/validation/inputs/coarse.npy",
+          "bytes": 288128,
+          "sha256": "cf930cc5b736915782e9d45df81253dad3cd029ca23243295848302625269e17"
+        },
+        {
+          "path": "resources/historylst246/data/validation/inputs/context.npy",
+          "bytes": 2828,
+          "sha256": "451c40264fefe266ff25934f2aff3dd7098870a81665ec07e3bb431b820594e5"
+        },
+        {
+          "path": "resources/historylst246/data/validation/inputs/emissivity.npy",
+          "bytes": 18432128,
+          "sha256": "507a045a62b1fde2beed388416abc607dbfbf53c3ad3b44715e208f6794df367"
+        },
+        {
+          "path": "resources/historylst246/data/validation/inputs/fine.npy",
+          "bytes": 239616128,
+          "sha256": "75f322c827acce2c336be43e72bfca507fff8156e1b616eb0b144563955ea27a"
+        },
+        {
+          "path": "resources/historylst246/data/validation/inputs/history.npy",
+          "bytes": 373248128,
+          "sha256": "9f641ffbc7851a41aece6d32edd2d63a0040408c28e015e08d7caadc2ed276cf"
+        },
+        {
+          "path": "resources/historylst246/data/validation/inputs/support.npy",
+          "bytes": 1152128,
+          "sha256": "93113b1fcd73a03302b3ff3cee16c2c7a3bcc69f4d9bb0fb27c308b7be3626eb"
+        },
+        {
+          "path": "resources/historylst246/data/validation/labels/formal.npy",
+          "bytes": 1152128,
+          "sha256": "9dfd0441235c4f762de73d2888398b8125bc331e0762fd91867700ff8331c6d1"
+        },
+        {
+          "path": "resources/historylst246/data/validation/labels/target.npy",
+          "bytes": 4608128,
+          "sha256": "6f9639298e8c1336eb033a20a414b02acdfe2682e52a1add737fbdba4ba03a2a"
+        },
+        {
+          "path": "resources/historylst246/data/validation/labels/valid.npy",
+          "bytes": 1152128,
+          "sha256": "bf0cba0869abe75c6dd85ac9e3494db659842d17d1ef483b22d7d3e0432e29fa"
+        }
+      ]
+    },
+    {
+      "name": "historylst246-fit",
+      "format": "concatenated-gzip-tar",
+      "parts": [
+        {
+          "name": "historylst246-fit.tar.gz.part001",
+          "bytes": 1073741824,
+          "sha256": "817f089fc0bad5e8b2cc47842cb703664b996adbb28934cf8d3ee1e886de1c92"
+        },
+        {
+          "name": "historylst246-fit.tar.gz.part002",
+          "bytes": 1073741824,
+          "sha256": "d8754a86c044c3130088f2414a3cdd02f7336ff30e31639b955a8482f52f4f29"
+        },
+        {
+          "name": "historylst246-fit.tar.gz.part003",
+          "bytes": 825584606,
+          "sha256": "579c8c5036358ec1dfae29ded63612a4a0259972232697a5fe5b9d121af24d41"
+        }
+      ],
+      "files": [
+        {
+          "path": "resources/historylst246/data/fit/inputs/coarse.npy",
+          "bytes": 3859328,
+          "sha256": "c61fe1f421044919d9e455ed55d6a83e65af88309f4d19b14be35bf307a75ba4"
+        },
+        {
+          "path": "resources/historylst246/data/fit/inputs/context.npy",
+          "bytes": 36308,
+          "sha256": "5ed2b80fa7451ab646cd6f1493c758bf1f1f25ed502ef221889041dcf89c63b2"
+        },
+        {
+          "path": "resources/historylst246/data/fit/inputs/emissivity.npy",
+          "bytes": 246988928,
+          "sha256": "4b33c156a1069746d85555279cd3cd38f2d8d22ae4632d252b7b9c055fe4b256"
+        },
+        {
+          "path": "resources/historylst246/data/fit/inputs/fine.npy",
+          "bytes": 3210854528,
+          "sha256": "f36fbf7568879ea0ccf5b64a82060133ec0bf6792d7defdc5d429a751628e3b1"
+        },
+        {
+          "path": "resources/historylst246/data/fit/inputs/history.npy",
+          "bytes": 5001523328,
+          "sha256": "c7dfecca840dab5ccfd5294d4c55362adebeefbe1b620dac881ac9dcf28cfd5b"
+        },
+        {
+          "path": "resources/historylst246/data/fit/inputs/support.npy",
+          "bytes": 15436928,
+          "sha256": "d0a9fabe15892bc3c3264e2722c2eafa0f6376fb4cf1c54fc158cc3ff0a91a44"
+        },
+        {
+          "path": "resources/historylst246/data/fit/labels/formal.npy",
+          "bytes": 15436928,
+          "sha256": "cb728abff8b0f4ff6212334705565b6217de23cf6195117712539eafd3eede66"
+        },
+        {
+          "path": "resources/historylst246/data/fit/labels/target.npy",
+          "bytes": 61747328,
+          "sha256": "7179f8301ebe46e922c18c757d8553ca470e5f26a6db9742f189b548bd51d43d"
+        },
+        {
+          "path": "resources/historylst246/data/fit/labels/valid.npy",
+          "bytes": 15436928,
+          "sha256": "b456bb7a4ad00e2352dbe2b6965841bb1eff56b61a46619da384dee6a399572c"
+        }
+      ]
+    },
+    {
+      "name": "selected-checkpoints",
+      "format": "concatenated-gzip-tar",
+      "parts": [
+        {
+          "name": "selected-checkpoints.tar.gz.part001",
+          "bytes": 518527934,
+          "sha256": "b963698bbdcdb4af7c835b2afd1dc79ce7f22762bda861ce5458991844ecc435"
+        }
+      ],
+      "files": [
+        {
+          "path": "research/jstars_20260914/experiments/mocolsk/calibrated/best.pt",
+          "bytes": 102050858,
+          "sha256": "d5d75c87b77d8610de14a792287554d5851225b6e77bf4a92d825a3580a3a162"
+        },
+        {
+          "path": "research/near_neighbor_attribution_20260914/thst_task_loss/best.pt",
+          "bytes": 150014033,
+          "sha256": "2d294d116c83c96656404e6337bdb3df2fe5f8de5b163ac377d59cb7a920bdda"
+        },
+        {
+          "path": "research/sub04_20260913/compact_query_product/runs/compact_20260905/best.pt",
+          "bytes": 24013645,
+          "sha256": "9fb45471adf1f2acfcbc81d70dd8f352517c6bd9efef188f50a6b7e67266ee54"
+        },
+        {
+          "path": "research/sub04_20260913/compact_query_product/runs/compact_20260912/best.pt",
+          "bytes": 24014669,
+          "sha256": "705e8a4b66d5c78b5f5d6af457af75443e5f357e6200c158fc6120f403f3fdd1"
+        },
+        {
+          "path": "research/sub04_20260913/compact_query_product/runs/compact_20260913/best.pt",
+          "bytes": 24015181,
+          "sha256": "88dbe6c74dcea9d1209f0fdc6f6468405351b7b9e3c2a8343383b6c595243c19"
+        },
+        {
+          "path": "research/sub04_20260913/final_confirmation/runs/baseline_20260905/best.pt",
+          "bytes": 11994347,
+          "sha256": "73ffc240398398c7cb1d9d9d3d64c6ed913baee7eb0a41c2fa61698af8de0147"
+        },
+        {
+          "path": "research/sub04_20260913/final_confirmation/runs/baseline_20260912/best.pt",
+          "bytes": 11994347,
+          "sha256": "7895f7ad6fe9bdabde6fdfed01f5c2b22422911e65317df745173be0f2798209"
+        },
+        {
+          "path": "research/sub04_20260913/final_confirmation/runs/baseline_20260913/best.pt",
+          "bytes": 11994347,
+          "sha256": "c85e95767e1de2425cb2d4f1b6abe4a49377262b4f9ec9639630778d9be26048"
+        },
+        {
+          "path": "research/sub04_20260913/final_confirmation/runs/naf_history_20260912/best.pt",
+          "bytes": 37359309,
+          "sha256": "9dfb4d11e6a4269770b514183fb5f2ad0b42d25d92a87c9f8be6a0d5722aa252"
+        },
+        {
+          "path": "research/sub04_20260913/final_confirmation/runs/naf_history_20260913/best.pt",
+          "bytes": 37359309,
+          "sha256": "38e5eb7d73ae453b332f361dfb1673359e89875380a12b62f15bef6ae11cd7b7"
+        },
+        {
+          "path": "research/sub04_20260913/multihead_kd/naf_history_20260905/best.pt",
+          "bytes": 37358669,
+          "sha256": "b0da53ce54cd01fd105e57931fb702f1468f9f0d60172d5280a9eb236e53a32e"
+        },
+        {
+          "path": "resources/historylst246/models/utae_best.pt",
+          "bytes": 11991339,
+          "sha256": "012185db5fc7832ec2e3216981032ac9162a9aa7d6661b734f5008a568689e8d"
+        },
+        {
+          "path": "resources/historylst246/reference_models/current_only.pt",
+          "bytes": 17131520,
+          "sha256": "846fc1105802e5bb860a3e637b091089d18c453202b6446ed8679881855ea914"
+        },
+        {
+          "path": "resources/historylst246/reference_models/full_history.pt",
+          "bytes": 17131328,
+          "sha256": "87c0ef0de9be5d942ea8d0bbc1fd5b977f87d4e085a5279048e3c48722f0a116"
+        },
+        {
+          "path": "resources/historylst246/reference_models/released_history.pt",
+          "bytes": 17132764,
+          "sha256": "0dc8a3e01b68d405642e69c2b8782b4b02ca940c3853f21a0c2a404d28ad523a"
+        },
+        {
+          "path": "resources/historylst246/reference_models/template.pt",
+          "bytes": 16544242,
+          "sha256": "a2330bcca93a09e363e35ff18e66cc7298d912dab24689f24e18f156a8f2d12a"
+        },
+        {
+          "path": "resources/historylst246/reference_models/without_explicit.pt",
+          "bytes": 17132764,
+          "sha256": "84c059ab2aa005ce4488aa649c961bcf620dd4cc5e2cfde1d22860b3a3dc750e"
+        }
+      ]
+    }
+  ]
+}

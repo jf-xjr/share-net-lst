@@ -1,0 +1,116 @@
+{
+  "labels_opened": false,
+  "split": "validation",
+  "scene_size": 160,
+  "precision": "FP32, TF32 disabled; common FP64 support projection",
+  "timed": "CPU prepared input arrays through host-to-GPU transfers, complete method inference, projection, CPU output",
+  "selection": "lowest, median, highest number of scene-available histories in Val45",
+  "warmup": 3,
+  "repetitions": 10,
+  "gpu": "NVIDIA GeForce RTX 5060 Ti",
+  "results": {
+    "MoCoLSK_selected": {
+      "checkpoint": "/home/jf_xjr/uhi_cdc/research/jstars_20260914/experiments/mocolsk/calibrated/best.pt",
+      "checkpoint_sha256": "d5d75c87b77d8610de14a792287554d5851225b6e77bf4a92d825a3580a3a162",
+      "parameters": 25472601,
+      "cases": [
+        {
+          "scene_id": "coeur_d_alene_id:2022:LC09_L2SP_043027_20220731_02_T1",
+          "index": 4,
+          "references": 5,
+          "seconds": [
+            0.09707884099771036,
+            0.09670385999925202,
+            0.09478539900010219,
+            0.09581564600375714,
+            0.0947334000011324,
+            0.09609073900355725,
+            0.09454909899795894,
+            0.10049757600063458,
+            0.0947976449970156,
+            0.09554328599915607
+          ],
+          "median_seconds": 0.0956794660014566,
+          "peak_cuda_bytes": 214878720,
+          "repeat_maximum_difference_K": [
+            3.0517578125e-05,
+            3.0517578125e-05,
+            3.0517578125e-05,
+            3.24249267578125e-05,
+            3.24249267578125e-05,
+            3.24249267578125e-05,
+            3.24249267578125e-05,
+            3.24249267578125e-05,
+            3.24249267578125e-05,
+            3.24249267578125e-05
+          ]
+        },
+        {
+          "scene_id": "bucharest_ro:2022:LC09_L2SP_183029_20220720_02_T1",
+          "index": 0,
+          "references": 8,
+          "seconds": [
+            0.09491868499753764,
+            0.09446998000203166,
+            0.09600786300143227,
+            0.09472095299861394,
+            0.09450570400076685,
+            0.09572259100241354,
+            0.10114916900056414,
+            0.09467062300245743,
+            0.09441992999927606,
+            0.10045814099430572
+          ],
+          "median_seconds": 0.09481981899807579,
+          "peak_cuda_bytes": 214878720,
+          "repeat_maximum_difference_K": [
+            3.0517578125e-05,
+            3.24249267578125e-05,
+            3.0517578125e-05,
+            3.0517578125e-05,
+            3.0517578125e-05,
+            3.0517578125e-05,
+            3.24249267578125e-05,
+            3.24249267578125e-05,
+            3.0517578125e-05,
+            3.2697405174531013e-05
+          ]
+        },
+        {
+          "scene_id": "sevilla_es:2021:LC08_L2SP_202034_20210730_02_T1",
+          "index": 36,
+          "references": 9,
+          "seconds": [
+            0.0960271459989599,
+            0.09415881899622036,
+            0.09483432499837363,
+            0.0956892410031287,
+            0.09576780699717347,
+            0.09415036400605459,
+            0.09582937900268007,
+            0.0952819560043281,
+            0.10069696900609415,
+            0.09495207999862032
+          ],
+          "median_seconds": 0.0954855985037284,
+          "peak_cuda_bytes": 214878720,
+          "repeat_maximum_difference_K": [
+            3.2697405117687595e-05,
+            3.0517578125e-05,
+            3.2697405117687595e-05,
+            3.24249267578125e-05,
+            3.24249267578125e-05,
+            3.0517578125e-05,
+            3.24249267578125e-05,
+            3.2697405117687595e-05,
+            3.24249267578125e-05,
+            3.24249267578125e-05
+          ]
+        }
+      ],
+      "median_across_case_medians": 0.0954855985037284
+    }
+  },
+  "source_sha256": "a6d822f724bf7bb36959e50bf34829a820ef0ee22f4ad3eec9e53bf5de5c4c49",
+  "timing_recovery": "The initial 1e-6 K repeat check was stricter than FP32 full-network numerical resolution. No training or Test prediction was repeated. This timing run records each observed difference against the established 2e-4 K FP32 check bound."
+}

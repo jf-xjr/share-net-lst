@@ -1,0 +1,66 @@
+{
+  "status": "complete",
+  "new_prediction_scenes": 540,
+  "scores": {
+    "all_history": {
+      "rmse": 0.42613199570471244,
+      "mae": 0.3164740038320662,
+      "bias": -0.0035760324731912616,
+      "mse": 0.1914220589670134,
+      "hotspot_iou": 0.8044597059954773,
+      "hotspot_mae": 0.3942432268780987
+    },
+    "archive_only": {
+      "rmse": 0.5045964744057136,
+      "mae": 0.3725768854022727,
+      "bias": -0.004748583101292311,
+      "mse": 0.26424177397816523,
+      "hotspot_iou": 0.7645817135658014,
+      "hotspot_mae": 0.4911595913154571
+    },
+    "recent_only": {
+      "rmse": 0.49508859312566794,
+      "mae": 0.3667603326188314,
+      "bias": -0.00887186412047382,
+      "mse": 0.267121586141505,
+      "hotspot_iou": 0.7732391888053868,
+      "hotspot_mae": 0.4816268610725989
+    }
+  },
+  "pairs": {
+    "archive_only_minus_all": {
+      "metric": "rmse",
+      "definition": "first minus second",
+      "delta": 0.07846447870100114,
+      "confidence_interval_95": [
+        0.06504653308805172,
+        0.09228912520747569
+      ],
+      "positive_cities": 30,
+      "cities": 30,
+      "regional_delta": {
+        "china": 0.10448510853032864,
+        "europe": 0.07210119458236626,
+        "us": 0.05880713299030851
+      }
+    },
+    "recent_only_minus_all": {
+      "metric": "rmse",
+      "definition": "first minus second",
+      "delta": 0.0689565974209555,
+      "confidence_interval_95": [
+        0.054038654141135074,
+        0.08491406606206868
+      ],
+      "positive_cities": 30,
+      "cities": 30,
+      "regional_delta": {
+        "china": 0.08031125584436036,
+        "europe": 0.061616110964788195,
+        "us": 0.06494242545371795
+      }
+    }
+  },
+  "source_unchanged": true,
+  "manifest_unchanged": true
+}

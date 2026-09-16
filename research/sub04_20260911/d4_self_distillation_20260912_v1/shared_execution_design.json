@@ -1,0 +1,12 @@
+{
+  "status": "execution_change_declared_before_shared_runs",
+  "declared_at_utc": "2026-09-12T12:42:48.770277+00:00",
+  "original_trainer_sha256": "25f54ff1dcde4eb2d97f8f5f47ee8ddd0d021e94a21801e31a72465ebfb59572",
+  "shared_entry_sha256": "d22966f3ccf9eb3b86685b82bf97a1906cde4e1b49f090858329de8bd037a09f",
+  "planned_runs_sha256": "b50fddcb6ac34ede060ed4243106ba06df5d9628985504ce4f18c29d298c4a6e",
+  "change": "Only execution context and per-run wall allowance: seed905 pair isolated 360s each; seeds912/913 each same-GPU architecture pair 540s each, all retain 13:00 UTC hard cutoff.",
+  "unchanged": "1000updates/10Val45 choices/fused AdamW/.25 history/.25 emissivity/RNG/loss/schedule/teacher/initialization/pilot gate",
+  "isolated_timing": false,
+  "automatic_queue": false,
+  "test_opened": false
+}

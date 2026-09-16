@@ -1,0 +1,16 @@
+{
+  "repository": "https://github.com/VSainteuf/utae-paps",
+  "commit": "987874e27a98bb399277f2d55eb010744d26f881",
+  "license": "MIT",
+  "original_sha256": {
+    "utae.py": "c0f33cc875713cb348d25c4be8dac2435464bf81960c8288a7ed5f5718417f93",
+    "ltae.py": "e358812f75eb1d74a5607a7d4bd28538241a5a215b0b67eefa59b7ea457bc36e",
+    "positional_encoding.py": "b5a2498ebe76c0095bc5d155345324dc86443b0bb940b5189cffbe59e722fd7e",
+    "convlstm.py": "9d501a1d59828f922a7827b76e2c797ac25471737f2b9d0e0516d0be52f890c6"
+  },
+  "changes": [
+    "Relative package imports",
+    "LTAE accepts spatial visibility mask in addition to padded dates",
+    "Positional denominator is a nonpersistent buffer for CPU/GPU transfer; same values"
+  ]
+}

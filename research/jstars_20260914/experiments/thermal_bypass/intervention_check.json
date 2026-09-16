@@ -1,0 +1,31 @@
+{
+  "initialization_checks": [
+    {
+      "seed": 20260914,
+      "all_initial_tensors_identical": true
+    },
+    {
+      "seed": 20260915,
+      "all_initial_tensors_identical": true
+    }
+  ],
+  "first_scale_historical_feature_and_moment_injection_unchanged": true,
+  "returned_full_resolution_summary_zero": true,
+  "removed_connections": [
+    "summary_to_decoder_detail_skip",
+    "summary_to_gated_temperature_residual"
+  ],
+  "all_scales_keep_feature_fusion_and_moment_injection": true,
+  "history_encoder_and_all_fusion_gradients_active": {
+    "historical": true,
+    "fusion_0": true,
+    "fusion_1": true,
+    "fusion_2": true,
+    "fusion_3": true
+  },
+  "no_history_forward_equivalence": true,
+  "inactive_parameters": 1348,
+  "nonzero_bypass_effect_on_training_scene_K": 13.41375732421875,
+  "split": "fit",
+  "scene_index": 0
+}
