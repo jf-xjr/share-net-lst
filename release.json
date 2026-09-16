@@ -10,5 +10,8 @@
   "target_repository": "jf-xjr/share-net-lst",
   "visibility": "private",
   "network_name": "SHaRe-Net",
-  "network_full_name": "Scale-wise Historical Reweighting Network"
+  "network_full_name": "Scale-wise Historical Reweighting Network",
+  "repository_url": "https://github.com/jf-xjr/share-net-lst",
+  "dataset_storage": "google_drive_pending",
+  "checkpoint_storage": "github_release"
 }

@@ -60,7 +60,9 @@
           "bytes": 2304128,
           "sha256": "4f720877d469cca866e0992e9e5f7321d94fcddce3a5015cdde129382e73394b"
         }
-      ]
+      ],
+      "storage": "google_drive",
+      "download_url": null
     },
     {
       "name": "historylst246-validation",
@@ -118,7 +120,9 @@
           "bytes": 1152128,
           "sha256": "bf0cba0869abe75c6dd85ac9e3494db659842d17d1ef483b22d7d3e0432e29fa"
         }
-      ]
+      ],
+      "storage": "google_drive",
+      "download_url": null
     },
     {
       "name": "historylst246-fit",
@@ -186,7 +190,9 @@
           "bytes": 15436928,
           "sha256": "b456bb7a4ad00e2352dbe2b6965841bb1eff56b61a46619da384dee6a399572c"
         }
-      ]
+      ],
+      "storage": "google_drive",
+      "download_url": null
     },
     {
       "name": "selected-checkpoints",
@@ -284,7 +290,8 @@
           "bytes": 17132764,
           "sha256": "84c059ab2aa005ce4488aa649c961bcf620dd4cc5e2cfde1d22860b3a3dc750e"
         }
-      ]
+      ],
+      "storage": "github_release"
     }
   ]
 }
