@@ -4,7 +4,7 @@ Code and selected models accompanying **Accurate and Efficient Urban Land Surfac
 
 **SHaRe-Net** names the network's scale-wise historical source reweighting. Internal model classes and original run identifiers are retained for traceability.
 
-Target repository: **`jf-xjr/share-net-lst`**, private. Release: **`v1.0.0-manuscript`**.
+Repository: **[`jf-xjr/share-net-lst`](https://github.com/jf-xjr/share-net-lst)**, public. Release: **`v1.0.0-manuscript`**.
 
 The final network reconstructs 480 m observations on a 120 m grid with 5,977,045 parameters. Its recorded mean test RMSE is 0.426132 K across three trained models. The original 246-city / 738-scene partition, trained weights and experiment results are preserved.
 
@@ -12,7 +12,7 @@ The final network reconstructs 480 m observations on a 120 m grid with 5,977,045
 
 | Location | Contents |
 |---|---|
-| [Manuscript PDF](research/jstars_20260914/manuscript/main.pdf) | Revised nine-page article; LaTeX is in the same directory |
+| [Manuscript PDF](research/jstars_20260914/manuscript/main.pdf) | Archived nine-page release snapshot; predates later manuscript revisions. LaTeX is in the same directory |
 | [Step-by-step reproduction](docs/reproduction.md) | Environment, downloads, three-model inference and scoring, expected result, troubleshooting and full-retraining limits |
 | [Configuration](docs/configuration.md) | Five training stages, all 74 channels, history selection, QA and baseline adaptations |
 | [Download guide](docs/release.md) | Google Drive data, GitHub model weights, checksums and extraction |

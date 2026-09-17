@@ -25,16 +25,16 @@ from scratch is a separate, substantially longer experiment.
 
 ## 2. Obtain the source and prepare Python
 
-The GitHub repository and the Google Drive dataset folder are currently private.
-Obtain repository access from its owner and request dataset access through the
-[Drive folder](https://drive.google.com/drive/folders/1xzp6lgvS1q4fS1Dcqmya80vaH8-_1--s).
-The two permissions are separate. Sign in with the accounts that received access.
+The GitHub repository and its Release attachments are public. The Google Drive
+dataset folder remains private: request dataset access through the
+[Drive folder](https://drive.google.com/drive/folders/1xzp6lgvS1q4fS1Dcqmya80vaH8-_1--s)
+and sign in with the account granted access. Public repository access does not
+change the dataset folder permissions.
 
-With Git and GitHub CLI installed, clone the repository:
+With Git installed, clone the repository without signing in:
 
 ```bash
-gh auth login
-gh repo clone jf-xjr/share-net-lst
+git clone https://github.com/jf-xjr/share-net-lst.git
 cd share-net-lst
 ```
 
@@ -235,7 +235,7 @@ explains its interpretation and the limits of independent generalization claims.
 
 | Symptom | Check or next step |
 |---|---|
-| GitHub returns 404, or Drive requests access | Confirm that the signed-in account has access to that service; repository permission does not grant Drive permission |
+| GitHub returns 404, or Drive requests access | Check the repository URL and release filename for GitHub. For Drive, use an account granted dataset access; the public repository does not grant Drive permission |
 | `python` is not found or NumPy/PyTorch cannot be imported | Activate `.venv`; use `python -m pip` from that same environment. Before creating it, use the available `python3` executable |
 | A part is missing or its checksum differs | Check its exact filename, size and download completion. Re-download the indicated part; an HTML access page is not the archive |
 | `Refusing to overwrite different content` during restoration | Use a clean source copy or move the conflicting local file aside after inspecting it. Keep the manifest hashes unchanged |

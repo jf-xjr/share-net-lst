@@ -1,7 +1,10 @@
 # Source attribution and terms
 
-This is a local derived-data release candidate. No public repository or DOI has
-yet been assigned. Source attribution travels with redistributed derivatives.
+This derived-data release accompanies the public
+[SHaRe-Net repository](https://github.com/jf-xjr/share-net-lst). No DOI has been
+assigned. The processed arrays remain in a private Google Drive folder as
+described in the repository download guide. Source attribution travels with
+redistributed derivatives.
 The arrays contain values and public scene identities, not access credentials.
 
 | Component | Source and modifications | Provider terms |

@@ -1,6 +1,6 @@
 # Data and checkpoint downloads
 
-Repository: `jf-xjr/share-net-lst` (private). Version: `v1.0.0-manuscript`.
+Repository: `jf-xjr/share-net-lst` (public). Version: `v1.0.0-manuscript`.
 **SHaRe-Net** stands for **Scale-wise Historical Reweighting Network**.
 
 The source tree preserves the manuscript implementations and fixed partitions.
@@ -38,8 +38,7 @@ is in the same folder. The repository [release-assets.json](../release-assets.js
 contains each part's SHA-256, MD5 and Drive URL; extraction checks SHA-256
 for both downloaded parts and original array files.
 
-For model weights in this private GitHub repository, authenticate GitHub CLI
-with an account that has access:
+Download model weights from the public [GitHub Release](https://github.com/jf-xjr/share-net-lst/releases/tag/v1.0.0-manuscript); browser downloads require no repository access approval. With GitHub CLI configured, you can also run:
 
 ```bash
 gh release download v1.0.0-manuscript --repo jf-xjr/share-net-lst \
