@@ -1,8 +1,8 @@
-# SHaRe-Net manuscript configuration
+# SHaRe-Net experiment configuration
 
-Repository **`share-net-lst`**, source release **`v1.0.0-manuscript`**. This is the configuration entry point for Sections II, III-E and IV-A of *Accurate and Efficient Urban Land Surface Temperature Reconstruction with Multiscale Historical Fusion*. The accompanying archive is `share-net-lst-v1.0.0-manuscript.zip`; open this file under `share-net-lst/docs/` after extraction. [Release metadata](../release.json) identifies the prepared source package. All links below resolve within this repository.
+Repository **`share-net-lst`**, source release **`v1.0.0-manuscript`**. This is the configuration entry point for the reconstruction inputs, training stages and baseline adaptations. The accompanying archive is `share-net-lst-v1.0.0-code.zip`; open this file under `share-net-lst/docs/` after extraction. [Release metadata](../release.json) identifies the prepared source package. All links below resolve within this repository.
 
-## Final-system training — Section III-E
+## Final-system training
 
 The table describes the five executed stages for each of the three final student lineages. Learning rates are the rates reached at the end of linear warm-up, before cosine decay. Batch size counts complete 160 × 160 scenes per optimizer update.
 
@@ -18,7 +18,7 @@ All stages use weight decay 1e-4, gradient-norm clipping at 1, and EMA with maxi
 
 The first fixed teacher averages eight spatial views of one reference-trained model; the second averages eight views of each of three refined models. All three student lineages share these teachers. [training.md](training.md) describes the initialization maps and teacher construction. [training_lineage.json](training_lineage.json) contains every stage's executed configuration, completed update count, selected checkpoint hash and bound run record. The table's settings are common across the three lineages; seeds and selected checkpoints remain in those existing records.
 
-## Current input: 74 channels — Section II
+## Current input: 74 channels
 
 The network concatenates **52 `fine` + 4 `emissivity` + 1 `support` + 2 coarse fields + 15 `context` = 74** channels, in that order. Context scalars are broadcast over the 160 × 160 grid; coarse temperature and coarse validity use nearest-neighbor expansion from 40 × 40. The stored `fine[0]` is kelvin and becomes `(B−300)/20` on input. Missing coarse temperature is zero after normalization, accompanied by the separate finite-value indicator. The input assembly is explicit in [the final model's inherited encoder](../research/sub04_20260911/naf_history/model.py) and [the U-TAE adapter](../resources/historylst246/historylst/model.py).
 
@@ -109,7 +109,7 @@ Texture features summarize the accepted 30 m children within each 120 m cell: st
 
 The four current emissivity channels are `(filled_mean_E−0.98)/0.01`, `std_E/0.01`, `log1p(mean_EMSD/0.01)` and accepted fraction. Emissivity and its uncertainty are scaled by 1e-4 from their digital numbers; the separate mask and filling are defined below. Current seasonal phase is `2π(DOY−1)/365.2425`. The two platform indicators identify Landsat 8/9. POWER daily weather fields are maximum/minimum 2 m air temperature, relative humidity, wind speed, downward shortwave radiation, corrected precipitation and top-layer soil wetness. Maximum temperature is retained twice, once in the legacy context and once in the separately normalized weather extension. The retained 15-channel context excludes the four latitude/longitude sine/cosine fields present in the older 19-channel builder.
 
-## Nine historical slots and channels — Section II
+## Nine historical slots and channels
 
 | Zero-based slots | Candidate pool | Ranking / retained record |
 |---|---|---|
@@ -136,7 +136,7 @@ Each slot contains the following nine channels. The history is flattened in slot
 
 Before encoding, thermal coverage masks channels 0, 1 and 3; emissivity coverage masks channel 4. A date with no valid thermal observation anywhere has nine zero channels, including its metadata. Temperature and quality fill from the nearest nonempty study cell; coverage remains the original accepted fraction. [Historical preprocessing](../resources/historylst246/reference_models/code/g246_8h_historical_features.py) defines the exact formulas, with the same channel meanings for [recent records](../resources/historylst246/reference_models/code/g246_8h_recent_historical_features.py).
 
-## Quality and support thresholds — Section II
+## Quality and support thresholds
 
 | Field | Executed acceptance rule |
 |---|---|
@@ -153,7 +153,7 @@ The current QA rules come from [acquire_effective120_v2.py](../resources/history
 
 Observation `support` and the urban scoring `formal` mask are separate supplied arrays. Only `support` enters reconstruction and coarse projection. The unchanged dataset manifest identifies both arrays and their checksums. Conditional evaluation intersects `formal` with its input-defined subset and requires at least 32 scored urban pixels per scene; its definitions remain in [experiment_conditions.md](experiment_conditions.md).
 
-## Baseline input adaptations — Section IV-A
+## Baseline input adaptations
 
 **Historical U-TAE.** Separate 3 × 3 stems map the 74 current fields and each nine-channel historical observation to 32 channels. The current predictor-only token is concatenated with nine historical tokens. Its time position is zero; historical positions are negative recorded ages in days. Local thermal coverage masks temporal attention and decoder skip aggregation, while the current token stays visible. A signed regression head adds a residual to the current coarse interpolant, followed by the common projection. See [historylst/model.py](../resources/historylst246/historylst/model.py). The three scored students share the final fusion system's two fixed teachers, as recorded in [training.md](training.md).
 
@@ -163,6 +163,6 @@ Observation `support` and the urban scoring `formal` mask are separate supplied 
 
 For multiple-reference inference, [predict](../research/near_neighbor_attribution_20260914/train_thst.py) reconstructs from every available reference and weights the outputs at each pixel by that reference's thermal coverage divided by summed coverage. Where summed local coverage is zero, it averages the available reconstructions equally. A scene with no available reference uses the prepared slot-0 fallback. Both versions use four overlapping 128 × 128 windows to cover the 160 × 160 scene, average window overlaps and apply the common coarse projection. [thst_adapter.py](../research/near_neighbor_attribution_20260914/thst_adapter.py) implements the auxiliary embedding. The multiple-reference, task-calibrated version is the reported accuracy comparator; both reference strategies appear in the inference-cost comparison.
 
-## Existing evidence and article interpretation
+## Existing evidence and evaluation context
 
 The 11.6% RMSE improvement compares the final teacher-trained compact system with historical U-TAE. The weighting control compares paired reference-only models and yields 0.0042 K overall, with 0.0152 K and 0.0096 K gains in the two reported thermal-mismatch subsets. Compact recovery/refinement reduces the full parent's parameter count by 35.8% while preserving its accuracy. The direct-bypass removal improves the reference-only control; encoder thermal moments remain active and the final 0.426 K system retains its original bypass. Existing scores, city partitions and model files are unchanged in this documentation release.

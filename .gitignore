@@ -17,3 +17,9 @@ outputs/
 
 # Recorded sampling schedules are small reproducibility inputs.
 !**/schedule.npz
+
+# Manuscripts remain local and must not enter public Git history.
+**/manuscript/
+*.tex
+*.pdf
+*manuscript*.zip

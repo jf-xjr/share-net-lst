@@ -1,6 +1,6 @@
 # Reproduce the main SHaRe-Net result
 
-This guide takes you from the downloaded release to the paper's **0.426132 K
+This guide takes you from the downloaded release to the recorded **0.426132 K
 mean test RMSE**. It assumes basic remote-sensing knowledge and familiarity with
 running terminal commands. You can use an AI assistant to help with the setup;
 the commands, expected files and score definitions below provide the reference.
@@ -16,7 +16,7 @@ reference temperatures and fixed partitions.
 | Aim | Required assets | What this release supports |
 |---|---|---|
 | Recompute the final model's main test score | Source tree, test-data part and selected-checkpoints part | Follow Sections 2–6; CPU or CUDA inference and scoring have portable entry points |
-| Inspect the method and existing experiments | Source tree only | Read the manuscript, [configuration](configuration.md), [training explanation](training.md) and preserved result records |
+| Inspect the method and existing experiments | Source tree only | Read the [configuration](configuration.md), [training explanation](training.md) and preserved result records |
 | Train the final SHaRe-Net system again from random initialization | All three data splits, five training stages, two generated teacher fields and new run records | The settings and historical implementations are provided; additional runner adaptation and intermediate-artifact generation are needed, as detailed in Section 8 |
 
 Recomputing the main score uses three already trained networks independently.
@@ -25,11 +25,10 @@ from scratch is a separate, substantially longer experiment.
 
 ## 2. Obtain the source and prepare Python
 
-The GitHub repository and its Release attachments are public. The Google Drive
-dataset folder remains private: request dataset access through the
-[Drive folder](https://drive.google.com/drive/folders/1xzp6lgvS1q4fS1Dcqmya80vaH8-_1--s)
-and sign in with the account granted access. Public repository access does not
-change the dataset folder permissions.
+The GitHub repository, its Release attachments and the
+[Google Drive dataset folder](https://drive.google.com/drive/folders/1xzp6lgvS1q4fS1Dcqmya80vaH8-_1--s)
+are publicly readable. Browser downloads and cloning require no sign-in or
+access approval. The manuscript is not included.
 
 With Git installed, clone the repository without signing in:
 
@@ -39,7 +38,7 @@ cd share-net-lst
 ```
 
 Alternatively, extract the source ZIP attached to the
-[manuscript release](https://github.com/jf-xjr/share-net-lst/releases/tag/v1.0.0-manuscript)
+[code and model release](https://github.com/jf-xjr/share-net-lst/releases/tag/v1.0.0-manuscript)
 and enter its `share-net-lst` directory. All subsequent commands run from that
 directory, which contains `README.md`, `release-assets.json` and `scripts/`.
 
@@ -174,9 +173,9 @@ for example, changes inference CPU parallelism without changing the protocol.
 Both commands refuse to overwrite completed output files. For a second run,
 choose a new output directory such as `outputs/reproduction_cuda/`.
 
-## 6. Compare with the paper
+## 6. Compare with the recorded result
 
-The paper's result is the **arithmetic mean of the three model scores**. For
+The recorded result is the **arithmetic mean of the three model scores**. For
 each model, the scorer first computes RMSE over each scene's supplied urban
 evaluation mask, averages its three scenes within each city, averages cities
 within each region, and then averages the three regions. This is not a pooled
@@ -202,13 +201,13 @@ reference_path = Path("research/jstars_20260914/experiments/revision_evidence/sc
 reference = json.loads(reference_path.read_text())["final_0.426"]["macro"]["rmse"]
 reproduced = mean(scores)
 print(f"Mean of three model scores: {reproduced:.9f} K")
-print(f"Recorded paper result:     {reference:.9f} K")
+print(f"Recorded result:           {reference:.9f} K")
 print(f"Difference:                {reproduced - reference:+.9f} K")
 PY
 ```
 
 The recorded value is **0.42613199570471244 K**, displayed as **0.426132 K** in
-the repository and 0.426 K at the paper's three-decimal precision. Averaging the
+the repository and 0.426 K at three-decimal precision. Averaging the
 three prediction arrays before scoring creates an ensemble experiment and does
 not reproduce this statistic. A single seed need not equal the three-seed mean.
 
@@ -223,19 +222,19 @@ For diagnosis, the original per-model results are:
 Exact prediction hashes can vary across CPU/GPU and PyTorch numerical kernels.
 Keep the printed environment versions and inference records when reporting a
 difference; the released data and checkpoint hashes should match exactly.
-If the RMSE difference changes the paper's displayed precision, inspect the
+If the RMSE difference changes the reported three-decimal precision, inspect the
 split, model identity, aggregation and device before attributing it to hardware.
 
-The test cohort contains 30 cities and 90 scenes and was previously used in
-follow-up development. Repeating this evaluation verifies the recorded
-retrospective result. The existing [evaluation history](evaluation_history.md)
-explains its interpretation and the limits of independent generalization claims.
+The test cohort contains 30 cities and 90 scenes excluded from training.
+Repeating this evaluation verifies the recorded result for fixed models on the
+same cohort. The [evaluation history](evaluation_history.md) records the training,
+selection and evaluation roles, together with the earlier development timeline.
 
 ## 7. Common problems
 
 | Symptom | Check or next step |
 |---|---|
-| GitHub returns 404, or Drive requests access | Check the repository URL and release filename for GitHub. For Drive, use an account granted dataset access; the public repository does not grant Drive permission |
+| GitHub returns 404, or Drive requests access | Use the current links in [the download guide](release.md). Both locations are public; verify the URL and retry in a private browser window. Older Drive metadata may still describe the former private setting |
 | `python` is not found or NumPy/PyTorch cannot be imported | Activate `.venv`; use `python -m pip` from that same environment. Before creating it, use the available `python3` executable |
 | A part is missing or its checksum differs | Check its exact filename, size and download completion. Re-download the indicated part; an HTML access page is not the archive |
 | `Refusing to overwrite different content` during restoration | Use a clean source copy or move the conflicting local file aside after inspecting it. Keep the manifest hashes unchanged |
@@ -272,7 +271,7 @@ with an `initialization_seed` and five `stages`. Every stage has its
 The top-level `teachers` entries identify the two cached fields and their
 producers' receipts. Use each stage's recorded seed and configuration: later
 stages need not reuse the initial random seed. The
-[configuration table](configuration.md#final-system-training--section-iii-e)
+[configuration table](configuration.md#final-system-training)
 provides the shared learning rates, teacher weights and validation budgets, and
 [training.md](training.md) explains block transfers and optimizer/EMA resets.
 
@@ -314,7 +313,7 @@ adaptation remains additional reproduction work. The standalone
 [HistoryLST246 README](../resources/historylst246/README.md) also provides an
 independent U-TAE training workflow. That is useful for testing the data and
 training pipeline, but it is a separate baseline from the final SHaRe-Net system
-and from the teacher-trained U-TAE comparison in the paper.
+and from the teacher-trained U-TAE recorded comparison.
 
 ## 9. A useful brief for an AI assistant
 
@@ -325,7 +324,7 @@ For the main-score route, give your assistant this repository and ask:
 > data identities. First check the environment, permissions, downloaded assets
 > and all three checkpoint hashes. Run each final seed separately, retain its
 > prediction and score records, and average the three macro.rmse values. Report
-> the environment, mean RMSE and difference from the recorded paper result.
+> the environment, mean RMSE and difference from the recorded result.
 
 For full retraining, first ask it to inventory the missing artifacts and the
 historical runner dependencies in Section 8. A valid inventory should identify

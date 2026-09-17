@@ -3,13 +3,13 @@
 Repository: `jf-xjr/share-net-lst` (public). Version: `v1.0.0-manuscript`.
 **SHaRe-Net** stands for **Scale-wise Historical Reweighting Network**.
 
-The source tree preserves the manuscript implementations and fixed partitions.
+The source tree preserves the model implementations and fixed partitions. Manuscript PDFs, LaTeX sources and paper figures are not distributed.
 Processed dataset arrays are available in the [Google Drive data folder](https://drive.google.com/drive/folders/1xzp6lgvS1q4fS1Dcqmya80vaH8-_1--s).
-The folder is **private**: sign in with an account granted access, or request
-access from the folder owner through Google Drive. Dataset parts are not hosted on GitHub.
+The folder is **publicly readable**: no Google sign-in or access request is needed.
+Dataset parts are not hosted on GitHub.
 Selected checkpoint weights are attached to the GitHub Release.
 
-For a sequential walkthrough that uses these downloads to recompute the paper's
+For a sequential walkthrough that uses these downloads to recompute the recorded
 three-model mean test score, see the [reproduction guide](reproduction.md).
 
 `release-assets.json` records each group's storage location and the exact
@@ -33,7 +33,8 @@ three parts, all of which are required to restore the training set.
 | [historylst246-fit.tar.gz.part003](https://drive.google.com/file/d/1ibQGPemF8UroLPS_qvEqBrnYhEYBSkHj/view) | 825,584,606 |
 
 All five uploaded parts were verified on 2026-09-16 against their local byte
-sizes and MD5 checksums. The [SHA-256 manifest](https://drive.google.com/file/d/1dr8svKE9-6Q2uggUEqtAokAI34gQvnFL/view)
+sizes and MD5 checksums. Public access and anonymous byte-range downloads for
+all parts were verified on 2026-09-17. The [SHA-256 manifest](https://drive.google.com/file/d/1dr8svKE9-6Q2uggUEqtAokAI34gQvnFL/view)
 is in the same folder. The repository [release-assets.json](../release-assets.json)
 contains each part's SHA-256, MD5 and Drive URL; extraction checks SHA-256
 for both downloaded parts and original array files.
@@ -101,3 +102,10 @@ license files remain alongside their implementations. The existing MIT license
 under `resources/historylst246/` covers that portable task's software; it does
 not replace source-data or third-party terms. No new blanket license has been
 assigned to the assembled research repository.
+
+See [license status](licenses.md) for the scope of confirmed upstream licenses and permissions that remain unresolved.
+
+The README and JSON stored in Drive are the original upload records and may
+still describe the former private access setting. Use this guide and the
+current repository manifest for access instructions. The data bytes and
+checksums are unchanged.

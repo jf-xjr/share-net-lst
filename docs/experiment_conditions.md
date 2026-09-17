@@ -1,6 +1,6 @@
 # Experimental conditions
 
-The article presents the task, method, comparisons and results. This record contains the operational settings needed to reproduce them. Data channels, selection rules and comparator adapters are described in [implementation.md](implementation.md); stage configurations and teachers are described in [training.md](training.md).
+This record contains the operational settings needed to reproduce the recorded experiments. Data channels, selection rules and comparator adapters are described in [implementation.md](implementation.md); stage configurations and teachers are described in [training.md](training.md).
 
 ## Common inputs and outputs
 
@@ -34,4 +34,4 @@ The three scenes are those closest to each region's median reference-temperature
 
 Both paired jobs completed all 12,000 updates and 26 validation candidates. Validation selected seed 20260914 at its recorded minimum and seed 20260915 at update 8,000 EMA. The 180 new test predictions were saved before scoring. Mean RMSE is 0.455039060 K without the bypass versus 0.457766028 K with it. Per-run values are 0.452960975 versus 0.456153593 K and 0.457117146 versus 0.459378464 K. Removing the bypass improves 20 of 30 cities; the paired improvement is 0.002726968 K, with a 95% interval of [0.000105740, 0.005501056] K. Hotspot IoU rises from 0.792240083 to 0.794252442.
 
-The result concerns paired, randomly initialized, reference-only training. The delivered 0.426 K models retain their original thermal bypass and teacher-guided training. The revised paper centers the demonstrated compact-system capability and reports the removable direct pathway as a measured component finding. `thermal_bypass/analysis/` contains selections, predictions' identities, per-scene/city scores and paired statistics.
+The result concerns paired, randomly initialized, reference-only training. The delivered 0.426 K models retain their original thermal bypass and teacher-guided training. `thermal_bypass/analysis/` contains selections, predictions' identities, per-scene/city scores and paired statistics.

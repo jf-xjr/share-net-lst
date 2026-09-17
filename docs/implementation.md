@@ -1,6 +1,6 @@
 # Implementation and experiment record
 
-Start with [configuration.md](configuration.md) for the executed training values, complete 74-channel dictionary, slot selection, quality thresholds and baseline input adaptations. This repository documents the inputs, model lineage, comparator adaptations, and evaluation settings behind the manuscript. Executable sources and JSON records retain the exact configurations.
+Start with [configuration.md](configuration.md) for the executed training values, complete 74-channel dictionary, slot selection, quality thresholds and baseline input adaptations. This repository documents the inputs, model lineage, comparator adaptations, and evaluation settings of the recorded experiments. Executable sources and JSON records retain the exact configurations.
 
 ## Data package and split
 
@@ -92,7 +92,7 @@ Hotspot sets contain exactly $\lceil n/10\rceil$ of the $n$ scored pixels in a s
 
 ## Evaluation cohort and reference provenance
 
-The 30-city evaluation cohort was inspected before the final architecture and training recipe were established. The paper reports retrospective comparisons on cities excluded from gradient fitting. Checkpoints use validation-based selection; the prior development history remains material to interpretation. See [evaluation_history.md](evaluation_history.md) for the corresponding records.
+Parameter fitting uses the training partition; checkpoints are selected by validation RMSE, and model candidates are compared using validation performance and parameter budgets. Fixed models are evaluated on the 30 test cities excluded from training. See [evaluation_history.md](evaluation_history.md) for the evaluation sequence and retained development records.
 
 ## Complete training lineage
 

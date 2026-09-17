@@ -1,8 +1,8 @@
 # Final model training
 
-The manuscript's method section gives the teacher loss and structural transfers. [training_lineage.json](training_lineage.json) exports the exact configurations, parent paths, checkpoint hashes, and completion records for every retained stage of all three final models.
+[training_lineage.json](training_lineage.json) exports the exact configurations, parent paths, checkpoint hashes, and completion records for every retained stage of all three final models.
 
-The [five-stage configuration table](configuration.md#final-system-training--section-iii-e) lists the optimizer, learning rates, effective batch, update budget, teacher weight and schedule for every stage. Validation considers 50, 10, 14, 26 and 8 raw/EMA candidates, respectively.
+The [five-stage configuration table](configuration.md#final-system-training) lists the optimizer, learning rates, effective batch, update budget, teacher weight and schedule for every stage. Validation considers 50, 10, 14, 26 and 8 raw/EMA candidates, respectively.
 
 Block indices are zero based. Recovery retains bottleneck blocks 0/2/4 and encoder-level-2 blocks 0/1/3, then reindexes them. `compact_recovery/model.py` implements this tensor mapping. `compact_query_product/model.py` implements the final transfer and architecture. Every stage initializes a fresh optimizer and EMA from its selected parent; no optimizer history is transferred between stages.
 
@@ -16,7 +16,7 @@ Historical U-TAE receives 18,000 supervised updates, the same 1,000-update first
 
 At this matched stage, the full parent has 9,310,501 parameters and scores 0.427535665 K versus U-TAE's 0.481815815 K. The paired difference is 0.054280150 K, with a 95% city-bootstrap interval of [0.048920686, 0.059844633] K and improvement in 30/30 cities. Compact recovery and query refinement then produce 5,977,045 parameters and 0.426131996 K. The 35.8032% parameter reduction accompanies a 0.001403669 K RMSE reduction; its paired interval is [0.000977309, 0.001838765] K, with 25/30 city gains. The architecture and capacity differ between the full parent and U-TAE, so this stage comparison attributes neither a single module nor an isolated teacher effect.
 
-The full-parent comparison reuses `sub04_20260913/final_confirmation/test` predictions. U-TAE checkpoints match those used in the final comparison. The two saved U-TAE prediction packets differ by at most 3.2553e-5 K on common finite support because of legacy numerical serialization/reprojection, with identical finite masks; the rescored macro RMSE differs by approximately 1.3e-9 K. The manuscript's displayed precision is unaffected.
+The full-parent comparison reuses `sub04_20260913/final_confirmation/test` predictions. U-TAE checkpoints match those used in the final comparison. The two saved U-TAE prediction packets differ by at most 3.2553e-5 K on common finite support because of legacy numerical serialization/reprojection, with identical finite masks; the rescored macro RMSE differs by approximately 1.3e-9 K. The reported three-decimal RMSE is unaffected.
 
 Matched scratch structural runs use reference-only supervision, two paired seeds, 12,000 updates and identical 26-candidate validation schedules. Their difference from the final score combines initialization, supervision and optimization; it is not an estimate of distillation alone. Parent-to-compact inference speed was not measured under the current common timing boundary; the reported compression result concerns parameters and reconstruction accuracy.
 

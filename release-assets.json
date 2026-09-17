@@ -66,8 +66,8 @@
       ],
       "storage": "google_drive",
       "download_url": "https://drive.google.com/drive/folders/1xzp6lgvS1q4fS1Dcqmya80vaH8-_1--s",
-      "visibility": "private",
-      "access_required": true
+      "visibility": "public",
+      "access_required": false
     },
     {
       "name": "historylst246-validation",
@@ -131,8 +131,8 @@
       ],
       "storage": "google_drive",
       "download_url": "https://drive.google.com/drive/folders/1xzp6lgvS1q4fS1Dcqmya80vaH8-_1--s",
-      "visibility": "private",
-      "access_required": true
+      "visibility": "public",
+      "access_required": false
     },
     {
       "name": "historylst246-fit",
@@ -212,8 +212,8 @@
       ],
       "storage": "google_drive",
       "download_url": "https://drive.google.com/drive/folders/1xzp6lgvS1q4fS1Dcqmya80vaH8-_1--s",
-      "visibility": "private",
-      "access_required": true
+      "visibility": "public",
+      "access_required": false
     },
     {
       "name": "selected-checkpoints",
@@ -319,11 +319,13 @@
     "status": "uploaded_and_verified",
     "storage": "google_drive",
     "folder_url": "https://drive.google.com/drive/folders/1xzp6lgvS1q4fS1Dcqmya80vaH8-_1--s",
-    "visibility": "private",
-    "access_required": true,
+    "visibility": "public",
+    "access_required": false,
     "verified_at_utc": "2026-09-16T09:38:41.672066+00:00",
     "remote_size_and_md5_verified": true,
     "dataset_parts": 5,
-    "dataset_bytes": 3626248102
+    "dataset_bytes": 3626248102,
+    "public_access_verified_at_utc": "2026-09-17T03:09:15.378172+00:00",
+    "anonymous_range_downloads_verified": true
   }
 }
